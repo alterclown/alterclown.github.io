@@ -276,7 +276,7 @@
           \******************************/
         /*! no static exports found */
         /***/ (function (module, exports, __webpack_require__) {
-            module.exports = __webpack_require__(/*! C:\Users\User\source\repos\HRM\AccountingWebUi\src\styles.css */ "./src/styles.css");
+            module.exports = __webpack_require__(/*! C:\Users\User\source\repos\AspAccounting\AccountingWebUi\src\styles.css */ "./src/styles.css");
             /***/ 
         })
     }, [[3, "runtime"]]]);

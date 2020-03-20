@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addAccountDetail()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" (keyup)=\"applyFilter($event.target.value)\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\"  (click)=\"onSearchClear()\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Account Group Detail Id</th>\n          <th>Account Group Name</th>\n          <th>Group Under</th>\n          <th>Affect Gross Profit</th>\n          <th>Narration</th>\n          <th>Nature</th>\n          <th>Extra1</th>\n          <th>Extra2</th>\n          <th>Edit/Delete</th>\n          <!-- <th>Delete</th> -->\n        </thead>\n        <tr *ngFor=\"let account of addAccountDetailList\">\n          <td>{{account.AccountGroupDetailId}}</td>\n          <td>{{account.AccountGroupName}}</td>\n          <td>{{account.GroupUnder}}</td>\n          <td>{{account.AffectGrossProfit}}</td>\n          <td>{{account.Narration}}</td>\n          <td>{{account.Nature}}</td>\n          <td>{{account.Extra1}}</td>\n          <td>{{account.Extra2}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editAccountDetail(account.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteAccountDetail(account.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addAccountDetail()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" (keyup)=\"applyFilter($event.target.value)\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\"  (click)=\"onSearchClear()\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Account Group Detail Id</th>\n          <th>Account Group Name</th>\n          <th>Group Under</th>\n          <th>Affect Gross Profit</th>\n          <th>Narration</th>\n          <th>Nature</th>\n          <th>Extra1</th>\n          <th>Extra2</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let account of addAccountDetailList\">\n          <td>{{account.AccountGroupDetailId}}</td>\n          <td>{{account.AccountGroupName}}</td>\n          <td>{{account.GroupUnder}}</td>\n          <td>{{account.AffectGrossProfit}}</td>\n          <td>{{account.Narration}}</td>\n          <td>{{account.Nature}}</td>\n          <td>{{account.Extra1}}</td>\n          <td>{{account.Extra2}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editAccountDetail(account.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteAccountDetail(account.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n\n  <div style=\"float:left;padding:10px;margin:0 auto;\" *ngIf=\"myBooks\">\n    <table>\n        <tr>\n            <th>Book ID</th>\n                <th>Book Name</th>\n                    <th>Category</th>\n                        <th>Price</th>\n        </tr>\n        <tr *ngFor=\"let books of myBooks\">    <!-- LOOP -->\n            <td>{{books.AccountGroupDetailId}}</td>\n                <td>{{books.AccountGroupName}}</td>\n                    <td>{{books.GroupUnder}}</td>\n                        <td>{{books.AffectGrossProfit}}</td>\n        </tr>\n    </table>\n</div>");
 
 /***/ }),
 
@@ -475,22 +475,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _services_account_group_detail_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/account-group-detail.service */ "./src/app/account-group-detail/services/account-group-detail.service.ts");
 /* harmony import */ var _account_group_detail_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../account-group-detail.component */ "./src/app/account-group-detail/account-group-detail.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
 
 
 
 
 
 let AccountGroupDetailListComponent = class AccountGroupDetailListComponent {
-    constructor(dialog, service) {
+    constructor(dialog, service, httpService) {
         this.dialog = dialog;
         this.service = service;
+        this.httpService = httpService;
         this.displayedColumns = ['accountGroupDetailId', 'accountGroupName', 'groupUnder', 'affectGrossProfit', 'extraDate', 'narration', 'nature', 'extra1', 'extra2', 'actions'];
         this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this.service.getAccountDetail());
+        this.accountDetailList = [];
     }
     ngOnInit() {
+        // this.accountDetailList = this.service.getAccount();
+        this.httpService.get('https://localhost:44330/api/AccountGroupDetail/GetAccountGroupDetail').subscribe(data => {
+            this.myBooks = data;
+        });
     }
     get addAccountDetailList() {
-        return this.service.getAccountDetail();
+        return this.service.getAccount();
     }
     addAccountDetail() {
         const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogConfig"]();
@@ -518,7 +526,8 @@ let AccountGroupDetailListComponent = class AccountGroupDetailListComponent {
 };
 AccountGroupDetailListComponent.ctorParameters = () => [
     { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
-    { type: _services_account_group_detail_service__WEBPACK_IMPORTED_MODULE_3__["AccountGroupDetailService"] }
+    { type: _services_account_group_detail_service__WEBPACK_IMPORTED_MODULE_3__["AccountGroupDetailService"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"] }
 ];
 AccountGroupDetailListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -630,10 +639,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountGroupDetailService", function() { return AccountGroupDetailService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
 
 
 let AccountGroupDetailService = class AccountGroupDetailService {
-    constructor() {
+    constructor(httpClient, httpService) {
+        this.httpClient = httpClient;
+        this.httpService = httpService;
+        this._list = [];
+        this._accountDetail = [];
         this._addAccountDetail = [
             { AccountGroupDetailId: 1, AccountGroupName: 'Hydrogen', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
             { AccountGroupDetailId: 1, AccountGroupName: 'Helium', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
@@ -662,7 +677,27 @@ let AccountGroupDetailService = class AccountGroupDetailService {
     getAccountDetail() {
         return this._addAccountDetail;
     }
+    getAccount() {
+        this.httpService.get('https://localhost:44330/api/AccountGroupDetail/GetAccountGroupDetail').subscribe(data => {
+            this._accountDetail = data;
+        });
+    }
+    //   getAccount(){
+    //     return this.httpClient.get('https://localhost:44330/api/AccountGroupDetail/GetAccountGroupDetail').subscribe((res: AccountGroupDetail) => {
+    //       return <AccountGroupDetail><unknown>{
+    //         id: res.AccountGroupDetailId,
+    //         title: res.AccountGroupName
+    //       };
+    //   }
+    // }
+    getAll() {
+        return this.httpClient.get('https://localhost:44330/api/AccountGroupDetail/GetAccountGroupDetail');
+    }
 };
+AccountGroupDetailService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
 AccountGroupDetailService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
         providedIn: 'root'
@@ -1795,7 +1830,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\User\source\repos\HRM\AccountingWebUi\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\User\source\repos\AspAccounting\AccountingWebUi\src\main.ts */"./src/main.ts");
 
 
 /***/ })
