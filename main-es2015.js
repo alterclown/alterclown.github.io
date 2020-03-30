@@ -23,58 +23,6 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.html":
-/*!***********************************************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.html ***!
-  \***********************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addAccountDetail()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" (keyup)=\"applyFilter($event.target.value)\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\"  (click)=\"onSearchClear()\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Account Group Detail Id</th>\n          <th>Account Group Name</th>\n          <th>Group Under</th>\n          <th>Affect Gross Profit</th>\n          <th>Narration</th>\n          <th>Nature</th>\n          <th>Extra1</th>\n          <th>Extra2</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let account of addAccountDetailList\">\n          <td>{{account.AccountGroupDetailId}}</td>\n          <td>{{account.AccountGroupName}}</td>\n          <td>{{account.GroupUnder}}</td>\n          <td>{{account.AffectGrossProfit}}</td>\n          <td>{{account.Narration}}</td>\n          <td>{{account.Nature}}</td>\n          <td>{{account.Extra1}}</td>\n          <td>{{account.Extra2}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editAccountDetail(account.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteAccountDetail(account.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n\n  <div style=\"float:left;padding:10px;margin:0 auto;\" *ngIf=\"myBooks\">\n    <table>\n        <tr>\n            <th>Book ID</th>\n                <th>Book Name</th>\n                    <th>Category</th>\n                        <th>Price</th>\n        </tr>\n        <tr *ngFor=\"let books of myBooks\">    <!-- LOOP -->\n            <td>{{books.AccountGroupDetailId}}</td>\n                <td>{{books.AccountGroupName}}</td>\n                    <td>{{books.GroupUnder}}</td>\n                        <td>{{books.AffectGrossProfit}}</td>\n        </tr>\n    </table>\n</div>");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/account-group-detail/account-group-detail.component.html":
-/*!****************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/account-group-detail/account-group-detail.component.html ***!
-  \****************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("  <mat-toolbar>\n    <span></span>\n    <span class=\"fill-remaining-space\"></span>\n    <button class=\"btn-dialog-close\" mat-stroked-button (click)=\"onClose()\" tabIndex=\"-1\"><mat-icon>clear</mat-icon></button>\n  </mat-toolbar>\n  <form [formGroup]=\"_accountForm\" class=\"normal-form\">\n    <mat-grid-list cols=\"2\" rowHeight=\"550px\">\n      <mat-grid-tile>\n        <div class=\"controles-container\">\n          <!-- <input type=\"hidden\" formControlName=\"$key\"> -->\n           <mat-form-field>\n            <input formControlName=\"AccountGroupDetailId\" matInput placeholder=\"Account GroupDetail Id\">\n            <mat-error>This field is mandatory.</mat-error>\n          </mat-form-field>\n          <mat-form-field>\n            <input formControlName=\"AccountGroupName\" matInput placeholder=\"Account GroupName\">\n            <mat-error>Invalid email address.</mat-error>\n          </mat-form-field>\n          <mat-form-field>\n            <input formControlName=\"GroupUnder\" matInput placeholder=\"Group Under\">\n          </mat-form-field>\n          <mat-form-field>\n            <input formControlName=\"AffectGrossProfit\" matInput placeholder=\"Affect Gross Profit\">\n          </mat-form-field>\n\n          <mat-form-field>\n            <input formControlName=\"ExtraDate\" matInput placeholder=\"Extra Date\">\n          </mat-form-field>\n\n          <mat-form-field>\n            <input formControlName=\"Narration\" matInput placeholder=\"Narration\">\n          </mat-form-field>\n\n          <mat-form-field>\n            <input formControlName=\"Nature\" matInput placeholder=\"Nature\">\n          </mat-form-field>\n\n          <mat-form-field>\n            <input formControlName=\"Extra1\" matInput placeholder=\"Extra1\">\n          </mat-form-field>\n\n          <mat-form-field>\n            <input formControlName=\"Extra2\" matInput placeholder=\"Extra2\">\n          </mat-form-field>\n        </div>\n      </mat-grid-tile>\n      <mat-grid-tile>\n        <div class=\"controles-container\">          \n          <div class=\"button-row\">\n            <button mat-raised-button color=\"primary\" (click)=\"onSubmit()\" >Submit</button>\n            <button mat-raised-button color=\"warn\" (click)=\"onClear()\">Clear</button>\n          </div>\n        </div>\n      </mat-grid-tile>\n    </mat-grid-list>\n  </form>\n\n  <!-- <h1 mat-dialog-title> <strong></strong></h1>\n<div mat-dialog-content>\n  <mat-form-field>\n    <input formControlName=\"AddTaxesId\" matInput placeholder=\"Add Taxes Id*\">\n    <mat-error>This field is mandatory.</mat-error>\n  </mat-form-field>\n  <mat-form-field>\n    <input formControlName=\"TaxName\" matInput placeholder=\"Tax Name\">\n    <mat-error>Invalid email address.</mat-error>\n  </mat-form-field>\n  <mat-form-field>\n    <input formControlName=\"TaxValue\" matInput placeholder=\"Tax Value*\">\n  </mat-form-field>\n  <mat-form-field>\n    <input formControlName=\"Status\" matInput placeholder=\"Status\">\n  </mat-form-field>\n  <ng-template #elseTemplate>\n    Sure to delete <b></b>?\n  </ng-template>\n</div>\n<div mat-dialog-actions>\n  <div class=\"button-row\">\n    <button mat-raised-button color=\"primary\" >Submit</button>\n    <button mat-raised-button color=\"warn\">Clear</button>\n  </div>\n</div> -->");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/add-tax/add-tax-list/add-tax-list.component.html":
-/*!********************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/add-tax/add-tax-list/add-tax-list.component.html ***!
-  \********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab  (click)=\"addAddTax()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" (keyup)=\"applyFilter()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\"  (click)=\"onSearchClear()\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <div class=\"mat-elevation-z8\">\n    <mat-table [dataSource]=\"dataSource\"  matSort>\n      <ng-container matColumnDef=\"addtaxid\">\n        <mat-header-cell *matHeaderCellDef  mat-sort-header>Add Taxes Id</mat-header-cell>\n        <mat-cell *matCellDef=\"let element\">{{element.AddTaxesId}}</mat-cell>\n      </ng-container>\n      <ng-container matColumnDef=\"taxname\">\n        <mat-header-cell *matHeaderCellDef  mat-sort-header>Tax Name</mat-header-cell>\n        <mat-cell *matCellDef=\"let element\">{{element.TaxName}}</mat-cell>\n      </ng-container>\n      <ng-container matColumnDef=\"taxvalue\">\n        <mat-header-cell *matHeaderCellDef mat-sort-header>Tax Value</mat-header-cell>\n        <mat-cell *matCellDef=\"let element\">{{element.TaxValue}}</mat-cell>\n      </ng-container>\n      <ng-container matColumnDef=\"status\">\n        <mat-header-cell *matHeaderCellDef mat-sort-header>Status</mat-header-cell>\n        <mat-cell *matCellDef=\"let element\">{{element.Status}}</mat-cell>\n      </ng-container>\n      <ng-container matColumnDef=\"actions\">\n        <mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>\n        <mat-cell *matCellDef=\"let row\">\n          <button mat-icon-button (click)=\"editAddTax(row.id)\"><mat-icon>launch</mat-icon></button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteAddTax(row.id)\"><mat-icon>delete_outline</mat-icon></button>\n        </mat-cell>\n      </ng-container>\n      <ng-container matColumnDef=\"loading\">\n        <mat-footer-cell *matFooterCellDef colspan=\"6\">\n          Loading data...\n        </mat-footer-cell>\n      </ng-container>\n      <ng-container matColumnDef=\"noData\">\n        <mat-footer-cell *matFooterCellDef colspan=\"6\">\n          No data.\n        </mat-footer-cell>\n      </ng-container>\n      <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n      <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n      <mat-footer-row *matFooterRowDef=\"['loading']\"[ngClass]=\"{'hide':dataSource!=null}\" ></mat-footer-row>\n      <mat-footer-row *matFooterRowDef=\"['noData']\" [ngClass]=\"{'hide':!(dataSource!=null && dataSource.data.length==0)}\"></mat-footer-row>\n    </mat-table>\n    <mat-paginator [pageSizeOptions]=\"[5, 10, 25, 100]\" [pageSize]=\"5\" showFirstLastButtons></mat-paginator>\n  </div>\n  ");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/add-tax/add-tax.component.html":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/add-tax/add-tax.component.html ***!
-  \**************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("  <!-- <mat-toolbar>\n    <span></span>\n    <span class=\"fill-remaining-space\" ></span>\n  </mat-toolbar> -->\n    <button class=\"btn-dialog-close\" mat-stroked-button (click)=\"onClose()\" tabIndex=\"-1\"><mat-icon>clear</mat-icon></button>\n  \n  <form [formGroup]=\"_taxForm\" class=\"normal-form\">\n    <mat-grid-list cols=\"1\" rowHeight=\"250px\" >\n      <mat-grid-tile>\n        <div class=\"controles-container\">\n          <!-- <input type=\"hidden\" formControlName=\"$key\"> -->\n          <mat-form-field>\n            <input formControlName=\"AddTaxesId\" matInput placeholder=\"Add Taxes Id*\">\n            <mat-error>This field is mandatory.</mat-error>\n          </mat-form-field>\n          <mat-form-field>\n            <input formControlName=\"TaxName\" matInput placeholder=\"Tax Name\">\n            <mat-error>Invalid email address.</mat-error>\n          </mat-form-field>\n          <mat-form-field>\n            <input formControlName=\"TaxValue\" matInput placeholder=\"Tax Value*\">\n          </mat-form-field>\n          <mat-form-field>\n            <input formControlName=\"Status\" matInput placeholder=\"Status\">\n          </mat-form-field>\n        </div>\n      </mat-grid-tile>\n      <mat-grid-tile>\n        <div class=\"controles-container\">          \n          <div class=\"button-row\">\n            <button mat-raised-button color=\"primary\" (click)=\"onSubmit()\" >Submit</button>\n            <button mat-raised-button color=\"warn\" (click)=\"onClear()\">Clear</button>\n          </div>\n        </div>\n      </mat-grid-tile>\n    </mat-grid-list>\n  </form>\n<!-- \n  <h1 mat-dialog-title> <strong></strong></h1>\n<div mat-dialog-content>\n  <mat-form-field>\n    <input formControlName=\"AddTaxesId\" matInput placeholder=\"Add Taxes Id*\">\n    <mat-error>This field is mandatory.</mat-error>\n  </mat-form-field>\n  <mat-form-field>\n    <input formControlName=\"TaxName\" matInput placeholder=\"Tax Name\">\n    <mat-error>Invalid email address.</mat-error>\n  </mat-form-field>\n  <mat-form-field>\n    <input formControlName=\"TaxValue\" matInput placeholder=\"Tax Value*\">\n  </mat-form-field>\n  <mat-form-field>\n    <input formControlName=\"Status\" matInput placeholder=\"Status\">\n  </mat-form-field>\n  <ng-template #elseTemplate>\n    Sure to delete <b></b>?\n  </ng-template>\n</div>\n<div mat-dialog-actions>\n  <div class=\"button-row\">\n    <button mat-raised-button color=\"primary\" (click)=\"onSubmit()\" >Submit</button>\n    <button mat-raised-button color=\"warn\" (click)=\"onClear()\">Clear</button>\n  </div>\n</div> -->");
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
 /*!**************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
@@ -84,59 +32,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (" <app-navbar></app-navbar>\n<!-- <app-dashboard></app-dashboard>  -->\n<router-outlet></router-outlet> \n");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/brands-add/brands-add-list/brands-add-list.component.html":
-/*!*****************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/brands-add/brands-add-list/brands-add-list.component.html ***!
-  \*****************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1>Brands-add Works</h1>>");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/brands-add/brands-add.component.html":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/brands-add/brands-add.component.html ***!
-  \********************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>brands-add works!</p>\n");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/customers/customers-list/customers-list.component.html":
-/*!**************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/customers/customers-list/customers-list.component.html ***!
-  \**************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"test()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <!-- <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" (keyup)=\"applyFilter($event.target.value)\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\"  (click)=\"onSearchClear()\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field> -->\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Customer ID</th>\n          <th>Name</th>\n          <th>Company</th>\n          <th>Company Address</th>\n\n          <!-- <th>Delete</th> -->\n        </thead>\n        <tr *ngFor=\"let customer of customerList\">\n          <td>{{customer.CustomerId}}</td>\n          <td>{{customer.Name}}</td>\n          <td>{{customer.Company}}</td>\n          <td>{{customer.CompanyAddress}}</td>\n          <!-- <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editAccountDetail(account.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteAccountDetail(account.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td> -->\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/customers/customers.component.html":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/customers/customers.component.html ***!
-  \******************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>customers works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<app-navbar></app-navbar>\n\n<router-outlet></router-outlet>");
 
 /***/ }),
 
@@ -149,33 +45,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-add-tax-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Tax\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-customers-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Customers\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-employees-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Employees\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-product-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Products\n    </button>\n</div>\n<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-add-tax-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Tax\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n</div>\n\n<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-add-tax-list\" routerLinkActive=\"active\">\n        <mat-icon>note_add</mat-icon>\n    </button>\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-account-group-detail-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add Account\n    </button>\n</div>\n\n\n\n<!-- <router-outlet></router-outlet> -->\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"/user-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Users\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Attendance\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Customers\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Employees\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Products\n    </button>\n</div>\n\nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n\n\n<!-- <div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n</div>\n\n<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n        <mat-icon>note_add</mat-icon>\n    </button>\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n</div> -->\n\n<router-outlet></router-outlet>\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employees/employees-list/employees-list.component.html":
-/*!**************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/employees/employees-list/employees-list.component.html ***!
-  \**************************************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.html":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.html ***!
+  \************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"test()\">\n      <mat-icon>add</mat-icon>\n    </button>\n  <!-- <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput  placeholder=\"Search\" autocomplete=\"off\" (keyup)=\"applyFilter($event.target.value)\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\"  (click)=\"onSearchClear()\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field> -->\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\">\n    <table class=\"table\">\n      <thead>\n        <th>Employees ID</th>\n        <th>Employees Name</th>\n        <th>Designation</th>\n        <th>Mobile No </th>\n\n\n        <!-- <th>Delete</th> -->\n      </thead>\n      <tr *ngFor=\"let employee of employeeList\">\n        <td>{{employee.EmployeesId}}</td>\n        <td>{{employee.EmployeesName}}</td>\n        <td>{{employee.Designation}}</td>\n        <td>{{employee.MobileNo}}</td>\n        <!-- <td>\n            <button mat-icon-button color=\"accent\"(click)=\"editAccountDetail(account.Id)\"><mat-icon>edit</mat-icon></button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteAccountDetail(account.Id)\"><mat-icon>delete_outline</mat-icon></button>\n        </td> -->\n     </tr>\n     </table>\n    </div>\n</mat-card-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>hrm-attendance-list works!</p>\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employees/employees.component.html":
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/hrm-login/hrm-login.component.html":
 /*!******************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/employees/employees.component.html ***!
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/hrm-login/hrm-login.component.html ***!
   \******************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>employees works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n  <div class=\"row\">\n    <div class=\"col\"></div>\n    <div class=\"col-sm-5 margin\"> \n      <h1 class=\"display-3 text-center\">HRM</h1> \n      <form >  \n        <div class=\"form-group\">\n          <label for=\"username\">Username</label>\n          <input class=\"form-control\" placeholder=\"Username\" [(ngModel)]=\"username\" name=\"username\" required>\n          <small id=\"emailHelp\" class=\"form-text text-muted\">Kindly provide your username.</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"password\">Password</label>\n          <input class=\"form-control\" placeholder=\"Password\" [(ngModel)]=\"password\"type=\"password\" name=\"password\" required>\n        </div>\n          <!-- <button type=\"submit\" class=\"btn btn-outline-info btn-block\"  (click)=\"login();valueChanged()\" >Submit</button> -->\n          <button mat-raised-button color=\"primary\" type=\"submit\" (click)=\"login();valueChanged()\">Login</button>\n      </form>\n    </div>\n    <div class=\"col\"></div>\n  </div>\n\n  <!-- <div class=\"signin-content\">\n    <mat-card>\n      <mat-card-content>\n        <form [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n          <p>Please login to continue</p>\n          <mat-form-field class=\"half-width-input\">\n            <input matInput placeholder=\"User\" formControlName=\"userName\" required>\n            <mat-error *ngIf=\"isFieldInvalid('userName')\">\n              Please inform your user name\n            </mat-error>\n          </mat-form-field>\n          <mat-form-field class=\"half-width-input\">\n            <input matInput type=\"password\" placeholder=\"Password\" formControlName=\"password\" required>\n            <mat-error *ngIf=\"isFieldInvalid('userName')\">\n              Please inform your password\n            </mat-error>\n          </mat-form-field>\n          <button mat-raised-button color=\"primary\" type=\"submit\">Login</button>\n        </form>\n      </mat-card-content>\n    </mat-card>\n  </div> -->");
 
 /***/ }),
 
@@ -188,33 +84,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"primary\" class=\"navbar\">\n    <div>Accounting\n        <a  routerLink=\"app-dashboard\" routerLinkActive=\"active\"></a>\n    </div>\n    <div>\n     <span >Login</span>\n     <span></span>\n\n    </div>\n </mat-toolbar>\n\n ");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\" >\n    <div>My HRM\n        <a  routerLink=\"app-dashboard\" routerLinkActive=\"active\"></a>\n    </div>\n    <div>\n        <mat-icon (click) = \"logOut()\">account_box</mat-icon>\n    <span></span>\n\n    </div>\n </mat-toolbar>");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/products/product-list/product-list.component.html":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/products/product-list/product-list.component.html ***!
-  \*********************************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-list/user-list.component.html":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-list/user-list.component.html ***!
+  \***********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"test()\">\n      <mat-icon>add</mat-icon>\n    </button>\n  <!-- <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput  placeholder=\"Search\" autocomplete=\"off\" (keyup)=\"applyFilter($event.target.value)\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\"  (click)=\"onSearchClear()\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field> -->\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\">\n    <table class=\"table\">\n      <thead>\n        <th>Product ID</th>\n        <th>Product Name</th>\n        <th>Location</th>\n        <th>Product Warehouse</th>\n\n        <!-- <th>Delete</th> -->\n      </thead>\n      <tr *ngFor=\"let product of productList\">\n        <td>{{product.ProductID}}</td>\n        <td>{{product.ProductName}}</td>\n        <td>{{product.Location}}</td>\n        <td>{{product.ProductWarehouse}}</td>\n        <!-- <td>\n            <button mat-icon-button color=\"accent\"(click)=\"editAccountDetail(account.Id)\"><mat-icon>edit</mat-icon></button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteAccountDetail(account.Id)\"><mat-icon>delete_outline</mat-icon></button>\n        </td> -->\n     </tr>\n     </table>\n    </div>\n</mat-card-content>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList\">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/products/products.component.html":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/products/products.component.html ***!
-  \****************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user.component.html":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/user/user.component.html ***!
+  \********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>products works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>user works!</p>\n");
 
 /***/ }),
 
@@ -447,488 +343,6 @@ function __importDefault(mod) {
 
 /***/ }),
 
-/***/ "./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.css":
-/*!********************************************************************************************************!*\
-  !*** ./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.css ***!
-  \********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjY291bnQtZ3JvdXAtZGV0YWlsL2FjY291bnQtZ3JvdXAtZGV0YWlsLWxpc3QvYWNjb3VudC1ncm91cC1kZXRhaWwtbGlzdC5jb21wb25lbnQuY3NzIn0= */");
-
-/***/ }),
-
-/***/ "./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.ts":
-/*!*******************************************************************************************************!*\
-  !*** ./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.ts ***!
-  \*******************************************************************************************************/
-/*! exports provided: AccountGroupDetailListComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountGroupDetailListComponent", function() { return AccountGroupDetailListComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _services_account_group_detail_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/account-group-detail.service */ "./src/app/account-group-detail/services/account-group-detail.service.ts");
-/* harmony import */ var _account_group_detail_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../account-group-detail.component */ "./src/app/account-group-detail/account-group-detail.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-
-
-
-
-
-
-let AccountGroupDetailListComponent = class AccountGroupDetailListComponent {
-    constructor(dialog, service, httpService) {
-        this.dialog = dialog;
-        this.service = service;
-        this.httpService = httpService;
-        this.displayedColumns = ['accountGroupDetailId', 'accountGroupName', 'groupUnder', 'affectGrossProfit', 'extraDate', 'narration', 'nature', 'extra1', 'extra2', 'actions'];
-        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this.service.getAccountDetail());
-        this.accountDetailList = [];
-    }
-    ngOnInit() {
-        // this.accountDetailList = this.service.getAccount();
-        this.httpService.get('https://localhost:44330/api/AccountGroupDetail/GetAccountGroupDetail').subscribe(data => {
-            this.myBooks = data;
-        });
-    }
-    get addAccountDetailList() {
-        return this.service.getAccount();
-    }
-    addAccountDetail() {
-        const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogConfig"]();
-        this.isPopupOpened = true;
-        const dialogRef = this.dialog.open(_account_group_detail_component__WEBPACK_IMPORTED_MODULE_4__["AccountGroupDetailComponent"], {
-            data: {}
-        });
-        dialogRef.afterClosed().subscribe(result => {
-        });
-        dialogConfig.width = '60px';
-    }
-    editAccountDetail(id) {
-        this.isPopupOpened = true;
-        const account = this.service.getAccountDetail().filter(c => c.AccountGroupDetailId === id);
-        const dialogRef = this.dialog.open(_account_group_detail_component__WEBPACK_IMPORTED_MODULE_4__["AccountGroupDetailComponent"], {
-            data: {}
-        });
-        dialogRef.afterClosed().subscribe(result => {
-            data: account;
-        });
-    }
-    deleteAccountDetail(id) {
-        this.service.deleteAccountDetail(id);
-    }
-};
-AccountGroupDetailListComponent.ctorParameters = () => [
-    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
-    { type: _services_account_group_detail_service__WEBPACK_IMPORTED_MODULE_3__["AccountGroupDetailService"] },
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"] }
-];
-AccountGroupDetailListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-account-group-detail-list',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./account-group-detail-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./account-group-detail-list.component.css */ "./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.css")).default]
-    })
-], AccountGroupDetailListComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/account-group-detail/account-group-detail.component.css":
-/*!*************************************************************************!*\
-  !*** ./src/app/account-group-detail/account-group-detail.component.css ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjY291bnQtZ3JvdXAtZGV0YWlsL2FjY291bnQtZ3JvdXAtZGV0YWlsLmNvbXBvbmVudC5jc3MifQ== */");
-
-/***/ }),
-
-/***/ "./src/app/account-group-detail/account-group-detail.component.ts":
-/*!************************************************************************!*\
-  !*** ./src/app/account-group-detail/account-group-detail.component.ts ***!
-  \************************************************************************/
-/*! exports provided: AccountGroupDetailComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountGroupDetailComponent", function() { return AccountGroupDetailComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _services_account_group_detail_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/account-group-detail.service */ "./src/app/account-group-detail/services/account-group-detail.service.ts");
-
-
-
-
-
-let AccountGroupDetailComponent = class AccountGroupDetailComponent {
-    constructor(_formBuilder, data, _accountservice, dialogRef) {
-        this._formBuilder = _formBuilder;
-        this.data = data;
-        this._accountservice = _accountservice;
-        this.dialogRef = dialogRef;
-    }
-    ngOnInit() {
-        this._accountForm = this._formBuilder.group({
-            AccountGroupDetailId: [this.data.AccountGroupDetailId],
-            AccountGroupName: [this.data.AccountGroupName, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            GroupUnder: [this.data.GroupUnder, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            AffectGrossProfit: [this.data.AffectGrossProfit, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            ExtraDate: [this.data.ExtraDate, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            Narration: [this.data.Narration, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            Nature: [this.data.Nature, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            Extra1: [this.data.Extra1, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            Extra2: [this.data.Extra2, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]]
-        });
-    }
-    onSubmit() {
-        if (isNaN(this.data.ID)) {
-            this._accountservice.addAccountDetail(this._accountForm.value);
-            this.dialogRef.close();
-        }
-        else {
-            this._accountservice.deleteAccountDetail(this._accountForm.value);
-            this.dialogRef.close();
-        }
-    }
-    onClose() {
-        this.dialogRef.close();
-    }
-};
-AccountGroupDetailComponent.ctorParameters = () => [
-    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
-    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] },
-    { type: _services_account_group_detail_service__WEBPACK_IMPORTED_MODULE_4__["AccountGroupDetailService"] },
-    { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogRef"] }
-];
-AccountGroupDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-account-group-detail',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./account-group-detail.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/account-group-detail/account-group-detail.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./account-group-detail.component.css */ "./src/app/account-group-detail/account-group-detail.component.css")).default]
-    }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
-], AccountGroupDetailComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/account-group-detail/services/account-group-detail.service.ts":
-/*!*******************************************************************************!*\
-  !*** ./src/app/account-group-detail/services/account-group-detail.service.ts ***!
-  \*******************************************************************************/
-/*! exports provided: AccountGroupDetailService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountGroupDetailService", function() { return AccountGroupDetailService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-
-
-
-let AccountGroupDetailService = class AccountGroupDetailService {
-    constructor(httpClient, httpService) {
-        this.httpClient = httpClient;
-        this.httpService = httpService;
-        this._list = [];
-        this._accountDetail = [];
-        this._addAccountDetail = [
-            { AccountGroupDetailId: 1, AccountGroupName: 'Hydrogen', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-            { AccountGroupDetailId: 1, AccountGroupName: 'Helium', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-            { AccountGroupDetailId: 1, AccountGroupName: 'Lithium', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-            { AccountGroupDetailId: 1, AccountGroupName: 'Boron', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-            { AccountGroupDetailId: 1, AccountGroupName: 'Hydrogen', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-            { AccountGroupDetailId: 1, AccountGroupName: 'Helium', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-            { AccountGroupDetailId: 1, AccountGroupName: 'Lithium', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-            { AccountGroupDetailId: 1, AccountGroupName: 'Beryllium', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-            { AccountGroupDetailId: 1, AccountGroupName: 'Boron', GroupUnder: 'acc', AffectGrossProfit: 8, ExtraDate: 'sd', Narration: 'asd', Nature: 're', Extra1: 'ex1', Extra2: 'ex2' },
-        ];
-    }
-    addAccountDetail(addAccountDetail) {
-        addAccountDetail.AccountGroupDetailId = this._addAccountDetail.length + 1;
-        this._addAccountDetail.push(addAccountDetail);
-    }
-    editAccountDetail(addAccountDetail) {
-        const index = this._addAccountDetail.findIndex(c => c.AccountGroupDetailId === addAccountDetail.AccountGroupDetailId);
-        this._addAccountDetail[index] = addAccountDetail;
-        this._addAccountDetail.push(addAccountDetail);
-    }
-    deleteAccountDetail(id) {
-        const addTax = this._addAccountDetail.findIndex(c => c.AccountGroupDetailId === id);
-        this._addAccountDetail.splice(addTax, 1);
-    }
-    getAccountDetail() {
-        return this._addAccountDetail;
-    }
-    getAccount() {
-        this.httpService.get('https://localhost:44330/api/AccountGroupDetail/GetAccountGroupDetail').subscribe(data => {
-            this._accountDetail = data;
-        });
-    }
-    //   getAccount(){
-    //     return this.httpClient.get('https://localhost:44330/api/AccountGroupDetail/GetAccountGroupDetail').subscribe((res: AccountGroupDetail) => {
-    //       return <AccountGroupDetail><unknown>{
-    //         id: res.AccountGroupDetailId,
-    //         title: res.AccountGroupName
-    //       };
-    //   }
-    // }
-    getAll() {
-        return this.httpClient.get('https://localhost:44330/api/AccountGroupDetail/GetAccountGroupDetail');
-    }
-};
-AccountGroupDetailService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
-];
-AccountGroupDetailService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: 'root'
-    })
-], AccountGroupDetailService);
-
-
-
-/***/ }),
-
-/***/ "./src/app/add-tax/add-tax-list/add-tax-list.component.css":
-/*!*****************************************************************!*\
-  !*** ./src/app/add-tax/add-tax-list/add-tax-list.component.css ***!
-  \*****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkZC10YXgvYWRkLXRheC1saXN0L2FkZC10YXgtbGlzdC5jb21wb25lbnQuY3NzIn0= */");
-
-/***/ }),
-
-/***/ "./src/app/add-tax/add-tax-list/add-tax-list.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/add-tax/add-tax-list/add-tax-list.component.ts ***!
-  \****************************************************************/
-/*! exports provided: AddTaxListComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddTaxListComponent", function() { return AddTaxListComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _services_add_tax_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/add-tax.service */ "./src/app/add-tax/services/add-tax.service.ts");
-/* harmony import */ var _add_tax_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../add-tax.component */ "./src/app/add-tax/add-tax.component.ts");
-
-
-
-
-
-let AddTaxListComponent = class AddTaxListComponent {
-    constructor(dialog, service) {
-        this.dialog = dialog;
-        this.service = service;
-        this.displayedColumns = ['addtaxid', 'taxname', 'taxvalue', 'status', 'actions'];
-        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this.service._addTaxList);
-    }
-    ngOnInit() {
-    }
-    get addTaxtList() {
-        return this.service.getAddTax();
-    }
-    addAddTax() {
-        const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogConfig"]();
-        this.isPopupOpened = true;
-        const dialogRef = this.dialog.open(_add_tax_component__WEBPACK_IMPORTED_MODULE_4__["AddTaxComponent"], {
-            data: {}
-        });
-        dialogRef.afterClosed().subscribe(result => {
-        });
-        dialogConfig.width = '60px';
-    }
-    editAddTax(id) {
-        this.isPopupOpened = true;
-        const tax = this.service.getAddTax().find(c => c.AddTaxesId === id);
-        const dialogRef = this.dialog.open(_add_tax_component__WEBPACK_IMPORTED_MODULE_4__["AddTaxComponent"], {
-            data: {}
-        });
-        dialogRef.afterClosed().subscribe(result => {
-            data: tax;
-        });
-    }
-    deleteAddTax(id) {
-        this.service.deleteAddTax(id);
-    }
-};
-AddTaxListComponent.ctorParameters = () => [
-    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
-    { type: _services_add_tax_service__WEBPACK_IMPORTED_MODULE_3__["AddTaxService"] }
-];
-AddTaxListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-add-tax-list',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./add-tax-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/add-tax/add-tax-list/add-tax-list.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./add-tax-list.component.css */ "./src/app/add-tax/add-tax-list/add-tax-list.component.css")).default]
-    })
-], AddTaxListComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/add-tax/add-tax.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/add-tax/add-tax.component.css ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkZC10YXgvYWRkLXRheC5jb21wb25lbnQuY3NzIn0= */");
-
-/***/ }),
-
-/***/ "./src/app/add-tax/add-tax.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/add-tax/add-tax.component.ts ***!
-  \**********************************************/
-/*! exports provided: AddTaxComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddTaxComponent", function() { return AddTaxComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _services_add_tax_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/add-tax.service */ "./src/app/add-tax/services/add-tax.service.ts");
-
-
-
-
-
-let AddTaxComponent = class AddTaxComponent {
-    constructor(_formBuilder, data, _taxservice, dialogRef) {
-        this._formBuilder = _formBuilder;
-        this.data = data;
-        this._taxservice = _taxservice;
-        this.dialogRef = dialogRef;
-    }
-    ngOnInit() {
-        this._taxForm = this._formBuilder.group({
-            AddTaxesId: [this.data.AddTaxesId],
-            TaxName: [this.data.TaxName, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            TaxValue: [this.data.TaxValue, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-            Status: [this.data.Status, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
-        });
-    }
-    onSubmit() {
-        if (isNaN(this.data.ID)) {
-            this._taxservice.addAddTax(this._taxForm.value);
-            this.dialogRef.close();
-        }
-        else {
-            this._taxservice.deleteAddTax(this._taxForm.value);
-            this.dialogRef.close();
-        }
-    }
-    onClose() {
-        this.dialogRef.close();
-    }
-};
-AddTaxComponent.ctorParameters = () => [
-    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
-    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] },
-    { type: _services_add_tax_service__WEBPACK_IMPORTED_MODULE_4__["AddTaxService"] },
-    { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogRef"] }
-];
-AddTaxComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-add-tax',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./add-tax.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/add-tax/add-tax.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./add-tax.component.css */ "./src/app/add-tax/add-tax.component.css")).default]
-    }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
-], AddTaxComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/add-tax/services/add-tax.service.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/add-tax/services/add-tax.service.ts ***!
-  \*****************************************************/
-/*! exports provided: AddTaxService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddTaxService", function() { return AddTaxService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let AddTaxService = class AddTaxService {
-    constructor() {
-        this._addTaxList = [
-        // {AddTaxesId: 1, TaxName: 'Hydrogen', TaxValue: 1.0079, Status: 'H'},
-        // {AddTaxesId: 1, TaxName: 'Helium', TaxValue: 1.0079, Status: 'He'},
-        // {AddTaxesId: 1, TaxName: 'Lithium', TaxValue: 1.0079, Status: 'Li'},
-        // {AddTaxesId: 1, TaxName: 'Beryllium', TaxValue: 1.0079, Status: 'Be'},
-        // {AddTaxesId: 1, TaxName: 'Boron', TaxValue: 1.0079, Status: 'B'},
-        // {AddTaxesId: 1, TaxName: 'Hydrogen', TaxValue: 1.0079, Status: 'H'},
-        // {AddTaxesId: 1, TaxName: 'Helium', TaxValue: 1.0079, Status: 'He'},
-        // {AddTaxesId: 1, TaxName: 'Lithium', TaxValue: 1.0079, Status: 'Li'},
-        // {AddTaxesId: 1, TaxName: 'Beryllium', TaxValue: 1.0079, Status: 'Be'},
-        // {AddTaxesId: 1, TaxName: 'Boron', TaxValue: 1.0079, Status: 'B'},
-        ];
-    }
-    addAddTax(addTax) {
-        addTax.AddTaxesId = this._addTaxList.length + 1;
-        this._addTaxList.push(addTax);
-    }
-    editAddTax(addTax) {
-        const index = this._addTaxList.findIndex(c => c.AddTaxesId === addTax.AddTaxesId);
-        this._addTaxList[index] = addTax;
-    }
-    deleteAddTax(id) {
-        const addTax = this._addTaxList.findIndex(c => c.AddTaxesId === id);
-        this._addTaxList.splice(addTax, 1);
-    }
-    getAddTax() {
-        return this._addTaxList;
-    }
-};
-AddTaxService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: 'root'
-    })
-], AddTaxService);
-
-
-
-/***/ }),
-
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -954,13 +368,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 let AppComponent = class AppComponent {
-    constructor() {
-        this.title = 'AccountingWebUi';
+    constructor(router) {
+        this.router = router;
+        this.title = 'HRMUI';
     }
 };
+AppComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
@@ -1006,29 +426,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-/* harmony import */ var _add_tax_add_tax_list_add_tax_list_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./add-tax/add-tax-list/add-tax-list.component */ "./src/app/add-tax/add-tax-list/add-tax-list.component.ts");
-/* harmony import */ var _account_group_detail_account_group_detail_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./account-group-detail/account-group-detail.component */ "./src/app/account-group-detail/account-group-detail.component.ts");
-/* harmony import */ var _account_group_detail_account_group_detail_list_account_group_detail_list_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./account-group-detail/account-group-detail-list/account-group-detail-list.component */ "./src/app/account-group-detail/account-group-detail-list/account-group-detail-list.component.ts");
-/* harmony import */ var _add_tax_add_tax_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./add-tax/add-tax.component */ "./src/app/add-tax/add-tax.component.ts");
-/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
-/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
-/* harmony import */ var _brands_add_brands_add_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./brands-add/brands-add.component */ "./src/app/brands-add/brands-add.component.ts");
-/* harmony import */ var _brands_add_brands_add_list_brands_add_list_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./brands-add/brands-add-list/brands-add-list.component */ "./src/app/brands-add/brands-add-list/brands-add-list.component.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _customers_customers_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./customers/customers.component */ "./src/app/customers/customers.component.ts");
-/* harmony import */ var _customers_customers_list_customers_list_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./customers/customers-list/customers-list.component */ "./src/app/customers/customers-list/customers-list.component.ts");
-/* harmony import */ var _employees_employees_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./employees/employees.component */ "./src/app/employees/employees.component.ts");
-/* harmony import */ var _employees_employees_list_employees_list_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./employees/employees-list/employees-list.component */ "./src/app/employees/employees-list/employees-list.component.ts");
-/* harmony import */ var _products_products_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./products/products.component */ "./src/app/products/products.component.ts");
-/* harmony import */ var _products_product_list_product_list_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./products/product-list/product-list.component */ "./src/app/products/product-list/product-list.component.ts");
-
-
-
-
-
-
-
-
+/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./hrm-login/hrm-login.component */ "./src/app/hrm-login/hrm-login.component.ts");
+/* harmony import */ var _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./hrm-login/hrm-attendance-list/hrm-attendance-list.component */ "./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.ts");
+/* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./user/user.component */ "./src/app/user/user.component.ts");
+/* harmony import */ var _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./user/user-list/user-list.component */ "./src/app/user/user-list/user-list.component.ts");
 
 
 
@@ -1065,20 +469,14 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-            _add_tax_add_tax_component__WEBPACK_IMPORTED_MODULE_26__["AddTaxComponent"],
-            _add_tax_add_tax_list_add_tax_list_component__WEBPACK_IMPORTED_MODULE_23__["AddTaxListComponent"],
-            _account_group_detail_account_group_detail_component__WEBPACK_IMPORTED_MODULE_24__["AccountGroupDetailComponent"],
-            _account_group_detail_account_group_detail_list_account_group_detail_list_component__WEBPACK_IMPORTED_MODULE_25__["AccountGroupDetailListComponent"],
-            _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_27__["NavbarComponent"],
-            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_28__["DashboardComponent"],
-            _brands_add_brands_add_component__WEBPACK_IMPORTED_MODULE_29__["BrandsAddComponent"],
-            _brands_add_brands_add_list_brands_add_list_component__WEBPACK_IMPORTED_MODULE_30__["BrandsAddListComponent"],
-            _customers_customers_component__WEBPACK_IMPORTED_MODULE_32__["CustomersComponent"],
-            _customers_customers_list_customers_list_component__WEBPACK_IMPORTED_MODULE_33__["CustomersListComponent"],
-            _employees_employees_component__WEBPACK_IMPORTED_MODULE_34__["EmployeesComponent"],
-            _employees_employees_list_employees_list_component__WEBPACK_IMPORTED_MODULE_35__["EmployeesListComponent"],
-            _products_products_component__WEBPACK_IMPORTED_MODULE_36__["ProductsComponent"],
-            _products_product_list_product_list_component__WEBPACK_IMPORTED_MODULE_37__["ProductListComponent"],
+            _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["DashboardComponent"],
+            _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_26__["HrmLoginComponent"],
+            _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_27__["HrmAttendanceListComponent"],
+            _user_user_component__WEBPACK_IMPORTED_MODULE_28__["UserComponent"],
+            _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_29__["UserListComponent"]
+            // FormsModule,
+            // ReactiveFormsModule
         ],
         imports: [
             _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
@@ -1103,18 +501,17 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_forms__WEBPACK_IMPORTED_MODULE_21__["FormsModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_22__["BrowserAnimationsModule"],
             _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_6__["MatToolbarModule"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_31__["RouterModule"].forRoot([
-                { path: 'app-add-tax-list', component: _add_tax_add_tax_list_add_tax_list_component__WEBPACK_IMPORTED_MODULE_23__["AddTaxListComponent"] },
-                { path: 'app-account-group-detail-list', component: _account_group_detail_account_group_detail_list_account_group_detail_list_component__WEBPACK_IMPORTED_MODULE_25__["AccountGroupDetailListComponent"] },
-                { path: 'app-navbar', component: _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_27__["NavbarComponent"] },
-                { path: '', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_28__["DashboardComponent"] },
-                { path: 'app-customers-list', component: _customers_customers_list_customers_list_component__WEBPACK_IMPORTED_MODULE_33__["CustomersListComponent"] },
-                { path: 'app-employees-list', component: _employees_employees_list_employees_list_component__WEBPACK_IMPORTED_MODULE_35__["EmployeesListComponent"] },
-                { path: 'app-Product-list', component: _products_product_list_product_list_component__WEBPACK_IMPORTED_MODULE_37__["ProductListComponent"] },
+            _angular_router__WEBPACK_IMPORTED_MODULE_25__["RouterModule"].forRoot([
+                { path: 'navbar', component: _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"] },
+                { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["DashboardComponent"] },
+                { path: 'user', component: _user_user_component__WEBPACK_IMPORTED_MODULE_28__["UserComponent"] },
+                { path: 'user-list', component: _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_29__["UserListComponent"] },
+                { path: '', component: _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_26__["HrmLoginComponent"] },
+                { path: 'attend', component: _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_27__["HrmAttendanceListComponent"] },
                 { path: '**', redirectTo: '/' }
             ])
         ],
-        entryComponents: [_add_tax_add_tax_component__WEBPACK_IMPORTED_MODULE_26__["AddTaxComponent"], _account_group_detail_account_group_detail_component__WEBPACK_IMPORTED_MODULE_24__["AccountGroupDetailComponent"]],
+        entryComponents: [_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"]],
         exports: [
         // MatToolbarModule,
         // MatGridListModule,
@@ -1137,243 +534,6 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["CUSTOM_ELEMENTS_SCHEMA"]]
     })
 ], AppModule);
-
-
-
-/***/ }),
-
-/***/ "./src/app/brands-add/brands-add-list/brands-add-list.component.css":
-/*!**************************************************************************!*\
-  !*** ./src/app/brands-add/brands-add-list/brands-add-list.component.css ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2JyYW5kcy1hZGQvYnJhbmRzLWFkZC1saXN0L2JyYW5kcy1hZGQtbGlzdC5jb21wb25lbnQuY3NzIn0= */");
-
-/***/ }),
-
-/***/ "./src/app/brands-add/brands-add-list/brands-add-list.component.ts":
-/*!*************************************************************************!*\
-  !*** ./src/app/brands-add/brands-add-list/brands-add-list.component.ts ***!
-  \*************************************************************************/
-/*! exports provided: BrandsAddListComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BrandsAddListComponent", function() { return BrandsAddListComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let BrandsAddListComponent = class BrandsAddListComponent {
-    ngOnInit() {
-    }
-};
-BrandsAddListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-brands-add-list',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./brands-add-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/brands-add/brands-add-list/brands-add-list.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./brands-add-list.component.css */ "./src/app/brands-add/brands-add-list/brands-add-list.component.css")).default]
-    })
-], BrandsAddListComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/brands-add/brands-add.component.css":
-/*!*****************************************************!*\
-  !*** ./src/app/brands-add/brands-add.component.css ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2JyYW5kcy1hZGQvYnJhbmRzLWFkZC5jb21wb25lbnQuY3NzIn0= */");
-
-/***/ }),
-
-/***/ "./src/app/brands-add/brands-add.component.ts":
-/*!****************************************************!*\
-  !*** ./src/app/brands-add/brands-add.component.ts ***!
-  \****************************************************/
-/*! exports provided: BrandsAddComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BrandsAddComponent", function() { return BrandsAddComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let BrandsAddComponent = class BrandsAddComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-};
-BrandsAddComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-brands-add',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./brands-add.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/brands-add/brands-add.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./brands-add.component.css */ "./src/app/brands-add/brands-add.component.css")).default]
-    })
-], BrandsAddComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/customers/customers-list/customers-list.component.css":
-/*!***********************************************************************!*\
-  !*** ./src/app/customers/customers-list/customers-list.component.css ***!
-  \***********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2N1c3RvbWVycy9jdXN0b21lcnMtbGlzdC9jdXN0b21lcnMtbGlzdC5jb21wb25lbnQuY3NzIn0= */");
-
-/***/ }),
-
-/***/ "./src/app/customers/customers-list/customers-list.component.ts":
-/*!**********************************************************************!*\
-  !*** ./src/app/customers/customers-list/customers-list.component.ts ***!
-  \**********************************************************************/
-/*! exports provided: CustomersListComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomersListComponent", function() { return CustomersListComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _services_customers_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/customers.service */ "./src/app/customers/services/customers.service.ts");
-
-
-
-let CustomersListComponent = class CustomersListComponent {
-    constructor(service) {
-        this.service = service;
-    }
-    ngOnInit() {
-    }
-    get customerList() {
-        return this.service.getCustomer();
-    }
-};
-CustomersListComponent.ctorParameters = () => [
-    { type: _services_customers_service__WEBPACK_IMPORTED_MODULE_2__["CustomersService"] }
-];
-CustomersListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-customers-list',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./customers-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/customers/customers-list/customers-list.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./customers-list.component.css */ "./src/app/customers/customers-list/customers-list.component.css")).default]
-    })
-], CustomersListComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/customers/customers.component.css":
-/*!***************************************************!*\
-  !*** ./src/app/customers/customers.component.css ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2N1c3RvbWVycy9jdXN0b21lcnMuY29tcG9uZW50LmNzcyJ9 */");
-
-/***/ }),
-
-/***/ "./src/app/customers/customers.component.ts":
-/*!**************************************************!*\
-  !*** ./src/app/customers/customers.component.ts ***!
-  \**************************************************/
-/*! exports provided: CustomersComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomersComponent", function() { return CustomersComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let CustomersComponent = class CustomersComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-};
-CustomersComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-customers',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./customers.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/customers/customers.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./customers.component.css */ "./src/app/customers/customers.component.css")).default]
-    })
-], CustomersComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/customers/services/customers.service.ts":
-/*!*********************************************************!*\
-  !*** ./src/app/customers/services/customers.service.ts ***!
-  \*********************************************************/
-/*! exports provided: CustomersService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomersService", function() { return CustomersService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let CustomersService = class CustomersService {
-    constructor() {
-        this._customers = [
-            { CustomerId: 1, Name: 'Rahi', Company: 'OptoCoder', CompanyAddress: 'Mirpur' },
-            { CustomerId: 1, Name: 'Rahi', Company: 'OptoCoder', CompanyAddress: 'Mirpur' },
-            { CustomerId: 1, Name: 'Rahi', Company: 'OptoCoder', CompanyAddress: 'Mirpur' },
-            { CustomerId: 1, Name: 'Rahi', Company: 'OptoCoder', CompanyAddress: 'Mirpur' },
-            { CustomerId: 1, Name: 'Rahi', Company: 'OptoCoder', CompanyAddress: 'Mirpur' },
-            { CustomerId: 1, Name: 'Rahi', Company: 'OptoCoder', CompanyAddress: 'Mirpur' },
-        ];
-    }
-    addCustomer(addCustomers) {
-        addCustomers.CustomerId = this._customers.length + 1;
-        this._customers.push(addCustomers);
-    }
-    editCustomerDetail(addCustomers) {
-        const index = this._customers.findIndex(c => c.CustomerId === addCustomers.CustomerId);
-        this._customers[index] = addCustomers;
-        this._customers.push(addCustomers);
-    }
-    deleteCustomerDetail(id) {
-        const customer = this._customers.findIndex(c => c.CustomerId === id);
-        this._customers.splice(customer, 1);
-    }
-    getCustomer() {
-        return this._customers;
-    }
-};
-CustomersService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: 'root'
-    })
-], CustomersService);
 
 
 
@@ -1410,6 +570,9 @@ let DashboardComponent = class DashboardComponent {
     constructor() { }
     ngOnInit() {
     }
+    parentMethod($event) {
+        this.exampleParent = $event;
+    }
 };
 DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1423,149 +586,112 @@ DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/employees/employees-list/employees-list.component.css":
-/*!***********************************************************************!*\
-  !*** ./src/app/employees/employees-list/employees-list.component.css ***!
-  \***********************************************************************/
+/***/ "./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.css":
+/*!*********************************************************************************!*\
+  !*** ./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.css ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2VtcGxveWVlcy9lbXBsb3llZXMtbGlzdC9lbXBsb3llZXMtbGlzdC5jb21wb25lbnQuY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hybS1sb2dpbi9ocm0tYXR0ZW5kYW5jZS1saXN0L2hybS1hdHRlbmRhbmNlLWxpc3QuY29tcG9uZW50LmNzcyJ9 */");
 
 /***/ }),
 
-/***/ "./src/app/employees/employees-list/employees-list.component.ts":
-/*!**********************************************************************!*\
-  !*** ./src/app/employees/employees-list/employees-list.component.ts ***!
-  \**********************************************************************/
-/*! exports provided: EmployeesListComponent */
+/***/ "./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.ts ***!
+  \********************************************************************************/
+/*! exports provided: HrmAttendanceListComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeesListComponent", function() { return EmployeesListComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HrmAttendanceListComponent", function() { return HrmAttendanceListComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _services_employees_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/employees.service */ "./src/app/employees/services/employees.service.ts");
 
 
-
-let EmployeesListComponent = class EmployeesListComponent {
-    constructor(service) {
-        this.service = service;
-    }
+let HrmAttendanceListComponent = class HrmAttendanceListComponent {
+    constructor() { }
     ngOnInit() {
     }
-    get employeeList() {
-        return this.service.getEmployee();
-    }
 };
-EmployeesListComponent.ctorParameters = () => [
-    { type: _services_employees_service__WEBPACK_IMPORTED_MODULE_2__["EmployeesService"] }
-];
-EmployeesListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+HrmAttendanceListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-employees-list',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employees-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employees/employees-list/employees-list.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employees-list.component.css */ "./src/app/employees/employees-list/employees-list.component.css")).default]
+        selector: 'app-hrm-attendance-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./hrm-attendance-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./hrm-attendance-list.component.css */ "./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.css")).default]
     })
-], EmployeesListComponent);
+], HrmAttendanceListComponent);
 
 
 
 /***/ }),
 
-/***/ "./src/app/employees/employees.component.css":
+/***/ "./src/app/hrm-login/hrm-login.component.css":
 /*!***************************************************!*\
-  !*** ./src/app/employees/employees.component.css ***!
+  !*** ./src/app/hrm-login/hrm-login.component.css ***!
   \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2VtcGxveWVlcy9lbXBsb3llZXMuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = ("mat-card {\r\n    max-width: 400px;\r\n    margin: 2em auto;\r\n    text-align: center;\r\n  }\r\n  .signin-content {\r\n    padding: 60px 1rem;\r\n  }\r\n  .full-width-input {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaHJtLWxvZ2luL2hybS1sb2dpbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixrQkFBa0I7RUFDcEI7RUFDQTtJQUNFLGtCQUFrQjtFQUNwQjtFQUNBO0lBQ0UsV0FBVztFQUNiIiwiZmlsZSI6InNyYy9hcHAvaHJtLWxvZ2luL2hybS1sb2dpbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWNhcmQge1xyXG4gICAgbWF4LXdpZHRoOiA0MDBweDtcclxuICAgIG1hcmdpbjogMmVtIGF1dG87XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIC5zaWduaW4tY29udGVudCB7XHJcbiAgICBwYWRkaW5nOiA2MHB4IDFyZW07XHJcbiAgfVxyXG4gIC5mdWxsLXdpZHRoLWlucHV0IHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH0iXX0= */");
 
 /***/ }),
 
-/***/ "./src/app/employees/employees.component.ts":
+/***/ "./src/app/hrm-login/hrm-login.component.ts":
 /*!**************************************************!*\
-  !*** ./src/app/employees/employees.component.ts ***!
+  !*** ./src/app/hrm-login/hrm-login.component.ts ***!
   \**************************************************/
-/*! exports provided: EmployeesComponent */
+/*! exports provided: HrmLoginComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeesComponent", function() { return EmployeesComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HrmLoginComponent", function() { return HrmLoginComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
-let EmployeesComponent = class EmployeesComponent {
-    constructor() { }
-    ngOnInit() {
+
+let HrmLoginComponent = class HrmLoginComponent {
+    constructor(router) {
+        this.router = router;
+        this.attendance = 'You Are Attended Today';
+        this.valueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+    }
+    ngOnInit() { }
+    valueChanged() {
+        this.valueChange.emit(this.attendance);
+    }
+    login() {
+        if (this.username == 'admin' && this.password == 'admin') {
+            this.router.navigate(["dashboard"]);
+            console.log(this.attendance);
+        }
+        else {
+            alert("Invalid credentials");
+        }
     }
 };
-EmployeesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+HrmLoginComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
+], HrmLoginComponent.prototype, "valueChange", void 0);
+HrmLoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-employees',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employees.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employees/employees.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employees.component.css */ "./src/app/employees/employees.component.css")).default]
+        selector: 'app-hrm-login',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./hrm-login.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/hrm-login/hrm-login.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./hrm-login.component.css */ "./src/app/hrm-login/hrm-login.component.css")).default]
     })
-], EmployeesComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/employees/services/employees.service.ts":
-/*!*********************************************************!*\
-  !*** ./src/app/employees/services/employees.service.ts ***!
-  \*********************************************************/
-/*! exports provided: EmployeesService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeesService", function() { return EmployeesService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let EmployeesService = class EmployeesService {
-    constructor() {
-        this._employees = [
-            { EmployeesId: 1, EmployeesName: 'Rahi', Designation: 'Executive', MobileNo: '+8801823578649' },
-            { EmployeesId: 1, EmployeesName: 'Rahi', Designation: 'Executive', MobileNo: '+8801823578649' },
-            { EmployeesId: 1, EmployeesName: 'Rahi', Designation: 'Executive', MobileNo: '+8801823578649' },
-            { EmployeesId: 1, EmployeesName: 'Rahi', Designation: 'Executive', MobileNo: '+8801823578649' },
-        ];
-    }
-    addEmployee(addEmployees) {
-        addEmployees.EmployeesId = this._employees.length + 1;
-        this._employees.push(addEmployees);
-    }
-    editEmployeeDetail(addEmployees) {
-        const index = this._employees.findIndex(c => c.EmployeesId === addEmployees.EmployeesId);
-        this._employees[index] = addEmployees;
-        this._employees.push(addEmployees);
-    }
-    deleteEmployeeDetail(id) {
-        const employee = this._employees.findIndex(c => c.EmployeesId === id);
-        this._employees.splice(employee, 1);
-    }
-    getEmployee() {
-        return this._employees;
-    }
-};
-EmployeesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: 'root'
-    })
-], EmployeesService);
+], HrmLoginComponent);
 
 
 
@@ -1580,7 +706,7 @@ EmployeesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".navbar {\r\njustify-content: space-between;\r\nheight: 45px;\r\n}\r\n.span {\r\n    padding-right: 3 rem ;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2YmFyL25hdmJhci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0EsOEJBQThCO0FBQzlCLFlBQVk7QUFDWjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCIiwiZmlsZSI6InNyYy9hcHAvbmF2YmFyL25hdmJhci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdmJhciB7XHJcbmp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuaGVpZ2h0OiA0NXB4O1xyXG59XHJcbi5zcGFuIHtcclxuICAgIHBhZGRpbmctcmlnaHQ6IDMgcmVtIDtcclxufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".navbar {\r\njustify-content: space-between;\r\nheight: 45px;\r\nwidth: 83rem;\r\n}\r\n.span {\r\n    padding-right: 3 rem ;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2YmFyL25hdmJhci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0EsOEJBQThCO0FBQzlCLFlBQVk7QUFDWixZQUFZO0FBQ1o7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QiIsImZpbGUiOiJzcmMvYXBwL25hdmJhci9uYXZiYXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uYXZiYXIge1xyXG5qdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbmhlaWdodDogNDVweDtcclxud2lkdGg6IDgzcmVtO1xyXG59XHJcbi5zcGFuIHtcclxuICAgIHBhZGRpbmctcmlnaHQ6IDMgcmVtIDtcclxufSJdfQ== */");
 
 /***/ }),
 
@@ -1596,13 +722,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavbarComponent", function() { return NavbarComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 let NavbarComponent = class NavbarComponent {
-    constructor() { }
+    // @Input() public isUserLoggedIn: boolean;
+    constructor(router) {
+        this.router = router;
+    }
     ngOnInit() {
     }
+    logOut() {
+        this.router.navigate(['']);
+    }
 };
+NavbarComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
 NavbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-navbar',
@@ -1615,150 +752,194 @@ NavbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/products/product-list/product-list.component.css":
-/*!******************************************************************!*\
-  !*** ./src/app/products/product-list/product-list.component.css ***!
-  \******************************************************************/
+/***/ "./src/app/user/services/user.service.ts":
+/*!***********************************************!*\
+  !*** ./src/app/user/services/user.service.ts ***!
+  \***********************************************/
+/*! exports provided: UserService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserService", function() { return UserService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let UserService = class UserService {
+    constructor(httpClient, httpService) {
+        this.httpClient = httpClient;
+        this.httpService = httpService;
+        this._userDetails = [];
+        this._userDetail = [
+            { UserId: 1, UserName: 'admin', Password: 'admin', UserGender: 'Male', Role: 'Admin', Token: 'asd55689654', Attendance: 1 },
+            { UserId: 2, UserName: 'Maria', Password: 'maria', UserGender: 'Female', Role: 'User', Token: 'asd588989654', Attendance: 2 },
+            { UserId: 3, UserName: 'Shaon', Password: 'shaon', UserGender: 'Male', Role: 'User', Token: 'asd567889654', Attendance: 5 },
+            { UserId: 4, UserName: 'Tara', Password: 'tara', UserGender: 'Female', Role: 'User', Token: 'asd5559589654', Attendance: 6 },
+            { UserId: 5, UserName: 'Rahi', Password: 'rahi', UserGender: 'Male', Role: 'User', Token: 'asd589654', Attendance: 3 },
+            { UserId: 6, UserName: 'Kriti', Password: 'kriti', UserGender: 'Female', Role: 'User', Token: 'asd589654', Attendance: 3 },
+            { UserId: 7, UserName: 'Raman', Password: 'raman', UserGender: 'Male', Role: 'User', Token: 'asdasd589654', Attendance: 2 },
+            { UserId: 8, UserName: 'Rashi', Password: 'rashi', UserGender: 'Female', Role: 'User', Token: 'asda245sd589654', Attendance: 10 },
+            { UserId: 9, UserName: 'Kiren', Password: 'kiren', UserGender: 'Male', Role: 'User', Token: 'asd578asd589654', Attendance: 11 },
+        ];
+    }
+    addAccountDetail(addUser) {
+        addUser.UserId = this._userDetail.length + 1;
+        this._userDetail.push(addUser);
+    }
+    editUserDetail(addUser) {
+        const index = this._userDetail.findIndex(c => c.UserId === addUser.UserId);
+        this._userDetail[index] = addUser;
+        this._userDetail.push(addUser);
+    }
+    deleteUserDetail(id) {
+        const addUsers = this._userDetail.findIndex(c => c.UserId === id);
+        this._userDetail.splice(addUsers, 1);
+    }
+    getUserDetail() {
+        return this._userDetail;
+    }
+};
+UserService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+UserService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], UserService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/user/user-list/user-list.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/user/user-list/user-list.component.css ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2R1Y3RzL3Byb2R1Y3QtbGlzdC9wcm9kdWN0LWxpc3QuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3VzZXIvdXNlci1saXN0L3VzZXItbGlzdC5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
-/***/ "./src/app/products/product-list/product-list.component.ts":
-/*!*****************************************************************!*\
-  !*** ./src/app/products/product-list/product-list.component.ts ***!
-  \*****************************************************************/
-/*! exports provided: ProductListComponent */
+/***/ "./src/app/user/user-list/user-list.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/user/user-list/user-list.component.ts ***!
+  \*******************************************************/
+/*! exports provided: UserListComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductListComponent", function() { return ProductListComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserListComponent", function() { return UserListComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _services_products_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/products.service */ "./src/app/products/services/products.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/user.service */ "./src/app/user/services/user.service.ts");
+/* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../user.component */ "./src/app/user/user.component.ts");
 
 
 
-let ProductListComponent = class ProductListComponent {
-    constructor(service) {
-        this.service = service;
+
+
+let UserListComponent = class UserListComponent {
+    constructor(dialog, _userService) {
+        this.dialog = dialog;
+        this._userService = _userService;
+        this.displayedColumns = ['addtaxid', 'taxname', 'taxvalue', 'status', 'actions'];
+        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this._userService._userDetail);
     }
     ngOnInit() {
     }
-    get productList() {
-        return this.service.getProduct();
+    get userList() {
+        return this._userService.getUserDetail();
+    }
+    addUser() {
+        const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogConfig"]();
+        this.isPopupOpened = true;
+        const dialogRef = this.dialog.open(_user_component__WEBPACK_IMPORTED_MODULE_4__["UserComponent"], {
+            data: {}
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+        dialogConfig.width = '60px';
+    }
+    editUser(id) {
+        this.isPopupOpened = true;
+        const tax = this._userService.getUserDetail().find(c => c.UserId === id);
+        const dialogRef = this.dialog.open(_user_component__WEBPACK_IMPORTED_MODULE_4__["UserComponent"], {
+            data: {}
+        });
+        dialogRef.afterClosed().subscribe(result => {
+            data: tax;
+        });
+    }
+    deleteUser(id) {
+        this._userService.deleteUserDetail(id);
     }
 };
-ProductListComponent.ctorParameters = () => [
-    { type: _services_products_service__WEBPACK_IMPORTED_MODULE_2__["ProductsService"] }
+UserListComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
+    { type: _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
 ];
-ProductListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+UserListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-product-list',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./product-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/products/product-list/product-list.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./product-list.component.css */ "./src/app/products/product-list/product-list.component.css")).default]
+        selector: 'app-user-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./user-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-list/user-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./user-list.component.css */ "./src/app/user/user-list/user-list.component.css")).default]
     })
-], ProductListComponent);
+], UserListComponent);
 
 
 
 /***/ }),
 
-/***/ "./src/app/products/products.component.css":
-/*!*************************************************!*\
-  !*** ./src/app/products/products.component.css ***!
-  \*************************************************/
+/***/ "./src/app/user/user.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/user/user.component.css ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2R1Y3RzL3Byb2R1Y3RzLmNvbXBvbmVudC5jc3MifQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3VzZXIvdXNlci5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
-/***/ "./src/app/products/products.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/products/products.component.ts ***!
-  \************************************************/
-/*! exports provided: ProductsComponent */
+/***/ "./src/app/user/user.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/user/user.component.ts ***!
+  \****************************************/
+/*! exports provided: UserComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductsComponent", function() { return ProductsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserComponent", function() { return UserComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-let ProductsComponent = class ProductsComponent {
+let UserComponent = class UserComponent {
     constructor() { }
     ngOnInit() {
     }
 };
-ProductsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+UserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-products',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./products.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/products/products.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./products.component.css */ "./src/app/products/products.component.css")).default]
+        selector: 'app-user',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./user.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./user.component.css */ "./src/app/user/user.component.css")).default]
     })
-], ProductsComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/products/services/products.service.ts":
-/*!*******************************************************!*\
-  !*** ./src/app/products/services/products.service.ts ***!
-  \*******************************************************/
-/*! exports provided: ProductsService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductsService", function() { return ProductsService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let ProductsService = class ProductsService {
-    constructor() {
-        this._products = [
-            { ProductID: 1, ProductName: 'Rahi', Location: 'OptoCoder', ProductWarehouse: 'Mirpur' },
-            { ProductID: 1, ProductName: 'Rahi', Location: 'OptoCoder', ProductWarehouse: 'Mirpur' },
-            { ProductID: 1, ProductName: 'Rahi', Location: 'OptoCoder', ProductWarehouse: 'Mirpur' },
-            { ProductID: 1, ProductName: 'Rahi', Location: 'OptoCoder', ProductWarehouse: 'Mirpur' },
-            { ProductID: 1, ProductName: 'Rahi', Location: 'OptoCoder', ProductWarehouse: 'Mirpur' },
-        ];
-    }
-    addProduct(addProducts) {
-        addProducts.ProductID = this._products.length + 1;
-        this._products.push(addProducts);
-    }
-    editProductDetail(addProducts) {
-        const index = this._products.findIndex(c => c.ProductID === addProducts.ProductID);
-        this._products[index] = addProducts;
-        this._products.push(addProducts);
-    }
-    deleteProductDetail(id) {
-        const product = this._products.findIndex(c => c.ProductID === id);
-        this._products.splice(product, 1);
-    }
-    getProduct() {
-        return this._products;
-    }
-};
-ProductsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: 'root'
-    })
-], ProductsService);
+], UserComponent);
 
 
 
@@ -1830,7 +1011,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\User\source\repos\AspAccounting\AccountingWebUi\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\User\source\repos\MyHrm\src\main.ts */"./src/main.ts");
 
 
 /***/ })
