@@ -162,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\" >\n    <div>HRM\n        <a routerLink=\"/dashboard\" routerLinkActive=\"active\"></a>\n    </div>\n\n   \n    <div class=\"logout\">\n        Login\n            <mat-icon  routerLink=\"/login\">account_box</mat-icon>\n        \n\n        Logout\n         <mat-icon *ngIf=\"!this.isLoggedIn\" (click) = \"logOut()\">account_circle</mat-icon>\n\n    </div>\n </mat-toolbar>");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\" >\n    <div class=\"logout\"> \n        <!-- <a  class=\"glyphicon glyphicon-flag\">HRM</a> -->\n        \n        HRM\n        <mat-icon routerLink=\"/dashboard\" routerLinkActive=\"active\">apps</mat-icon>\n    </div>\n\n   \n    <div class=\"logout\">\n        Login\n            <mat-icon  routerLink=\"/login\">account_box</mat-icon>\n        \n\n        Logout\n         <mat-icon *ngIf=\"!this.isLoggedIn\" (click) = \"logOut()\">account_circle</mat-icon>\n\n    </div>\n </mat-toolbar>");
 
 /***/ }),
 
