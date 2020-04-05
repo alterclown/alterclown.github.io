@@ -138,7 +138,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\" >\n    <div class=\"logout\"> \n        <!-- <a  class=\"glyphicon glyphicon-flag\">HRM</a> -->\n        <mat-icon routerLink=\"/dashboard\" routerLinkActive=\"active\">apps</mat-icon>\n    </div>\n\n\n    <div> \n        HRM\n    </div>\n   \n    <div class=\"logout\">\n        Login\n            <mat-icon  routerLink=\"/login\">account_box</mat-icon>\n        \n\n        Logout\n         <mat-icon *ngIf=\"!this.isLoggedIn\" (click) = \"logOut()\">account_circle</mat-icon>\n\n    </div>\n </mat-toolbar>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\" >\n    <div class=\"logout\"> \n        <mat-icon routerLink=\"/dashboard\" routerLinkActive=\"active\">apps</mat-icon>\n    </div>\n\n\n    <div> \n        HRM\n    </div>\n   \n    <div class=\"logout\">\n        Login\n            <mat-icon  routerLink=\"/login\">account_box</mat-icon>\n        \n\n        Logout\n         <mat-icon *ngIf=\"!this.isLoggedIn\" (click) = \"logOut()\">account_circle</mat-icon>\n\n    </div>\n </mat-toolbar>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll-list/payroll-list.component.html": 
@@ -193,7 +193,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n\n \n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n\n    <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon>\n   \n  </div>\n\n \n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user.component.html": 
@@ -1670,7 +1670,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3VzZXIvdXNlci1saXN0L3VzZXItbGlzdC5jb21wb25lbnQuY3NzIn0= */");
+            /* harmony default export */ __webpack_exports__["default"] = (".pdf {\r\n    cursor: pointer;\r\n    margin:10px;\r\n    \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlci91c2VyLWxpc3QvdXNlci1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsV0FBVzs7QUFFZiIsImZpbGUiOiJzcmMvYXBwL3VzZXIvdXNlci1saXN0L3VzZXItbGlzdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBkZiB7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICBtYXJnaW46MTBweDtcclxuICAgIFxyXG59Il19 */");
             /***/ 
         }),
         /***/ "./src/app/user/user-list/user-list.component.ts": 
@@ -1687,6 +1687,10 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/user.service */ "./src/app/user/services/user.service.ts");
             /* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../user.component */ "./src/app/user/user.component.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_5__);
+            /* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! html2canvas */ "./node_modules/html2canvas/dist/npm/index.js");
+            /* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/ __webpack_require__.n(html2canvas__WEBPACK_IMPORTED_MODULE_6__);
             var UserListComponent = /** @class */ (function () {
                 function UserListComponent(dialog, _userService) {
                     this.dialog = dialog;
@@ -1729,12 +1733,30 @@
                 UserListComponent.prototype.parentMethod = function ($event) {
                     this.exampleParent = $event;
                 };
+                UserListComponent.prototype.captureScreen = function () {
+                    var data = document.getElementById('contentToConvert');
+                    html2canvas__WEBPACK_IMPORTED_MODULE_6___default()(data).then(function (canvas) {
+                        // Few necessary setting options  
+                        var imgWidth = 208;
+                        var pageHeight = 295;
+                        var imgHeight = canvas.height * imgWidth / canvas.width;
+                        var heightLeft = imgHeight;
+                        var contentDataURL = canvas.toDataURL('image/png');
+                        var pdf = new jspdf__WEBPACK_IMPORTED_MODULE_5__('p', 'mm', 'a4'); // A4 size page of PDF  
+                        var position = 0;
+                        pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight);
+                        pdf.save('MYPdf.pdf'); // Generated PDF   
+                    });
+                };
                 return UserListComponent;
             }());
             UserListComponent.ctorParameters = function () { return [
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
                 { type: _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], UserListComponent.prototype, "userLists", void 0);
             UserListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-user-list',
