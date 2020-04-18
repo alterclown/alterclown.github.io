@@ -138,7 +138,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\" >\n    <div class=\"logout\"> \n        <mat-icon routerLink=\"/dashboard\" routerLinkActive=\"active\">apps</mat-icon>\n    </div>\n\n\n    <div> \n        HRM\n    </div>\n   \n    <div class=\"logout\">\n        Login\n            <mat-icon  routerLink=\"/login\">account_box</mat-icon>\n        \n\n        Logout\n         <mat-icon *ngIf=\"!this.isLoggedIn\" (click) = \"logOut()\">account_circle</mat-icon>\n\n    </div>\n </mat-toolbar>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\">\n    <div class=\"logout\"> \n        <mat-icon routerLink=\"/dashboard\" routerLinkActive=\"active\">apps</mat-icon>\n    </div>\n\n\n    <div> \n        HRM\n    </div>\n   \n    <div class=\"logout\">\n        Login\n            <mat-icon  routerLink=\"/login\">account_box</mat-icon>\n        \n\n        Logout\n         <mat-icon *ngIf=\"!this.isLoggedIn\" (click) = \"logOut()\">account_circle</mat-icon>\n\n    </div>\n </mat-toolbar>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll-list/payroll-list.component.html": 
@@ -193,7 +193,18 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n\n    <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon>\n   \n  </div>\n\n \n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon>\n   \n  </div>\n\n \n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n\n  <div class=\"col-sm-6 col-md-4 col-xl-3\">\n    <div class=\"card bg-light\">\n        <div class=\"card-body\">\n          \n            <h6 class=\"card-title text-uppercase text-truncate py-2\">User Info\n              <button mat-stroked-button color=\"warn\" (click)=\"mapUser()\">Show Location</button>\n            </h6>\n            \n            <div class=\"items border border-light\" *ngFor=\"let user of userList \">\n                <div class=\"card draggable shadow-sm\" >\n                    <div class=\"card-body p-2\" >      \n                      <p><input type=\"checkbox\" [(ngModel)]=\"isChecked\"> Select</p>\n                        <p>\n                          {{user.UserName}} ||\n                          {{user.Attendance}} ||\n                          {{user.IpAddress}}\n                        </p>                        \n                    </div>\n                </div>\n                </div>\n              </div>\n            </div>\n          </div>         \n\n<div class=\"maps\">\n  <app-user-location ></app-user-location>\n</div>\n\n\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-location/user-location.component.html": 
+        /*!*******************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-location/user-location.component.html ***!
+          \*******************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<agm-map [latitude]=\"lat\" [longitude] = \"lng\">\n    <agm-marker [latitude]=\"lat\" [longitude] = \"lng\">\n  </agm-marker>\n  </agm-map>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user.component.html": 
@@ -204,7 +215,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>user works!</p>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("\n");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -598,6 +609,8 @@
             /* harmony import */ var _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./loan/loan-list/loan-list.component */ "./src/app/loan/loan-list/loan-list.component.ts");
             /* harmony import */ var _training_training_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./training/training.component */ "./src/app/training/training.component.ts");
             /* harmony import */ var _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./training/training-list/training-list.component */ "./src/app/training/training-list/training-list.component.ts");
+            /* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/fesm2015/agm-core.js");
+            /* harmony import */ var _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./user/user-location/user-location.component */ "./src/app/user/user-location/user-location.component.ts");
             var AppModule = /** @class */ (function () {
                 function AppModule() {
                 }
@@ -622,7 +635,8 @@
                         _loan_loan_component__WEBPACK_IMPORTED_MODULE_36__["LoanComponent"],
                         _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__["LoanListComponent"],
                         _training_training_component__WEBPACK_IMPORTED_MODULE_38__["TrainingComponent"],
-                        _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"]
+                        _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"],
+                        _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"]
                         // FormsModule,
                         // ReactiveFormsModule
                     ],
@@ -666,8 +680,12 @@
                             { path: 'loan-list', component: _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__["LoanListComponent"] },
                             { path: 'training', component: _training_training_component__WEBPACK_IMPORTED_MODULE_38__["TrainingComponent"] },
                             { path: 'training-list', component: _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"] },
+                            { path: 'user-location', component: _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"] },
                             { path: '**', redirectTo: '/' }
-                        ])
+                        ]),
+                        _agm_core__WEBPACK_IMPORTED_MODULE_40__["AgmCoreModule"].forRoot({
+                            apiKey: ''
+                        })
                     ],
                     entryComponents: [_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"]],
                     exports: [
@@ -1622,20 +1640,23 @@
                     this.httpService = httpService;
                     this._userDetails = [];
                     this._userDetail = [
-                        { UserId: 1, UserName: 'admin', Password: 'admin', UserGender: 'Male', Role: 'Admin', Token: 'asd55689654', Attendance: 1 },
-                        { UserId: 2, UserName: 'Maria', Password: 'maria', UserGender: 'Female', Role: 'User', Token: 'asd588989654', Attendance: 2 },
-                        { UserId: 3, UserName: 'Shaon', Password: 'shaon', UserGender: 'Male', Role: 'User', Token: 'asd567889654', Attendance: 5 },
-                        { UserId: 4, UserName: 'Tara', Password: 'tara', UserGender: 'Female', Role: 'User', Token: 'asd5559589654', Attendance: 6 },
-                        { UserId: 5, UserName: 'Rahi', Password: 'rahi', UserGender: 'Male', Role: 'User', Token: 'asd589654', Attendance: 3 },
-                        { UserId: 6, UserName: 'Kriti', Password: 'kriti', UserGender: 'Female', Role: 'User', Token: 'asd589654', Attendance: 3 },
-                        { UserId: 7, UserName: 'Raman', Password: 'raman', UserGender: 'Male', Role: 'User', Token: 'asdasd589654', Attendance: 2 },
-                        { UserId: 8, UserName: 'Rashi', Password: 'rashi', UserGender: 'Female', Role: 'User', Token: 'asda245sd589654', Attendance: 10 },
-                        { UserId: 9, UserName: 'Kiren', Password: 'kiren', UserGender: 'Male', Role: 'User', Token: 'asd578asd589654', Attendance: 11 },
+                        { UserId: 1, UserName: 'admin', Password: 'admin', UserGender: 'Male', Role: 'Admin', Token: 'asd55689654', Attendance: 1, IpAddress: '172.72.82.0' },
+                        { UserId: 2, UserName: 'Maria', Password: 'maria', UserGender: 'Female', Role: 'User', Token: 'asd588989654', Attendance: 2, IpAddress: '172.82.92.0' },
+                        { UserId: 3, UserName: 'Shaon', Password: 'shaon', UserGender: 'Male', Role: 'User', Token: 'asd567889654', Attendance: 5, IpAddress: '164.92.81.1' },
+                        { UserId: 4, UserName: 'Tara', Password: 'tara', UserGender: 'Female', Role: 'User', Token: 'asd5559589654', Attendance: 6, IpAddress: '172.72.82.0' },
+                        { UserId: 5, UserName: 'Rahi', Password: 'rahi', UserGender: 'Male', Role: 'User', Token: 'asd589654', Attendance: 3, IpAddress: '172.72.82.0' },
+                        { UserId: 6, UserName: 'Kriti', Password: 'kriti', UserGender: 'Female', Role: 'User', Token: 'asd589654', Attendance: 3, IpAddress: '172.72.82.0' },
+                        { UserId: 7, UserName: 'Raman', Password: 'raman', UserGender: 'Male', Role: 'User', Token: 'asdasd589654', Attendance: 2, IpAddress: '172.72.82.0' },
+                        { UserId: 8, UserName: 'Rashi', Password: 'rashi', UserGender: 'Female', Role: 'User', Token: 'asda245sd589654', Attendance: 10, IpAddress: '172.72.82.0' },
+                        { UserId: 9, UserName: 'Kiren', Password: 'kiren', UserGender: 'Male', Role: 'User', Token: 'asd578asd589654', Attendance: 11, IpAddress: '172.72.82.0' },
                     ];
                 }
                 UserService.prototype.addAccountDetail = function (addUser) {
                     addUser.UserId = this._userDetail.length + 1;
                     this._userDetail.push(addUser);
+                };
+                UserService.prototype.getLocation = function () {
+                    return this.httpClient.get('');
                 };
                 UserService.prototype.editUserDetail = function (addUser) {
                     var index = this._userDetail.findIndex(function (c) { return c.UserId === addUser.UserId; });
@@ -1670,7 +1691,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = (".pdf {\r\n    cursor: pointer;\r\n    margin:10px;\r\n    \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlci91c2VyLWxpc3QvdXNlci1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsV0FBVzs7QUFFZiIsImZpbGUiOiJzcmMvYXBwL3VzZXIvdXNlci1saXN0L3VzZXItbGlzdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBkZiB7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICBtYXJnaW46MTBweDtcclxuICAgIFxyXG59Il19 */");
+            /* harmony default export */ __webpack_exports__["default"] = (".pdf {\r\n    cursor: pointer;\r\n    margin:10px;\r\n}\r\n\r\n  .maps {\r\n\r\n    position: absolute;\r\n    margin-left: 3%;\r\n    top:100px;\r\n    width: 85%;\r\n    height: 85%;\r\n  }\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlci91c2VyLWxpc3QvdXNlci1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsV0FBVztBQUNmOztFQUVFOztJQUVFLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YsU0FBUztJQUNULFVBQVU7SUFDVixXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC91c2VyL3VzZXItbGlzdC91c2VyLWxpc3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wZGYge1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgbWFyZ2luOjEwcHg7XHJcbn1cclxuXHJcbiAgLm1hcHMge1xyXG5cclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIG1hcmdpbi1sZWZ0OiAzJTtcclxuICAgIHRvcDoxMDBweDtcclxuICAgIHdpZHRoOiA4NSU7XHJcbiAgICBoZWlnaHQ6IDg1JTtcclxuICB9XHJcbiJdfQ== */");
             /***/ 
         }),
         /***/ "./src/app/user/user-list/user-list.component.ts": 
@@ -1766,6 +1787,56 @@
             ], UserListComponent);
             /***/ 
         }),
+        /***/ "./src/app/user/user-location/user-location.component.css": 
+        /*!****************************************************************!*\
+          !*** ./src/app/user/user-location/user-location.component.css ***!
+          \****************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("agm-map {\r\n    position: absolute;\r\n    margin-left: 40%;\r\n    top:100px;\r\n    width: 75%;\r\n    height: 75%;\r\n}\r\n\r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlci91c2VyLWxvY2F0aW9uL3VzZXItbG9jYXRpb24uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsU0FBUztJQUNULFVBQVU7SUFDVixXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC91c2VyL3VzZXItbG9jYXRpb24vdXNlci1sb2NhdGlvbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYWdtLW1hcCB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBtYXJnaW4tbGVmdDogNDAlO1xyXG4gICAgdG9wOjEwMHB4O1xyXG4gICAgd2lkdGg6IDc1JTtcclxuICAgIGhlaWdodDogNzUlO1xyXG59XHJcblxyXG4gICJdfQ== */");
+            /***/ 
+        }),
+        /***/ "./src/app/user/user-location/user-location.component.ts": 
+        /*!***************************************************************!*\
+          !*** ./src/app/user/user-location/user-location.component.ts ***!
+          \***************************************************************/
+        /*! exports provided: UserLocationComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserLocationComponent", function () { return UserLocationComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/user.service */ "./src/app/user/services/user.service.ts");
+            var UserLocationComponent = /** @class */ (function () {
+                function UserLocationComponent(_userService) {
+                    this._userService = _userService;
+                    this.lat = 23.7272;
+                    this.lng = 90.4093;
+                }
+                UserLocationComponent.prototype.ngOnInit = function () {
+                    this._userService.getLocation().subscribe(function (data) {
+                        console.log(data);
+                        // this.lat = data.latitude;
+                        // this.lng = data.longitude;
+                    });
+                };
+                return UserLocationComponent;
+            }());
+            UserLocationComponent.ctorParameters = function () { return [
+                { type: _services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"] }
+            ]; };
+            UserLocationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-user-location',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./user-location.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-location/user-location.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./user-location.component.css */ "./src/app/user/user-location/user-location.component.css")).default]
+                })
+            ], UserLocationComponent);
+            /***/ 
+        }),
         /***/ "./src/app/user/user.component.css": 
         /*!*****************************************!*\
           !*** ./src/app/user/user.component.css ***!
@@ -1774,7 +1845,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3VzZXIvdXNlci5jb21wb25lbnQuY3NzIn0= */");
+            /* harmony default export */ __webpack_exports__["default"] = ("\r\nagm-map {\r\n    height: 400px;\r\n    width: 500px;\r\n  }\r\n  \r\n  h2{\r\n    color: #2c3e50;\r\n  }\r\n  \r\n  input{\r\n    padding: 10px 15px;\r\n    font-size: 1em;\r\n    border-top: none;\r\n    border-right: none;\r\n    border-left: none;\r\n    outline: none;\r\n    margin: 0px 15px;\r\n    border-bottom: gray solid 2px;\r\n  }\r\n  \r\n  input:hover, input:focus{\r\n   border-bottom: #e67e22 solid 3px;\r\n  }\r\n  \r\n  button{\r\n    padding: 10px;\r\n    cursor: pointer;\r\n    background: #2980b9;\r\n    border: none;\r\n    color: white;\r\n    font-size: 1em;\r\n  }\r\n  \r\n  button:hover{\r\n    background: #e67e22;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlci91c2VyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7RUFDZDs7RUFFQTtJQUNFLGNBQWM7RUFDaEI7O0VBRUE7SUFDRSxrQkFBa0I7SUFDbEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLGFBQWE7SUFDYixnQkFBZ0I7SUFDaEIsNkJBQTZCO0VBQy9COztFQUdBO0dBQ0MsZ0NBQWdDO0VBQ2pDOztFQUdBO0lBQ0UsYUFBYTtJQUNiLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLFlBQVk7SUFDWixjQUFjO0VBQ2hCOztFQUVBO0lBQ0UsbUJBQW1CO0VBQ3JCIiwiZmlsZSI6InNyYy9hcHAvdXNlci91c2VyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuYWdtLW1hcCB7XHJcbiAgICBoZWlnaHQ6IDQwMHB4O1xyXG4gICAgd2lkdGg6IDUwMHB4O1xyXG4gIH1cclxuICBcclxuICBoMntcclxuICAgIGNvbG9yOiAjMmMzZTUwO1xyXG4gIH1cclxuICBcclxuICBpbnB1dHtcclxuICAgIHBhZGRpbmc6IDEwcHggMTVweDtcclxuICAgIGZvbnQtc2l6ZTogMWVtO1xyXG4gICAgYm9yZGVyLXRvcDogbm9uZTtcclxuICAgIGJvcmRlci1yaWdodDogbm9uZTtcclxuICAgIGJvcmRlci1sZWZ0OiBub25lO1xyXG4gICAgb3V0bGluZTogbm9uZTtcclxuICAgIG1hcmdpbjogMHB4IDE1cHg7XHJcbiAgICBib3JkZXItYm90dG9tOiBncmF5IHNvbGlkIDJweDtcclxuICB9XHJcbiAgXHJcbiAgXHJcbiAgaW5wdXQ6aG92ZXIsIGlucHV0OmZvY3Vze1xyXG4gICBib3JkZXItYm90dG9tOiAjZTY3ZTIyIHNvbGlkIDNweDtcclxuICB9XHJcbiAgXHJcbiAgXHJcbiAgYnV0dG9ue1xyXG4gICAgcGFkZGluZzogMTBweDtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGJhY2tncm91bmQ6ICMyOTgwYjk7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBmb250LXNpemU6IDFlbTtcclxuICB9XHJcbiAgXHJcbiAgYnV0dG9uOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZDogI2U2N2UyMjtcclxuICB9Il19 */");
             /***/ 
         }),
         /***/ "./src/app/user/user.component.ts": 
