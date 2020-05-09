@@ -50,7 +50,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <!-- <th>Employee Id</th>\n          <th>Employee First Name</th>\n          <th>Employee Last Name</th> -->\n          <th>Employee Full Name</th>\n          <!-- <th>Employee Father Name</th> -->\n          <th>Employee Date Of Birth</th>\n          <th>Employee Sex</th>\n          <th>Employee Religion</th>\n          <th>Employee Marital Status</th>\n          <th>Employee Nationality</th>\n          <!-- <th>Employee House</th>\n          <th>Employee Street</th>\n          <th>Employee City</th>\n          <th>Employee State</th>\n          <th>Employee PIN</th> -->\n          <th>Employee Phone Number</th>\n          <th>Employee Mobile Number</th>\n          <th>Employee Image</th>\n          <th>Employee Email</th>\n          <th>Employee Date Of Join</th>\n          <th>Employee Date Of Confirm</th>\n          <th>Employee Department</th>\n          <!-- <th>Employee Designation</th>\n          <th>Employee Basic Salary</th>\n          <th>Employee Salary PerDay</th> -->\n          <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let employee of employeeList\">\n          <!-- <td>{{employee.EmployeeId}}</td>\n          <td>{{employee.EmployeeFirstName}}</td>\n          <td>{{employee.EmployeeLastName}}</td> -->\n          <td>{{employee.EmployeeFullName}}</td>\n          <!-- <td>{{employee.EmployeeFatherName}}</td> -->\n          <td>{{employee.EmployeeDateOfBirth}}</td>\n          <td>{{employee.EmployeeSex}}</td>\n\n          <td>{{employee.EmployeeReligion}}</td>\n          <td>{{employee.EmployeeMaritalStatus}}</td>\n          <td>{{employee.EmployeeNationality}}</td>\n          <!-- <td>{{employee.EmployeeHouse}}</td>\n          <td>{{employee.EmployeeStreet}}</td>\n          <td>{{employee.EmployeeCity}}</td>\n          <td>{{employee.EmployeeState}}</td>\n\n          <td>{{employee.EmployeePIN}}</td> -->\n          <td>{{employee.EmployeePhoneNumber}}</td>\n          <td>{{employee.EmployeeMobileNumber}}</td>\n          <td>{{employee.EmployeeImage}}</td>\n          <td>{{employee.EmployeeEmail}}</td>\n          <td>{{employee.EmployeeDateOfJoin}}</td>\n          <td>{{employee.EmployeeDateOfConfirm}}</td>\n          <td>{{employee.EmployeeDepartment}}</td>\n          <!-- <td>{{employee.EmployeeDesignation}}</td>\n          <td>{{employee.EmployeeBasicSalary}}</td>\n          <td>{{employee.EmployeeSalaryPerDay}}</td> -->\n          \n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editemployee(employee.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteemployee(employee.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <!-- {{searchText}} -->\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <!-- <th>Employee Id</th>\n          <th>Employee First Name</th>\n          <th>Employee Last Name</th> -->\n          <th>Employee Full Name</th>\n          <!-- <th>Employee Father Name</th> -->\n          <th>Employee Date Of Birth</th>\n          <th>Employee Sex</th>\n          <th>Employee Religion</th>\n          <th>Employee Marital Status</th>\n          <th>Employee Nationality</th>\n          <!-- <th>Employee House</th>\n          <th>Employee Street</th>\n          <th>Employee City</th>\n          <th>Employee State</th>\n          <th>Employee PIN</th> -->\n          <th>Employee Phone Number</th>\n          <th>Employee Mobile Number</th>\n          <th>Employee Image</th>\n          <th>Employee Email</th>\n          <th>Employee Date Of Join</th>\n          <th>Employee Date Of Confirm</th>\n          <th>Employee Department</th>\n          <!-- <th>Employee Designation</th>\n          <th>Employee Basic Salary</th>\n          <th>Employee Salary PerDay</th> -->\n          <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let employee of employeeFullList \">\n          <!-- <td>{{employee.EmployeeId}}</td>\n          <td>{{employee.EmployeeFirstName}}</td>\n          <td>{{employee.EmployeeLastName}}</td> -->\n          <td>{{employee.EmployeeFullName}}</td>\n          <!-- <td>{{employee.EmployeeFatherName}}</td> -->\n          <td>{{employee.EmployeeDateOfBirth}}</td>\n          <td>{{employee.EmployeeSex}}</td>\n\n          <td>{{employee.EmployeeReligion}}</td>\n          <td>{{employee.EmployeeMaritalStatus}}</td>\n          <td>{{employee.EmployeeNationality}}</td>\n          <!-- <td>{{employee.EmployeeHouse}}</td>\n          <td>{{employee.EmployeeStreet}}</td>\n          <td>{{employee.EmployeeCity}}</td>\n          <td>{{employee.EmployeeState}}</td>\n\n          <td>{{employee.EmployeePIN}}</td> -->\n          <td>{{employee.EmployeePhoneNumber}}</td>\n          <td>{{employee.EmployeeMobileNumber}}</td>\n          <td>{{employee.EmployeeImage}}</td>\n          <td>{{employee.EmployeeEmail}}</td>\n          <td>{{employee.EmployeeDateOfJoin}}</td>\n          <td>{{employee.EmployeeDateOfConfirm}}</td>\n          <td>{{employee.EmployeeDepartment}}</td>\n          <!-- <td>{{employee.EmployeeDesignation}}</td>\n          <td>{{employee.EmployeeBasicSalary}}</td>\n          <td>{{employee.EmployeeSalaryPerDay}}</td> -->\n          \n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editemployee(employee.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteemployee(employee.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee/employee.component.html": 
@@ -94,7 +94,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Leave Id</th>\n          <th>Employee Id</th>\n          <th>Month</th>\n          <th>From Date</th>\n          <th>To Date</th>\n          <th>No Of Days</th>\n          <th>Leave Period</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let leave of leaveList \">\n          <td>{{leave.LeaveId}}</td>\n          <td>{{leave.EmployeeId}}</td>\n          <td>{{leave.Month}}</td>\n          <td>{{leave.FromDate}}</td>\n          <td>{{leave.ToDate}}</td>\n          <td>{{leave.NoOfDays}}</td>\n          <td>{{leave.LeavePeriod}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editLeave(leave.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteLeave(leave.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click) = \"addLeave()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput  placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Leave Id</th>\n          <th>Employee Id</th>\n          <th>Month</th>\n          <th>From Date</th>\n          <th>To Date</th>\n          <th>No Of Days</th>\n          <th>Leave Period</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let leave of leaveFullList \">\n          <td>{{leave.LeaveId}}</td>\n          <td>{{leave.EmployeeId}}</td>\n          <td>{{leave.Month}}</td>\n          <td>{{leave.FromDate}}</td>\n          <td>{{leave.ToDate}}</td>\n          <td>{{leave.NoOfDays}}</td>\n          <td>{{leave.LeavePeriod}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editLeave(leave.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteLeave(leave.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/leave/leave.component.html": 
@@ -105,7 +105,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>leave works!</p>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Leave Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div> -->\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Month\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"From Date\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"To Date\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave Period\" >\n        </mat-form-field>\n      </div>\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button (click)=\"onNoClick()\" tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/loan/loan-list/loan-list.component.html": 
@@ -116,7 +116,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Loan Id</th>\n          <th>Type Of Loan</th>\n          <th>Date Of Application</th>\n          <th>Proposed Amount</th>\n          <th>No Of Inst Recovery</th>\n          <th>Start Date Of Recovery</th>\n          <th>End Date Of Recovery</th>\n          <th>No Of Days</th>\n          <th>Interest Rate</th>\n          <th>Interest Amount</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let loan of loanList \">\n          <td>{{loan.LoanId}}</td>\n          <td>{{loan.TypeOfLoan}}</td>\n          <td>{{loan.DateOfApplication}}</td>\n          <td>{{loan.ProposedAmount}}</td>\n          <td>{{loan.NoOfInstRecovery}}</td>\n          <td>{{loan.StartDateOfRecovery}}</td>\n          <td>{{loan.EndDateOfRecovery}}</td>\n          <td>{{loan.NoOfDays}}</td>\n          <td>{{loan.InterestRate}}</td>\n          <td>{{loan.InterestAmount}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editLoan(loan.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteLoan(loan.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addLoan()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Loan Id</th>\n          <th>Type Of Loan</th>\n          <th>Date Of Application</th>\n          <th>Proposed Amount</th>\n          <th>No Of Inst Recovery</th>\n          <th>Start Date Of Recovery</th>\n          <th>End Date Of Recovery</th>\n          <th>No Of Days</th>\n          <th>Interest Rate</th>\n          <th>Interest Amount</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let loan of loanFullList \">\n          <td>{{loan.LoanId}}</td>\n          <td>{{loan.TypeOfLoan}}</td>\n          <td>{{loan.DateOfApplication}}</td>\n          <td>{{loan.ProposedAmount}}</td>\n          <td>{{loan.NoOfInstRecovery}}</td>\n          <td>{{loan.StartDateOfRecovery}}</td>\n          <td>{{loan.EndDateOfRecovery}}</td>\n          <td>{{loan.NoOfDays}}</td>\n          <td>{{loan.InterestRate}}</td>\n          <td>{{loan.InterestAmount}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editLoan(loan.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteLoan(loan.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/loan/loan.component.html": 
@@ -127,7 +127,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>loan works!</p>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Loan Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Type Of Loan\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Date Of Application\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Proposed Amount\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Inst Recovery\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date Of Recovery\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date Of Recovery\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Rate\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Amount\" >\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button (click)=\"onNoClick()\" tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/navbar/navbar.component.html": 
@@ -149,7 +149,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>PayrollId</th>\n          <th>EmployeeId</th>\n          <th>Month</th>\n          <th>Year</th>\n          <th>TotalPresent</th>\n          <th>TotalAbsent</th>\n          <th>LeaveDays</th>\n\n          <th>Deduction</th>\n          <th>Leave</th>\n          <th>FestivalAdvance</th>\n          <th>HousingLoan</th>\n          <th>VehicleLoan</th>\n          <!-- <th>OtherLoan</th>\n          <th>LossOfPay</th>\n          <th>TDS</th>\n          <th>ProfessionalFees</th>\n          <th>OtherDeductions</th>\n          <th>TotalEarnings</th>\n          <th>OtherPay</th>\n          <th>BasicSalary</th>\n          <th>SalaryPerDay</th>\n          <th>Pay</th>\n          <th>Earnings</th>\n          <th>Deductions</th>\n          <th>NetPay</th> -->\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let payroll of payrollList \">\n          <td>{{payroll.PayrollId}}</td>\n          <td>{{payroll.EmployeeId}}</td>\n          <td>{{payroll.Month}}</td>\n          <td>{{payroll.Year}}</td>\n          <td>{{payroll.TotalPresent}}</td>\n          <td>{{payroll.TotalAbsent}}</td>\n          <td>{{payroll.LeaveDays}}</td>\n\n          <td>{{payroll.Deduction}}</td>\n          <td>{{payroll.Leave}}</td>\n          <td>{{payroll.FestivalAdvance}}</td>\n          <td>{{payroll.HousingLoan}}</td>\n          <td>{{payroll.VehicleLoan}}</td>\n          <!-- <td>{{payroll.OtherLoan}}</td>\n          <td>{{payroll.LossOfPay}}</td>\n\n          <td>{{payroll.TDS}}</td>\n          <td>{{payroll.ProfessionalFees}}</td>\n          <td>{{payroll.OtherDeductions}}</td>\n          <td>{{payroll.TotalEarnings}}</td>\n          <td>{{payroll.OtherPay}}</td>\n          <td>{{payroll.BasicSalary}}</td>\n          <td>{{payroll.SalaryPerDay}}</td>\n\n          <td>{{payroll.Pay}}</td>\n          <td>{{payroll.Earnings}}</td>\n          <td>{{payroll.Deductions}}</td>\n          <td>{{payroll.NetPay}}</td> -->\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editPayroll(payroll.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deletePayroll(payroll.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>PayrollId</th>\n          <th>EmployeeId</th>\n          <th>Month</th>\n          <th>Year</th>\n          <th>TotalPresent</th>\n          <th>TotalAbsent</th>\n          <th>LeaveDays</th>\n\n          <th>Deduction</th>\n          <th>Leave</th>\n          <th>FestivalAdvance</th>\n          <th>HousingLoan</th>\n          <th>VehicleLoan</th>\n          <!-- <th>OtherLoan</th>\n          <th>LossOfPay</th>\n          <th>TDS</th>\n          <th>ProfessionalFees</th>\n          <th>OtherDeductions</th>\n          <th>TotalEarnings</th>\n          <th>OtherPay</th>\n          <th>BasicSalary</th>\n          <th>SalaryPerDay</th>\n          <th>Pay</th>\n          <th>Earnings</th>\n          <th>Deductions</th>\n          <th>NetPay</th> -->\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let payroll of payrollFullList \">\n          <td>{{payroll.PayrollId}}</td>\n          <td>{{payroll.EmployeeId}}</td>\n          <td>{{payroll.Month}}</td>\n          <td>{{payroll.Year}}</td>\n          <td>{{payroll.TotalPresent}}</td>\n          <td>{{payroll.TotalAbsent}}</td>\n          <td>{{payroll.LeaveDays}}</td>\n\n          <td>{{payroll.Deduction}}</td>\n          <td>{{payroll.Leave}}</td>\n          <td>{{payroll.FestivalAdvance}}</td>\n          <td>{{payroll.HousingLoan}}</td>\n          <td>{{payroll.VehicleLoan}}</td>\n          <!-- <td>{{payroll.OtherLoan}}</td>\n          <td>{{payroll.LossOfPay}}</td>\n\n          <td>{{payroll.TDS}}</td>\n          <td>{{payroll.ProfessionalFees}}</td>\n          <td>{{payroll.OtherDeductions}}</td>\n          <td>{{payroll.TotalEarnings}}</td>\n          <td>{{payroll.OtherPay}}</td>\n          <td>{{payroll.BasicSalary}}</td>\n          <td>{{payroll.SalaryPerDay}}</td>\n\n          <td>{{payroll.Pay}}</td>\n          <td>{{payroll.Earnings}}</td>\n          <td>{{payroll.Deductions}}</td>\n          <td>{{payroll.NetPay}}</td> -->\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editPayroll(payroll.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deletePayroll(payroll.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll.component.html": 
@@ -193,7 +193,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon>\n   \n  </div>\n\n \n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n\n  <div class=\"col-sm-6 col-md-4 col-xl-3\">\n    <div class=\"card bg-light\">\n        <div class=\"card-body\">\n          \n            <h6 class=\"card-title text-uppercase text-truncate py-2\">User Info\n              <button mat-stroked-button color=\"warn\" (click)=\"mapUser()\">Show Location</button>\n            </h6>\n            \n            <div class=\"items border border-light\" *ngFor=\"let user of userList \">\n                <div class=\"card draggable shadow-sm\" >\n                    <div class=\"card-body p-2\" >      \n                      <p><input type=\"checkbox\" [(ngModel)]=\"isChecked\"> Select</p>\n                        <p>\n                          {{user.UserName}} ||\n                          {{user.Attendance}} ||\n                          {{user.IpAddress}}\n                        </p>                        \n                    </div>\n                </div>\n                </div>\n              </div>\n            </div>\n          </div>         \n\n<div class=\"maps\">\n  <app-user-location ></app-user-location>\n</div>\n\n\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click) = \"addUser()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon>\n   \n  </div>\n\n \n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n\n  <div class=\"col-sm-6 col-md-4 col-xl-3\">\n    <div class=\"card bg-light\">\n        <div class=\"card-body\">\n          \n            <h6 class=\"card-title text-uppercase text-truncate py-2\">User Info\n              <button mat-stroked-button color=\"warn\" (click)=\"mapUser()\">Show Location</button>\n            </h6>\n            \n            <div class=\"items border border-light\" *ngFor=\"let user of getUserList \">\n                <div class=\"card draggable shadow-sm\" >\n                    <div class=\"card-body p-2\" >      \n                      <p><input type=\"checkbox\" [(ngModel)]=\"isChecked\"> Select</p>\n                        <p>\n                          {{user.UserName}} ||\n                          {{user.Attendance}} ||\n                          {{user.IpAddress}}\n                        </p>                        \n                    </div>\n                </div>\n                </div>\n              </div>\n            </div>\n          </div>         \n\n<div class=\"maps\">\n  <app-user-location ></app-user-location>\n</div>\n\n\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-location/user-location.component.html": 
@@ -215,7 +215,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"User Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"User Name\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Password\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"User Gender\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Role\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Token\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Attendance\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"IpAddress\" >\n        </mat-form-field>\n      </div>\n  \n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button (click)=\"onNoClick()\" tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -611,6 +611,7 @@
             /* harmony import */ var _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./training/training-list/training-list.component */ "./src/app/training/training-list/training-list.component.ts");
             /* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/fesm2015/agm-core.js");
             /* harmony import */ var _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./user/user-location/user-location.component */ "./src/app/user/user-location/user-location.component.ts");
+            //import { Ng2SearchPipeModule } from '@ng2-search-filter';
             var AppModule = /** @class */ (function () {
                 function AppModule() {
                 }
@@ -663,6 +664,7 @@
                         _angular_forms__WEBPACK_IMPORTED_MODULE_21__["FormsModule"],
                         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_22__["BrowserAnimationsModule"],
                         _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_6__["MatToolbarModule"],
+                        // Ng2SearchPipeModule,
                         _angular_router__WEBPACK_IMPORTED_MODULE_25__["RouterModule"].forRoot([
                             { path: 'navbar', component: _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"] },
                             { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["DashboardComponent"] },
@@ -782,16 +784,27 @@
                     this._employeeService = _employeeService;
                     this.displayedColumns = ['EmployeeId', 'EmployeeFirstName', 'EmployeeLastName', 'EmployeeFullName', 'EmployeeFatherName', 'EmployeeDateOfBirth', 'EmployeeSex', 'EmployeeReligion', 'EmployeeMaritalStatus', 'EmployeeNationality', 'EmployeeHouse', 'EmployeeStreet', 'EmployeeCity', 'EmployeeState', 'EmployeePIN', 'EmployeePhoneNumber', 'EmployeeMobileNumber', 'EmployeeImage', 'EmployeeEmail', 'EmployeeDateOfJoin', 'EmployeeDateOfConfirm', 'EmployeeDepartment', 'EmployeeDesignation', 'EmployeeBasicSalary', 'EmployeeSalaryPerDay'];
                     this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTableDataSource"](this._employeeService._employeeDetail);
+                    this.employeeList = [];
+                    this.employeeFullList = [];
                 }
                 EmployeeListComponent.prototype.ngOnInit = function () {
+                    this.employeeList = this._employeeService.getEmployee();
+                    this.employeeFullList = this.employeeList;
                 };
-                Object.defineProperty(EmployeeListComponent.prototype, "employeeList", {
-                    get: function () {
-                        return this._employeeService.getEmployee();
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
+                // get employeeList() {
+                //   return this._employeeService.getEmployee();
+                // }
+                EmployeeListComponent.prototype.search = function () {
+                    var _this = this;
+                    if (this.searchText != "") {
+                        this.employeeFullList = this.employeeFullList.filter(function (res) {
+                            return res.EmployeeFullName.toLocaleLowerCase().match(_this.searchText.toLocaleLowerCase());
+                        });
+                    }
+                    else if (this.searchText == "") {
+                        this.ngOnInit();
+                    }
+                };
                 return EmployeeListComponent;
             }());
             EmployeeListComponent.ctorParameters = function () { return [
@@ -863,7 +876,7 @@
                     this._employeeDetails = [];
                     this._employeeDetail = [
                         { EmployeeId: 1, EmployeeFirstName: 'admin', EmployeeLastName: 'admin', EmployeeFullName: 'Male', EmployeeFatherName: 'Admin', EmployeeDateOfBirth: '11/12/2000', EmployeeSex: 'Male', EmployeeReligion: 'Male', EmployeeMaritalStatus: 'Male', EmployeeNationality: 'Male', EmployeeHouse: 'Male', EmployeeStreet: '01', EmployeeCity: 'Dhaka', EmployeeState: 'Dhaka', EmployeePIN: '01', EmployeePhoneNumber: 'string', EmployeeMobileNumber: 'string', EmployeeImage: 'string', EmployeeEmail: 'string', EmployeeDateOfJoin: 'Date', EmployeeDateOfConfirm: 'string', EmployeeDepartment: 'string', EmployeeDesignation: 'string', EmployeeBasicSalary: 11, EmployeeSalaryPerDay: 11 },
-                        { EmployeeId: 1, EmployeeFirstName: 'admin', EmployeeLastName: 'admin', EmployeeFullName: 'Male', EmployeeFatherName: 'Admin', EmployeeDateOfBirth: '11/12/2000', EmployeeSex: 'Male', EmployeeReligion: 'Male', EmployeeMaritalStatus: 'Male', EmployeeNationality: 'Male', EmployeeHouse: 'Male', EmployeeStreet: '01', EmployeeCity: 'Dhaka', EmployeeState: 'Dhaka', EmployeePIN: '01', EmployeePhoneNumber: 'string', EmployeeMobileNumber: 'string', EmployeeImage: 'string', EmployeeEmail: 'string', EmployeeDateOfJoin: 'Date', EmployeeDateOfConfirm: 'string', EmployeeDepartment: 'string', EmployeeDesignation: 'string', EmployeeBasicSalary: 11, EmployeeSalaryPerDay: 11 },
+                        { EmployeeId: 1, EmployeeFirstName: 'admin', EmployeeLastName: 'admin', EmployeeFullName: 'Female', EmployeeFatherName: 'Admin', EmployeeDateOfBirth: '11/12/2000', EmployeeSex: 'Male', EmployeeReligion: 'Male', EmployeeMaritalStatus: 'Male', EmployeeNationality: 'Male', EmployeeHouse: 'Male', EmployeeStreet: '01', EmployeeCity: 'Dhaka', EmployeeState: 'Dhaka', EmployeePIN: '01', EmployeePhoneNumber: 'string', EmployeeMobileNumber: 'string', EmployeeImage: 'string', EmployeeEmail: 'string', EmployeeDateOfJoin: 'Date', EmployeeDateOfConfirm: 'string', EmployeeDepartment: 'string', EmployeeDesignation: 'string', EmployeeBasicSalary: 11, EmployeeSalaryPerDay: 11 },
                         { EmployeeId: 1, EmployeeFirstName: 'admin', EmployeeLastName: 'admin', EmployeeFullName: 'Male', EmployeeFatherName: 'Admin', EmployeeDateOfBirth: '11/12/2000', EmployeeSex: 'Male', EmployeeReligion: 'Male', EmployeeMaritalStatus: 'Male', EmployeeNationality: 'Male', EmployeeHouse: 'Male', EmployeeStreet: '01', EmployeeCity: 'Dhaka', EmployeeState: 'Dhaka', EmployeePIN: '01', EmployeePhoneNumber: 'string', EmployeeMobileNumber: 'string', EmployeeImage: 'string', EmployeeEmail: 'string', EmployeeDateOfJoin: 'Date', EmployeeDateOfConfirm: 'string', EmployeeDepartment: 'string', EmployeeDesignation: 'string', EmployeeBasicSalary: 11, EmployeeSalaryPerDay: 11 },
                         { EmployeeId: 1, EmployeeFirstName: 'admin', EmployeeLastName: 'admin', EmployeeFullName: 'Male', EmployeeFatherName: 'Admin', EmployeeDateOfBirth: '11/12/2000', EmployeeSex: 'Male', EmployeeReligion: 'Male', EmployeeMaritalStatus: 'Male', EmployeeNationality: 'Male', EmployeeHouse: 'Male', EmployeeStreet: '01', EmployeeCity: 'Dhaka', EmployeeState: 'Dhaka', EmployeePIN: '01', EmployeePhoneNumber: 'string', EmployeeMobileNumber: 'string', EmployeeImage: 'string', EmployeeEmail: 'string', EmployeeDateOfJoin: 'Date', EmployeeDateOfConfirm: 'string', EmployeeDepartment: 'string', EmployeeDesignation: 'string', EmployeeBasicSalary: 11, EmployeeSalaryPerDay: 11 },
                         { EmployeeId: 1, EmployeeFirstName: 'admin', EmployeeLastName: 'admin', EmployeeFullName: 'Male', EmployeeFatherName: 'Admin', EmployeeDateOfBirth: '11/12/2000', EmployeeSex: 'Male', EmployeeReligion: 'Male', EmployeeMaritalStatus: 'Male', EmployeeNationality: 'Male', EmployeeHouse: 'Male', EmployeeStreet: '01', EmployeeCity: 'Dhaka', EmployeeState: 'Dhaka', EmployeePIN: '01', EmployeePhoneNumber: 'string', EmployeeMobileNumber: 'string', EmployeeImage: 'string', EmployeeEmail: 'string', EmployeeDateOfJoin: 'Date', EmployeeDateOfConfirm: 'string', EmployeeDepartment: 'string', EmployeeDesignation: 'string', EmployeeBasicSalary: 11, EmployeeSalaryPerDay: 11 },
@@ -1030,16 +1043,24 @@
                 function LeaveListComponent(dialog, _leaveService) {
                     this.dialog = dialog;
                     this._leaveService = _leaveService;
+                    this.leaveList = [];
+                    this.leaveFullList = [];
                 }
                 LeaveListComponent.prototype.ngOnInit = function () {
+                    this.leaveList = this._leaveService.getLeave();
+                    this.leaveFullList = this.leaveList;
                 };
-                Object.defineProperty(LeaveListComponent.prototype, "leaveList", {
-                    get: function () {
-                        return this._leaveService.getLeave();
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
+                LeaveListComponent.prototype.search = function () {
+                    var _this = this;
+                    if (this.searchText != "") {
+                        this.leaveFullList = this.leaveFullList.filter(function (res) {
+                            return res.Month.toLocaleLowerCase().match(_this.searchText.toLocaleLowerCase());
+                        });
+                    }
+                    else if (this.searchText == "") {
+                        this.ngOnInit();
+                    }
+                };
                 LeaveListComponent.prototype.editLeave = function (id) {
                     this.isPopupOpened = true;
                     var tax = this._leaveService.getLeave().find(function (c) { return c.LeaveId === id; });
@@ -1052,6 +1073,16 @@
                 };
                 LeaveListComponent.prototype.deleteLeave = function (id) {
                     this._leaveService.deleteLeave(id);
+                };
+                LeaveListComponent.prototype.addLeave = function () {
+                    var dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
+                    this.isPopupOpened = true;
+                    var dialogRef = this.dialog.open(_leave_component__WEBPACK_IMPORTED_MODULE_4__["LeaveComponent"], {
+                        data: {}
+                    });
+                    dialogRef.afterClosed().subscribe(function (result) {
+                    });
+                    // dialogConfig.width = '60px';
                 };
                 return LeaveListComponent;
             }());
@@ -1076,7 +1107,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xlYXZlL2xlYXZlLmNvbXBvbmVudC5jc3MifQ== */");
+            /* harmony default export */ __webpack_exports__["default"] = (".container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n  \r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n  \r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGVhdmUvbGVhdmUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsZ0JBQWdCO0VBQ2xCOztFQUVBO0lBQ0UsV0FBVztFQUNiOztFQUVBO0lBQ0UsYUFBYTtJQUNiLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLGVBQWU7SUFDZixZQUFZO0VBQ2QiLCJmaWxlIjoic3JjL2FwcC9sZWF2ZS9sZWF2ZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIG1pbi13aWR0aDogNDUwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5jb250YWluZXIgPiAqIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuICBcclxuICAuZm9ybSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgcGFkZGluZy10b3A6IDZweDtcclxuICB9XHJcbiAgXHJcbiAgLm1hdC1mb3JtLWZpZWxkIHtcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgIGZsZXgtZ3JvdzogMTtcclxuICB9Il19 */");
             /***/ 
         }),
         /***/ "./src/app/leave/leave.component.ts": 
@@ -1090,19 +1121,33 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LeaveComponent", function () { return LeaveComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _services_leave_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/leave.service */ "./src/app/leave/services/leave.service.ts");
+            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             var LeaveComponent = /** @class */ (function () {
-                function LeaveComponent() {
+                function LeaveComponent(dialog, _leaveService, data) {
+                    this.dialog = dialog;
+                    this._leaveService = _leaveService;
+                    this.data = data;
                 }
                 LeaveComponent.prototype.ngOnInit = function () {
                 };
+                LeaveComponent.prototype.confirmAdd = function () {
+                    this._leaveService.addLeave(this.data);
+                };
                 return LeaveComponent;
             }());
+            LeaveComponent.ctorParameters = function () { return [
+                { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+                { type: _services_leave_service__WEBPACK_IMPORTED_MODULE_2__["LeaveService"] },
+                { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] }
+            ]; };
             LeaveComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-leave',
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./leave.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/leave/leave.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./leave.component.css */ "./src/app/leave/leave.component.css")).default]
-                })
+                }),
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
             ], LeaveComponent);
             /***/ 
         }),
@@ -1188,19 +1233,27 @@
                 function LoanListComponent(dialog, _loanService) {
                     this.dialog = dialog;
                     this._loanService = _loanService;
+                    this.loanList = [];
+                    this.loanFullList = [];
                     this.displayedColumns = ['addtaxid', 'taxname', 'taxvalue', 'status', 'actions'];
                     this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTableDataSource"](this._loanService._loanDetails);
                 }
                 LoanListComponent.prototype.ngOnInit = function () {
+                    this.loanList = this._loanService.getLoan();
+                    this.loanFullList = this.loanList;
                 };
-                Object.defineProperty(LoanListComponent.prototype, "loanList", {
-                    get: function () {
-                        return this._loanService.getLoan();
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
-                LoanListComponent.prototype.addUser = function () {
+                LoanListComponent.prototype.search = function () {
+                    var _this = this;
+                    if (this.searchText != "") {
+                        this.loanFullList = this.loanFullList.filter(function (res) {
+                            return res.TypeOfLoan.toLocaleLowerCase().match(_this.searchText.toLocaleLowerCase());
+                        });
+                    }
+                    else if (this.searchText == "") {
+                        this.ngOnInit();
+                    }
+                };
+                LoanListComponent.prototype.addLoan = function () {
                     var dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
                     this.isPopupOpened = true;
                     var dialogRef = this.dialog.open(_loan_component__WEBPACK_IMPORTED_MODULE_2__["LoanComponent"], {
@@ -1208,7 +1261,7 @@
                     });
                     dialogRef.afterClosed().subscribe(function (result) {
                     });
-                    dialogConfig.width = '60px';
+                    // dialogConfig.width = '60px';
                 };
                 LoanListComponent.prototype.editUser = function (id) {
                     this.isPopupOpened = true;
@@ -1246,7 +1299,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xvYW4vbG9hbi5jb21wb25lbnQuY3NzIn0= */");
+            /* harmony default export */ __webpack_exports__["default"] = (".container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n  \r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n  \r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9hbi9sb2FuLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxlQUFlO0lBQ2YsWUFBWTtFQUNkIiwiZmlsZSI6InNyYy9hcHAvbG9hbi9sb2FuLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgbWluLXdpZHRoOiA0NTBweDtcclxuICB9XHJcbiAgXHJcbiAgLmNvbnRhaW5lciA+ICoge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5mb3JtIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBwYWRkaW5nLXRvcDogNnB4O1xyXG4gIH1cclxuICBcclxuICAubWF0LWZvcm0tZmllbGQge1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgZmxleC1ncm93OiAxO1xyXG4gIH0iXX0= */");
             /***/ 
         }),
         /***/ "./src/app/loan/loan.component.ts": 
@@ -1260,19 +1313,38 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoanComponent", function () { return LoanComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _services_loan_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/loan.service */ "./src/app/loan/services/loan.service.ts");
             var LoanComponent = /** @class */ (function () {
-                function LoanComponent() {
+                function LoanComponent(dialog, _loanService, data) {
+                    this.dialog = dialog;
+                    this._loanService = _loanService;
+                    this.data = data;
+                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required
+                        // Validators.email,
+                    ]);
                 }
                 LoanComponent.prototype.ngOnInit = function () {
                 };
+                LoanComponent.prototype.confirmAdd = function () {
+                    this._loanService.addLoan(this.data);
+                };
                 return LoanComponent;
             }());
+            LoanComponent.ctorParameters = function () { return [
+                { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+                { type: _services_loan_service__WEBPACK_IMPORTED_MODULE_4__["LoanService"] },
+                { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] }
+            ]; };
             LoanComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-loan',
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./loan.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/loan/loan.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./loan.component.css */ "./src/app/loan/loan.component.css")).default]
-                })
+                }),
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
             ], LoanComponent);
             /***/ 
         }),
@@ -1288,10 +1360,12 @@
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+            /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
             var LoanService = /** @class */ (function () {
                 function LoanService(httpClient, httpService) {
                     this.httpClient = httpClient;
                     this.httpService = httpService;
+                    this.dataChange = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]([]);
                     this._loanDetails = [];
                     this._loanDetail = [
                         { LoanId: 1, TypeOfLoan: 'A', DateOfApplication: '11/12/2010', ProposedAmount: '11/11/2019', NoOfInstRecovery: '13/11/2019', StartDateOfRecovery: '3', EndDateOfRecovery: 'True', NoOfDays: 'Test', InterestRate: '10', InterestAmount: '11' },
@@ -1300,6 +1374,9 @@
                         { LoanId: 4, TypeOfLoan: 'D', DateOfApplication: '11/10/2010', ProposedAmount: '11/11/2019', NoOfInstRecovery: '13/11/2019', StartDateOfRecovery: '3', EndDateOfRecovery: 'True', NoOfDays: 'Test', InterestRate: '10', InterestAmount: '11' },
                     ];
                 }
+                LoanService.prototype.getDialogData = function () {
+                    return this.dialogData;
+                };
                 LoanService.prototype.addLoan = function (addLoan) {
                     addLoan.LoanId = this._loanDetail.length + 1;
                     this._loanDetail.push(addLoan);
@@ -1405,17 +1482,25 @@
                     this.dialog = dialog;
                     this._payrollService = _payrollService;
                     this.displayedColumns = ['addtaxid', 'taxname', 'taxvalue', 'status', 'actions'];
+                    this.payrollList = [];
+                    this.payrollFullList = [];
                     this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this._payrollService._payrollDetails);
                 }
                 PayrollListComponent.prototype.ngOnInit = function () {
+                    this.payrollList = this._payrollService.getPayroll();
+                    this.payrollFullList = this.payrollList;
                 };
-                Object.defineProperty(PayrollListComponent.prototype, "payrollList", {
-                    get: function () {
-                        return this._payrollService.getPayroll();
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
+                PayrollListComponent.prototype.search = function () {
+                    var _this = this;
+                    if (this.searchText != "") {
+                        this.payrollFullList = this.payrollFullList.filter(function (res) {
+                            return res.Month.toLocaleLowerCase().match(_this.searchText.toLocaleLowerCase());
+                        });
+                    }
+                    else if (this.searchText == "") {
+                        this.ngOnInit();
+                    }
+                };
                 PayrollListComponent.prototype.addPayroll = function () {
                     var dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogConfig"]();
                     this.isPopupOpened = true;
@@ -1511,10 +1596,10 @@
                     this._payrollDetails = [];
                     this._payrollDetail = [
                         { PayrollId: 1, EmployeeId: 1, Month: 'May', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
-                        { PayrollId: 1, EmployeeId: 1, Month: 'May', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
-                        { PayrollId: 1, EmployeeId: 1, Month: 'May', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
-                        { PayrollId: 1, EmployeeId: 1, Month: 'May', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
-                        { PayrollId: 1, EmployeeId: 1, Month: 'May', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
+                        { PayrollId: 1, EmployeeId: 1, Month: 'April', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
+                        { PayrollId: 1, EmployeeId: 1, Month: 'March', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
+                        { PayrollId: 1, EmployeeId: 1, Month: 'June', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
+                        { PayrollId: 1, EmployeeId: 1, Month: 'July', Year: '2010', TotalPresent: '10', TotalAbsent: '1', LeaveDays: '3', Deduction: '2', Leave: '4', FestivalAdvance: '2', HousingLoan: '3', VehicleLoan: '2', OtherLoan: '3', LossOfPay: '4', TDS: '6', ProfessionalFees: '6', OtherDeductions: '4', TotalEarnings: '3', OtherPay: '2', BasicSalary: '3', SalaryPerDay: '4', Pay: '1', Earnings: '3', Deductions: '4', NetPay: '6' },
                     ];
                 }
                 PayrollService.prototype.addPayroll = function (addPayroll) {
@@ -1651,7 +1736,7 @@
                         { UserId: 9, UserName: 'Kiren', Password: 'kiren', UserGender: 'Male', Role: 'User', Token: 'asd578asd589654', Attendance: 11, IpAddress: '172.72.82.0' },
                     ];
                 }
-                UserService.prototype.addAccountDetail = function (addUser) {
+                UserService.prototype.addUserDetail = function (addUser) {
                     addUser.UserId = this._userDetail.length + 1;
                     this._userDetail.push(addUser);
                 };
@@ -1716,18 +1801,16 @@
                 function UserListComponent(dialog, _userService) {
                     this.dialog = dialog;
                     this._userService = _userService;
+                    this.getUserList = [];
                     this.displayedColumns = ['addtaxid', 'taxname', 'taxvalue', 'status', 'actions'];
                     this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this._userService._userDetail);
                 }
                 UserListComponent.prototype.ngOnInit = function () {
+                    this.getUserList = this._userService.getUserDetail();
                 };
-                Object.defineProperty(UserListComponent.prototype, "userList", {
-                    get: function () {
-                        return this._userService.getUserDetail();
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
+                // get userList() {
+                //   return this._userService.getUserDetail();
+                // }
                 UserListComponent.prototype.addUser = function () {
                     var dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogConfig"]();
                     this.isPopupOpened = true;
@@ -1736,7 +1819,7 @@
                     });
                     dialogRef.afterClosed().subscribe(function (result) {
                     });
-                    dialogConfig.width = '60px';
+                    //  dialogConfig.width = '60px';
                 };
                 UserListComponent.prototype.editUser = function (id) {
                     this.isPopupOpened = true;
@@ -1845,7 +1928,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\r\nagm-map {\r\n    height: 400px;\r\n    width: 500px;\r\n  }\r\n  \r\n  h2{\r\n    color: #2c3e50;\r\n  }\r\n  \r\n  input{\r\n    padding: 10px 15px;\r\n    font-size: 1em;\r\n    border-top: none;\r\n    border-right: none;\r\n    border-left: none;\r\n    outline: none;\r\n    margin: 0px 15px;\r\n    border-bottom: gray solid 2px;\r\n  }\r\n  \r\n  input:hover, input:focus{\r\n   border-bottom: #e67e22 solid 3px;\r\n  }\r\n  \r\n  button{\r\n    padding: 10px;\r\n    cursor: pointer;\r\n    background: #2980b9;\r\n    border: none;\r\n    color: white;\r\n    font-size: 1em;\r\n  }\r\n  \r\n  button:hover{\r\n    background: #e67e22;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlci91c2VyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7RUFDZDs7RUFFQTtJQUNFLGNBQWM7RUFDaEI7O0VBRUE7SUFDRSxrQkFBa0I7SUFDbEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLGFBQWE7SUFDYixnQkFBZ0I7SUFDaEIsNkJBQTZCO0VBQy9COztFQUdBO0dBQ0MsZ0NBQWdDO0VBQ2pDOztFQUdBO0lBQ0UsYUFBYTtJQUNiLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLFlBQVk7SUFDWixjQUFjO0VBQ2hCOztFQUVBO0lBQ0UsbUJBQW1CO0VBQ3JCIiwiZmlsZSI6InNyYy9hcHAvdXNlci91c2VyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuYWdtLW1hcCB7XHJcbiAgICBoZWlnaHQ6IDQwMHB4O1xyXG4gICAgd2lkdGg6IDUwMHB4O1xyXG4gIH1cclxuICBcclxuICBoMntcclxuICAgIGNvbG9yOiAjMmMzZTUwO1xyXG4gIH1cclxuICBcclxuICBpbnB1dHtcclxuICAgIHBhZGRpbmc6IDEwcHggMTVweDtcclxuICAgIGZvbnQtc2l6ZTogMWVtO1xyXG4gICAgYm9yZGVyLXRvcDogbm9uZTtcclxuICAgIGJvcmRlci1yaWdodDogbm9uZTtcclxuICAgIGJvcmRlci1sZWZ0OiBub25lO1xyXG4gICAgb3V0bGluZTogbm9uZTtcclxuICAgIG1hcmdpbjogMHB4IDE1cHg7XHJcbiAgICBib3JkZXItYm90dG9tOiBncmF5IHNvbGlkIDJweDtcclxuICB9XHJcbiAgXHJcbiAgXHJcbiAgaW5wdXQ6aG92ZXIsIGlucHV0OmZvY3Vze1xyXG4gICBib3JkZXItYm90dG9tOiAjZTY3ZTIyIHNvbGlkIDNweDtcclxuICB9XHJcbiAgXHJcbiAgXHJcbiAgYnV0dG9ue1xyXG4gICAgcGFkZGluZzogMTBweDtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGJhY2tncm91bmQ6ICMyOTgwYjk7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBmb250LXNpemU6IDFlbTtcclxuICB9XHJcbiAgXHJcbiAgYnV0dG9uOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZDogI2U2N2UyMjtcclxuICB9Il19 */");
+            /* harmony default export */ __webpack_exports__["default"] = ("\r\n/* agm-map {\r\n    height: 400px;\r\n    width: 500px;\r\n  }\r\n  \r\n  h2{\r\n    color: #2c3e50;\r\n  }\r\n  \r\n  input{\r\n    padding: 10px 15px;\r\n    font-size: 1em;\r\n    border-top: none;\r\n    border-right: none;\r\n    border-left: none;\r\n    outline: none;\r\n    margin: 0px 15px;\r\n    border-bottom: gray solid 2px;\r\n  }\r\n  \r\n  \r\n  input:hover, input:focus{\r\n   border-bottom: #e67e22 solid 3px;\r\n  }\r\n  \r\n  \r\n  button{\r\n    padding: 10px;\r\n    cursor: pointer;\r\n    background: #2980b9;\r\n    border: none;\r\n    color: white;\r\n    font-size: 1em;\r\n  }\r\n  \r\n  button:hover{\r\n    background: #e67e22;\r\n  } */\r\n\r\n\r\n  .container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n\r\n\r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n\r\n\r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n\r\n\r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlci91c2VyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0tBcUNLOzs7RUFHSDtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsZ0JBQWdCO0VBQ2xCOzs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7O0VBRUE7SUFDRSxhQUFhO0lBQ2IsZ0JBQWdCO0VBQ2xCOzs7RUFFQTtJQUNFLGVBQWU7SUFDZixZQUFZO0VBQ2QiLCJmaWxlIjoic3JjL2FwcC91c2VyL3VzZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4vKiBhZ20tbWFwIHtcclxuICAgIGhlaWdodDogNDAwcHg7XHJcbiAgICB3aWR0aDogNTAwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIGgye1xyXG4gICAgY29sb3I6ICMyYzNlNTA7XHJcbiAgfVxyXG4gIFxyXG4gIGlucHV0e1xyXG4gICAgcGFkZGluZzogMTBweCAxNXB4O1xyXG4gICAgZm9udC1zaXplOiAxZW07XHJcbiAgICBib3JkZXItdG9wOiBub25lO1xyXG4gICAgYm9yZGVyLXJpZ2h0OiBub25lO1xyXG4gICAgYm9yZGVyLWxlZnQ6IG5vbmU7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG4gICAgbWFyZ2luOiAwcHggMTVweDtcclxuICAgIGJvcmRlci1ib3R0b206IGdyYXkgc29saWQgMnB4O1xyXG4gIH1cclxuICBcclxuICBcclxuICBpbnB1dDpob3ZlciwgaW5wdXQ6Zm9jdXN7XHJcbiAgIGJvcmRlci1ib3R0b206ICNlNjdlMjIgc29saWQgM3B4O1xyXG4gIH1cclxuICBcclxuICBcclxuICBidXR0b257XHJcbiAgICBwYWRkaW5nOiAxMHB4O1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgYmFja2dyb3VuZDogIzI5ODBiOTtcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGZvbnQtc2l6ZTogMWVtO1xyXG4gIH1cclxuICBcclxuICBidXR0b246aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZTY3ZTIyO1xyXG4gIH0gKi9cclxuXHJcblxyXG4gIC5jb250YWluZXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBtaW4td2lkdGg6IDQ1MHB4O1xyXG4gIH1cclxuICBcclxuICAuY29udGFpbmVyID4gKiB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgXHJcbiAgLmZvcm0ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIHBhZGRpbmctdG9wOiA2cHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5tYXQtZm9ybS1maWVsZCB7XHJcbiAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgICBmbGV4LWdyb3c6IDE7XHJcbiAgfVxyXG4gICJdfQ== */");
             /***/ 
         }),
         /***/ "./src/app/user/user.component.ts": 
@@ -1859,19 +1942,41 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserComponent", function () { return UserComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/user.service */ "./src/app/user/services/user.service.ts");
             var UserComponent = /** @class */ (function () {
-                function UserComponent() {
+                function UserComponent(dialog, _userService, data) {
+                    this.dialog = dialog;
+                    this._userService = _userService;
+                    this.data = data;
+                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required
+                        // Validators.email,
+                    ]);
                 }
                 UserComponent.prototype.ngOnInit = function () {
                 };
+                UserComponent.prototype.onNoClick = function () {
+                    this.dialog.closeAll();
+                };
+                UserComponent.prototype.confirmAdd = function () {
+                    this._userService.addUserDetail(this.data);
+                };
                 return UserComponent;
             }());
+            UserComponent.ctorParameters = function () { return [
+                { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+                { type: _services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"] },
+                { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] }
+            ]; };
             UserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-user',
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./user.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./user.component.css */ "./src/app/user/user.component.css")).default]
-                })
+                }),
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
             ], UserComponent);
             /***/ 
         }),
