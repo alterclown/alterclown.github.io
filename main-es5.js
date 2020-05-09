@@ -138,7 +138,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\">\n    <div class=\"logout\"> \n        <mat-icon routerLink=\"/dashboard\" routerLinkActive=\"active\">apps</mat-icon>\n    </div>\n\n\n    <div> \n        HRM\n    </div>\n   \n    <div class=\"logout\">\n        Login\n            <mat-icon  routerLink=\"/login\">account_box</mat-icon>\n        \n\n        Logout\n         <mat-icon *ngIf=\"!this.isLoggedIn\" (click) = \"logOut()\">account_circle</mat-icon>\n\n    </div>\n </mat-toolbar>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\">\n    <div class=\"logout\">\n        <mat-icon *ngIf=\"this.authService.isLoggedIn()\"  routerLink=\"/dashboard\" routerLinkActive=\"active\">apps</mat-icon>\n    </div>\n\n    <div> \n        HRM\n    </div>\n   \n    <div class=\"logout\">\n        <span routerLink=\"/login\">\n            Login\n            <mat-icon >account_box</mat-icon>\n        </span>\n    \n        <span *ngIf=\"this.authService.isLoggedIn()\" (click)=\"logOut()\">\n            Logout\n            <mat-icon> account_circle</mat-icon>\n        </span>\n    \n    </div>\n </mat-toolbar>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll-list/payroll-list.component.html": 
@@ -611,6 +611,7 @@
             /* harmony import */ var _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./training/training-list/training-list.component */ "./src/app/training/training-list/training-list.component.ts");
             /* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/fesm2015/agm-core.js");
             /* harmony import */ var _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./user/user-location/user-location.component */ "./src/app/user/user-location/user-location.component.ts");
+            /* harmony import */ var _auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./auth/auth-guard.service */ "./src/app/auth/auth-guard.service.ts");
             //import { Ng2SearchPipeModule } from '@ng2-search-filter';
             var AppModule = /** @class */ (function () {
                 function AppModule() {
@@ -667,22 +668,22 @@
                         // Ng2SearchPipeModule,
                         _angular_router__WEBPACK_IMPORTED_MODULE_25__["RouterModule"].forRoot([
                             { path: 'navbar', component: _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"] },
-                            { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["DashboardComponent"] },
-                            { path: 'user', component: _user_user_component__WEBPACK_IMPORTED_MODULE_28__["UserComponent"] },
-                            { path: 'user-list', component: _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_29__["UserListComponent"] },
+                            { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["DashboardComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'user', component: _user_user_component__WEBPACK_IMPORTED_MODULE_28__["UserComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'user-list', component: _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_29__["UserListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
                             { path: 'login', component: _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_26__["HrmLoginComponent"] },
-                            { path: 'attend', component: _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_27__["HrmAttendanceListComponent"] },
-                            { path: 'leave', component: _leave_leave_component__WEBPACK_IMPORTED_MODULE_30__["LeaveComponent"] },
-                            { path: 'leave-list', component: _leave_leave_list_leave_list_component__WEBPACK_IMPORTED_MODULE_31__["LeaveListComponent"] },
-                            { path: 'payroll', component: _payroll_payroll_component__WEBPACK_IMPORTED_MODULE_32__["PayrollComponent"] },
-                            { path: 'payroll-list', component: _payroll_payroll_list_payroll_list_component__WEBPACK_IMPORTED_MODULE_33__["PayrollListComponent"] },
-                            { path: 'employee', component: _employee_employee_component__WEBPACK_IMPORTED_MODULE_34__["EmployeeComponent"] },
-                            { path: 'employee-list', component: _employee_employee_list_employee_list_component__WEBPACK_IMPORTED_MODULE_35__["EmployeeListComponent"] },
-                            { path: 'loan', component: _loan_loan_component__WEBPACK_IMPORTED_MODULE_36__["LoanComponent"] },
-                            { path: 'loan-list', component: _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__["LoanListComponent"] },
-                            { path: 'training', component: _training_training_component__WEBPACK_IMPORTED_MODULE_38__["TrainingComponent"] },
-                            { path: 'training-list', component: _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"] },
-                            { path: 'user-location', component: _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"] },
+                            { path: 'attend', component: _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_27__["HrmAttendanceListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'leave', component: _leave_leave_component__WEBPACK_IMPORTED_MODULE_30__["LeaveComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'leave-list', component: _leave_leave_list_leave_list_component__WEBPACK_IMPORTED_MODULE_31__["LeaveListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'payroll', component: _payroll_payroll_component__WEBPACK_IMPORTED_MODULE_32__["PayrollComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'payroll-list', component: _payroll_payroll_list_payroll_list_component__WEBPACK_IMPORTED_MODULE_33__["PayrollListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'employee', component: _employee_employee_component__WEBPACK_IMPORTED_MODULE_34__["EmployeeComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'employee-list', component: _employee_employee_list_employee_list_component__WEBPACK_IMPORTED_MODULE_35__["EmployeeListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'loan', component: _loan_loan_component__WEBPACK_IMPORTED_MODULE_36__["LoanComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'loan-list', component: _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__["LoanListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'training', component: _training_training_component__WEBPACK_IMPORTED_MODULE_38__["TrainingComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'training-list', component: _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'user-location', component: _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
                             { path: '**', redirectTo: '/' }
                         ]),
                         _agm_core__WEBPACK_IMPORTED_MODULE_40__["AgmCoreModule"].forRoot({
@@ -712,6 +713,80 @@
                     schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["CUSTOM_ELEMENTS_SCHEMA"]]
                 })
             ], AppModule);
+            /***/ 
+        }),
+        /***/ "./src/app/auth/auth-guard.service.ts": 
+        /*!********************************************!*\
+          !*** ./src/app/auth/auth-guard.service.ts ***!
+          \********************************************/
+        /*! exports provided: AuthGuardService */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuardService", function () { return AuthGuardService; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            /* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./auth.service */ "./src/app/auth/auth.service.ts");
+            var AuthGuardService = /** @class */ (function () {
+                function AuthGuardService(authService, router) {
+                    this.authService = authService;
+                    this.router = router;
+                }
+                AuthGuardService.prototype.canActivate = function (route, state) {
+                    if (this.authService.isLoggedIn()) {
+                        return true;
+                    }
+                    this.router.navigate["login"];
+                    return false;
+                };
+                return AuthGuardService;
+            }());
+            AuthGuardService.ctorParameters = function () { return [
+                { type: _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+            ]; };
+            AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+                    providedIn: 'root'
+                })
+            ], AuthGuardService);
+            /***/ 
+        }),
+        /***/ "./src/app/auth/auth.service.ts": 
+        /*!**************************************!*\
+          !*** ./src/app/auth/auth.service.ts ***!
+          \**************************************/
+        /*! exports provided: AuthService */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function () { return AuthService; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var AuthService = /** @class */ (function () {
+                function AuthService() {
+                    this.USER_NAME_SESSION_ATTRIBUTE_NAME = 'authenticatedUser';
+                    this.username = null;
+                }
+                AuthService.prototype.setUsernameInsSession = function (username) {
+                    sessionStorage.setItem(this.USER_NAME_SESSION_ATTRIBUTE_NAME, username);
+                    this.username = username;
+                };
+                AuthService.prototype.isLoggedIn = function () {
+                    var user = sessionStorage.getItem(this.USER_NAME_SESSION_ATTRIBUTE_NAME);
+                    return !(user == null);
+                };
+                AuthService.prototype.logout = function () {
+                    sessionStorage.removeItem(this.USER_NAME_SESSION_ATTRIBUTE_NAME);
+                };
+                return AuthService;
+            }());
+            AuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+                    providedIn: 'root'
+                })
+            ], AuthService);
             /***/ 
         }),
         /***/ "./src/app/dashboard/dashboard.component.css": 
@@ -973,10 +1048,13 @@
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
             /* harmony import */ var _user_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../user/services/user.service */ "./src/app/user/services/user.service.ts");
+            /* harmony import */ var _auth_auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../auth/auth.service */ "./src/app/auth/auth.service.ts");
             var HrmLoginComponent = /** @class */ (function () {
-                function HrmLoginComponent(router, _user) {
+                function HrmLoginComponent(router, _user, authService) {
                     this.router = router;
                     this._user = _user;
+                    this.authService = authService;
+                    this.USER_NAME_SESSION_ATTRIBUTE_NAME = 'authenticatedUser';
                     this.userInitials = [];
                     this.attendance = 'You Are Attended Today';
                     this.valueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
@@ -989,6 +1067,7 @@
                 HrmLoginComponent.prototype.login = function () {
                     if (this.username == 'admin' && this.password == 'admin') {
                         this.valueChange.emit(this.attendance);
+                        this.authService.setUsernameInsSession(this.username);
                         this.router.navigate(["dashboard"]);
                         console.log(this.attendance);
                     }
@@ -1000,7 +1079,8 @@
             }());
             HrmLoginComponent.ctorParameters = function () { return [
                 { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
-                { type: _user_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
+                { type: _user_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+                { type: _auth_auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"] }
             ]; };
             tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
@@ -1429,19 +1509,23 @@
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            /* harmony import */ var _auth_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../auth/auth.service */ "./src/app/auth/auth.service.ts");
             var NavbarComponent = /** @class */ (function () {
-                function NavbarComponent(router) {
+                function NavbarComponent(router, authService) {
                     this.router = router;
+                    this.authService = authService;
                 }
                 NavbarComponent.prototype.ngOnInit = function () {
                 };
                 NavbarComponent.prototype.logOut = function () {
-                    this.router.navigate(['']);
+                    this.authService.logout();
+                    this.router.navigate(['login']);
                 };
                 return NavbarComponent;
             }());
             NavbarComponent.ctorParameters = function () { return [
-                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+                { type: _auth_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] }
             ]; };
             NavbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
