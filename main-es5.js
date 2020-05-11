@@ -39,7 +39,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"/user-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Users\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/employee-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Employee\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/leave-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Leave\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/loan-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Loan\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/payroll-list\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Payroll\n    </button>\n</div>\n\n<!-- <div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n</div>\n\n<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n        <mat-icon>note_add</mat-icon>\n    </button>\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>note_add</mat-icon>Add User\n    </button>\n</div> -->\n\n<!-- <router-outlet></router-outlet> -->\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"/user-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Users\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/employee-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Employee\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/leave-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Leave\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/loan-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Loan\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/payroll-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Payroll\n    </button>\n\n    \n</div>\n\n<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"/training-list\" routerLinkActive=\"active\">\n        <mat-icon>donut_small</mat-icon>Training\n        </button>\n\n    <!-- <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button> -->\n</div>\n\n<!-- <div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n        <mat-icon>donut_small</mat-icon>\n    </button>\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n</div> -->\n\n<!-- <router-outlet></router-outlet> -->\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee/employee-list/employee-list.component.html": 
@@ -50,7 +50,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <!-- {{searchText}} -->\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <!-- <th>Employee Id</th>\n          <th>Employee First Name</th>\n          <th>Employee Last Name</th> -->\n          <th>Employee Full Name</th>\n          <!-- <th>Employee Father Name</th> -->\n          <th>Employee Date Of Birth</th>\n          <th>Employee Sex</th>\n          <th>Employee Religion</th>\n          <th>Employee Marital Status</th>\n          <th>Employee Nationality</th>\n          <!-- <th>Employee House</th>\n          <th>Employee Street</th>\n          <th>Employee City</th>\n          <th>Employee State</th>\n          <th>Employee PIN</th> -->\n          <th>Employee Phone Number</th>\n          <th>Employee Mobile Number</th>\n          <th>Employee Image</th>\n          <th>Employee Email</th>\n          <th>Employee Date Of Join</th>\n          <th>Employee Date Of Confirm</th>\n          <th>Employee Department</th>\n          <!-- <th>Employee Designation</th>\n          <th>Employee Basic Salary</th>\n          <th>Employee Salary PerDay</th> -->\n          <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let employee of employeeFullList \">\n          <!-- <td>{{employee.EmployeeId}}</td>\n          <td>{{employee.EmployeeFirstName}}</td>\n          <td>{{employee.EmployeeLastName}}</td> -->\n          <td>{{employee.EmployeeFullName}}</td>\n          <!-- <td>{{employee.EmployeeFatherName}}</td> -->\n          <td>{{employee.EmployeeDateOfBirth}}</td>\n          <td>{{employee.EmployeeSex}}</td>\n\n          <td>{{employee.EmployeeReligion}}</td>\n          <td>{{employee.EmployeeMaritalStatus}}</td>\n          <td>{{employee.EmployeeNationality}}</td>\n          <!-- <td>{{employee.EmployeeHouse}}</td>\n          <td>{{employee.EmployeeStreet}}</td>\n          <td>{{employee.EmployeeCity}}</td>\n          <td>{{employee.EmployeeState}}</td>\n\n          <td>{{employee.EmployeePIN}}</td> -->\n          <td>{{employee.EmployeePhoneNumber}}</td>\n          <td>{{employee.EmployeeMobileNumber}}</td>\n          <td>{{employee.EmployeeImage}}</td>\n          <td>{{employee.EmployeeEmail}}</td>\n          <td>{{employee.EmployeeDateOfJoin}}</td>\n          <td>{{employee.EmployeeDateOfConfirm}}</td>\n          <td>{{employee.EmployeeDepartment}}</td>\n          <!-- <td>{{employee.EmployeeDesignation}}</td>\n          <td>{{employee.EmployeeBasicSalary}}</td>\n          <td>{{employee.EmployeeSalaryPerDay}}</td> -->\n          \n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editemployee(employee.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteemployee(employee.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab  (click)=\"addEmployee()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <!-- {{searchText}} -->\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <!-- <th>Employee Id</th>\n          <th>Employee First Name</th>\n          <th>Employee Last Name</th> -->\n          <th>Employee Full Name</th>\n          <!-- <th>Employee Father Name</th> -->\n          <th>Employee Date Of Birth</th>\n          <th>Employee Sex</th>\n          <th>Employee Religion</th>\n          <th>Employee Marital Status</th>\n          <th>Employee Nationality</th>\n          <!-- <th>Employee House</th>\n          <th>Employee Street</th>\n          <th>Employee City</th>\n          <th>Employee State</th>\n          <th>Employee PIN</th> -->\n          <th>Employee Phone Number</th>\n          <th>Employee Mobile Number</th>\n          <th>Employee Image</th>\n          <th>Employee Email</th>\n          <th>Employee Date Of Join</th>\n          <th>Employee Date Of Confirm</th>\n          <th>Employee Department</th>\n          <!-- <th>Employee Designation</th>\n          <th>Employee Basic Salary</th>\n          <th>Employee Salary PerDay</th> -->\n          <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let employee of employeeFullList \">\n          <!-- <td>{{employee.EmployeeId}}</td>\n          <td>{{employee.EmployeeFirstName}}</td>\n          <td>{{employee.EmployeeLastName}}</td> -->\n          <td>{{employee.EmployeeFullName}}</td>\n          <!-- <td>{{employee.EmployeeFatherName}}</td> -->\n          <td>{{employee.EmployeeDateOfBirth}}</td>\n          <td>{{employee.EmployeeSex}}</td>\n\n          <td>{{employee.EmployeeReligion}}</td>\n          <td>{{employee.EmployeeMaritalStatus}}</td>\n          <td>{{employee.EmployeeNationality}}</td>\n          <!-- <td>{{employee.EmployeeHouse}}</td>\n          <td>{{employee.EmployeeStreet}}</td>\n          <td>{{employee.EmployeeCity}}</td>\n          <td>{{employee.EmployeeState}}</td>\n\n          <td>{{employee.EmployeePIN}}</td> -->\n          <td>{{employee.EmployeePhoneNumber}}</td>\n          <td>{{employee.EmployeeMobileNumber}}</td>\n          <td>{{employee.EmployeeImage}}</td>\n          <td>{{employee.EmployeeEmail}}</td>\n          <td>{{employee.EmployeeDateOfJoin}}</td>\n          <td>{{employee.EmployeeDateOfConfirm}}</td>\n          <td>{{employee.EmployeeDepartment}}</td>\n          <!-- <td>{{employee.EmployeeDesignation}}</td>\n          <td>{{employee.EmployeeBasicSalary}}</td>\n          <td>{{employee.EmployeeSalaryPerDay}}</td> -->\n          \n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editEmployee(employee.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteEmployee(employee.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee/employee.component.html": 
@@ -61,7 +61,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>employee works!</p>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee First Name\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Last Name \" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Full Name\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Father Name\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Birth\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Sex\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Religion\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Marital Status\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Nationality\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee House\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Street\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee City\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee State\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee PIN\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Phone Number\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Mobile Number\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Image\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Email\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Join\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Confirm\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Department\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Designation\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee BasicSalary\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Salary Per Day\" >\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.html": 
@@ -105,7 +105,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Leave Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div> -->\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Month\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"From Date\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"To Date\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave Period\" >\n        </mat-form-field>\n      </div>\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button (click)=\"onNoClick()\" tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Leave Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div> -->\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Month\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"From Date\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"To Date\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave Period\" >\n        </mat-form-field>\n      </div>\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/loan/loan-list/loan-list.component.html": 
@@ -127,7 +127,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Loan Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Type Of Loan\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Date Of Application\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Proposed Amount\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Inst Recovery\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date Of Recovery\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date Of Recovery\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Rate\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Amount\" >\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button (click)=\"onNoClick()\" tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Loan Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Type Of Loan\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Date Of Application\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Proposed Amount\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Inst Recovery\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date Of Recovery\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date Of Recovery\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Rate\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Amount\" >\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/navbar/navbar.component.html": 
@@ -138,7 +138,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\" width=\"105%\">\n    <div class=\"logout\">\n        <mat-icon *ngIf=\"this.authService.isLoggedIn()\"  routerLink=\"/dashboard\" routerLinkActive=\"active\">apps</mat-icon>\n    </div>\n\n    <div> \n        HRM\n    </div>\n   \n    <div class=\"logout\">\n        <span *ngIf=\"!this.authService.isLoggedIn()\" routerLink=\"/login\">\n            Login\n            <mat-icon >account_box</mat-icon>\n        </span>\n    \n        <span *ngIf=\"this.authService.isLoggedIn()\" (click)=\"logOut()\">\n            Logout\n            <mat-icon> account_circle</mat-icon>\n        </span>\n    \n    </div>\n </mat-toolbar>\n\n\n <!-- <img  *ngIf=\"!this.authService.isLoggedIn()\" src=\"/assets/image/blur-background.jpg\" width=\"105%\"> -->\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar color =\"warn\" class=\"navbar\" width=\"105%\">\n    <div class=\"logout\">\n        <mat-icon *ngIf=\"this.authService.isLoggedIn()\"  routerLink=\"/dashboard\" routerLinkActive=\"active\">dashboard</mat-icon>\n    </div>\n\n    <div> \n        HRM\n    </div>\n   \n    <div class=\"logout\">\n        <span *ngIf=\"!this.authService.isLoggedIn()\" routerLink=\"/login\">\n            Login\n            <mat-icon >account_box</mat-icon>\n        </span>\n    \n        <span *ngIf=\"this.authService.isLoggedIn()\" (click)=\"logOut()\">\n            Logout\n            <mat-icon> account_circle</mat-icon>\n        </span>\n    \n    </div>\n </mat-toolbar>\n\n\n <!-- <img  *ngIf=\"!this.authService.isLoggedIn()\" src=\"/assets/image/blur-background.jpg\" width=\"105%\"> -->\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll-list/payroll-list.component.html": 
@@ -149,7 +149,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab>\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>PayrollId</th>\n          <th>EmployeeId</th>\n          <th>Month</th>\n          <th>Year</th>\n          <th>TotalPresent</th>\n          <th>TotalAbsent</th>\n          <th>LeaveDays</th>\n\n          <th>Deduction</th>\n          <th>Leave</th>\n          <th>FestivalAdvance</th>\n          <th>HousingLoan</th>\n          <th>VehicleLoan</th>\n          <!-- <th>OtherLoan</th>\n          <th>LossOfPay</th>\n          <th>TDS</th>\n          <th>ProfessionalFees</th>\n          <th>OtherDeductions</th>\n          <th>TotalEarnings</th>\n          <th>OtherPay</th>\n          <th>BasicSalary</th>\n          <th>SalaryPerDay</th>\n          <th>Pay</th>\n          <th>Earnings</th>\n          <th>Deductions</th>\n          <th>NetPay</th> -->\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let payroll of payrollFullList \">\n          <td>{{payroll.PayrollId}}</td>\n          <td>{{payroll.EmployeeId}}</td>\n          <td>{{payroll.Month}}</td>\n          <td>{{payroll.Year}}</td>\n          <td>{{payroll.TotalPresent}}</td>\n          <td>{{payroll.TotalAbsent}}</td>\n          <td>{{payroll.LeaveDays}}</td>\n\n          <td>{{payroll.Deduction}}</td>\n          <td>{{payroll.Leave}}</td>\n          <td>{{payroll.FestivalAdvance}}</td>\n          <td>{{payroll.HousingLoan}}</td>\n          <td>{{payroll.VehicleLoan}}</td>\n          <!-- <td>{{payroll.OtherLoan}}</td>\n          <td>{{payroll.LossOfPay}}</td>\n\n          <td>{{payroll.TDS}}</td>\n          <td>{{payroll.ProfessionalFees}}</td>\n          <td>{{payroll.OtherDeductions}}</td>\n          <td>{{payroll.TotalEarnings}}</td>\n          <td>{{payroll.OtherPay}}</td>\n          <td>{{payroll.BasicSalary}}</td>\n          <td>{{payroll.SalaryPerDay}}</td>\n\n          <td>{{payroll.Pay}}</td>\n          <td>{{payroll.Earnings}}</td>\n          <td>{{payroll.Deductions}}</td>\n          <td>{{payroll.NetPay}}</td> -->\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editPayroll(payroll.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deletePayroll(payroll.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addPayroll()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>PayrollId</th>\n          <th>EmployeeId</th>\n          <th>Month</th>\n          <th>Year</th>\n          <th>TotalPresent</th>\n          <th>TotalAbsent</th>\n          <th>LeaveDays</th>\n\n          <th>Deduction</th>\n          <th>Leave</th>\n          <th>FestivalAdvance</th>\n          <th>HousingLoan</th>\n          <th>VehicleLoan</th>\n          <!-- <th>OtherLoan</th>\n          <th>LossOfPay</th>\n          <th>TDS</th>\n          <th>ProfessionalFees</th>\n          <th>OtherDeductions</th>\n          <th>TotalEarnings</th>\n          <th>OtherPay</th>\n          <th>BasicSalary</th>\n          <th>SalaryPerDay</th>\n          <th>Pay</th>\n          <th>Earnings</th>\n          <th>Deductions</th>\n          <th>NetPay</th> -->\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let payroll of payrollFullList \">\n          <td>{{payroll.PayrollId}}</td>\n          <td>{{payroll.EmployeeId}}</td>\n          <td>{{payroll.Month}}</td>\n          <td>{{payroll.Year}}</td>\n          <td>{{payroll.TotalPresent}}</td>\n          <td>{{payroll.TotalAbsent}}</td>\n          <td>{{payroll.LeaveDays}}</td>\n\n          <td>{{payroll.Deduction}}</td>\n          <td>{{payroll.Leave}}</td>\n          <td>{{payroll.FestivalAdvance}}</td>\n          <td>{{payroll.HousingLoan}}</td>\n          <td>{{payroll.VehicleLoan}}</td>\n          <!-- <td>{{payroll.OtherLoan}}</td>\n          <td>{{payroll.LossOfPay}}</td>\n\n          <td>{{payroll.TDS}}</td>\n          <td>{{payroll.ProfessionalFees}}</td>\n          <td>{{payroll.OtherDeductions}}</td>\n          <td>{{payroll.TotalEarnings}}</td>\n          <td>{{payroll.OtherPay}}</td>\n          <td>{{payroll.BasicSalary}}</td>\n          <td>{{payroll.SalaryPerDay}}</td>\n\n          <td>{{payroll.Pay}}</td>\n          <td>{{payroll.Earnings}}</td>\n          <td>{{payroll.Deductions}}</td>\n          <td>{{payroll.NetPay}}</td> -->\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editPayroll(payroll.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deletePayroll(payroll.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll.component.html": 
@@ -160,7 +160,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>payroll works!</p>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Payroll</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\" Payroll Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Month\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Year\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Present\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Absent\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave Days\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Deduction\" >\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Festival Advance\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Housing Loan\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Vehicle Loan\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Loan\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Loss Of Pay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"TDS\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Professional Fees\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Deductions\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Earnings\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Pay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Basic Salary\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Salary Per Day\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Pay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Earnings\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Deductions\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Net Pay\" >\n        </mat-form-field>\n      </div>\n\n\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/training/training-list/training-list.component.html": 
@@ -171,7 +171,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>training-list works!</p>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addTraining()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Training Id</th>\n          <th>Training Provider</th>\n          <th>Trainee</th>\n          <th>Training Location</th>\n          <th>Start Date</th>\n          <th>End Date</th>\n          <th>Status</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let training of trainingFullList \">\n          <td>{{training.TrainingId}}</td>\n          <td>{{training.TrainingProvider}}</td>\n          <td>{{training.Trainee}}</td>\n          <td>{{training.TrainingLocation}}</td>\n          <td>{{training.StartDate}}</td>\n          <td>{{training.EndDate}}</td>\n          <td>{{training.Status}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editTraining(training.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteTraining(training.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/training/training.component.html": 
@@ -182,7 +182,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>training works!</p>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Payroll</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Training Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Training Provider\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Trainee\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Training Location\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Status\" >\n        </mat-form-field>\n      </div>\n\n     <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-list/user-list.component.html": 
@@ -215,7 +215,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"User Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"User Name\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Password\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"User Gender\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Role\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Token\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Attendance\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"IpAddress\" >\n        </mat-form-field>\n      </div>\n  \n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button (click)=\"onNoClick()\" tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>");
+            /* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"User Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"User Name\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Password\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"User Gender\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Role\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Token\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Attendance\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"IpAddress\" >\n        </mat-form-field>\n      </div>\n  \n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -854,8 +854,10 @@
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _services_employee_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/employee.service */ "./src/app/employee/services/employee.service.ts");
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _employee_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../employee.component */ "./src/app/employee/employee.component.ts");
             var EmployeeListComponent = /** @class */ (function () {
-                function EmployeeListComponent(_employeeService) {
+                function EmployeeListComponent(dialog, _employeeService) {
+                    this.dialog = dialog;
                     this._employeeService = _employeeService;
                     this.displayedColumns = ['EmployeeId', 'EmployeeFirstName', 'EmployeeLastName', 'EmployeeFullName', 'EmployeeFatherName', 'EmployeeDateOfBirth', 'EmployeeSex', 'EmployeeReligion', 'EmployeeMaritalStatus', 'EmployeeNationality', 'EmployeeHouse', 'EmployeeStreet', 'EmployeeCity', 'EmployeeState', 'EmployeePIN', 'EmployeePhoneNumber', 'EmployeeMobileNumber', 'EmployeeImage', 'EmployeeEmail', 'EmployeeDateOfJoin', 'EmployeeDateOfConfirm', 'EmployeeDepartment', 'EmployeeDesignation', 'EmployeeBasicSalary', 'EmployeeSalaryPerDay'];
                     this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTableDataSource"](this._employeeService._employeeDetail);
@@ -880,9 +882,33 @@
                         this.ngOnInit();
                     }
                 };
+                EmployeeListComponent.prototype.addEmployee = function () {
+                    var dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
+                    this.isPopupOpened = true;
+                    var dialogRef = this.dialog.open(_employee_component__WEBPACK_IMPORTED_MODULE_4__["EmployeeComponent"], {
+                        data: {}
+                    });
+                    dialogRef.afterClosed().subscribe(function (result) {
+                    });
+                    //dialogConfig.width = '60px';
+                };
+                EmployeeListComponent.prototype.editEmployee = function (id) {
+                    this.isPopupOpened = true;
+                    var tax = this._employeeService.getEmployee().find(function (c) { return c.EmployeeId === id; });
+                    var dialogRef = this.dialog.open(_employee_component__WEBPACK_IMPORTED_MODULE_4__["EmployeeComponent"], {
+                        data: {}
+                    });
+                    dialogRef.afterClosed().subscribe(function (result) {
+                        data: tax;
+                    });
+                };
+                EmployeeListComponent.prototype.deleteEmployee = function (id) {
+                    this._employeeService.deleteEmployee(id);
+                };
                 return EmployeeListComponent;
             }());
             EmployeeListComponent.ctorParameters = function () { return [
+                { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_employee_service__WEBPACK_IMPORTED_MODULE_2__["EmployeeService"] }
             ]; };
             EmployeeListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -916,19 +942,38 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeComponent", function () { return EmployeeComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _services_employee_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/employee.service */ "./src/app/employee/services/employee.service.ts");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var EmployeeComponent = /** @class */ (function () {
-                function EmployeeComponent() {
+                function EmployeeComponent(dialog, _empService, data) {
+                    this.dialog = dialog;
+                    this._empService = _empService;
+                    this.data = data;
+                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required
+                        // Validators.email,
+                    ]);
                 }
                 EmployeeComponent.prototype.ngOnInit = function () {
                 };
+                EmployeeComponent.prototype.confirmAdd = function () {
+                    this._empService.addEmployee(this.data);
+                };
                 return EmployeeComponent;
             }());
+            EmployeeComponent.ctorParameters = function () { return [
+                { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
+                { type: _services_employee_service__WEBPACK_IMPORTED_MODULE_3__["EmployeeService"] },
+                { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] }
+            ]; };
             EmployeeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-employee',
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employee.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee/employee.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employee.component.css */ "./src/app/employee/employee.component.css")).default]
-                })
+                }),
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
             ], EmployeeComponent);
             /***/ 
         }),
@@ -1593,7 +1638,7 @@
                     });
                     dialogRef.afterClosed().subscribe(function (result) {
                     });
-                    dialogConfig.width = '60px';
+                    //dialogConfig.width = '60px';
                 };
                 PayrollListComponent.prototype.editPayroll = function (id) {
                     this.isPopupOpened = true;
@@ -1631,7 +1676,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BheXJvbGwvcGF5cm9sbC5jb21wb25lbnQuY3NzIn0= */");
+            /* harmony default export */ __webpack_exports__["default"] = (".container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n  \r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n  \r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGF5cm9sbC9wYXlyb2xsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxlQUFlO0lBQ2YsWUFBWTtFQUNkIiwiZmlsZSI6InNyYy9hcHAvcGF5cm9sbC9wYXlyb2xsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgbWluLXdpZHRoOiA0NTBweDtcclxuICB9XHJcbiAgXHJcbiAgLmNvbnRhaW5lciA+ICoge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5mb3JtIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBwYWRkaW5nLXRvcDogNnB4O1xyXG4gIH1cclxuICBcclxuICAubWF0LWZvcm0tZmllbGQge1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgZmxleC1ncm93OiAxO1xyXG4gIH0iXX0= */");
             /***/ 
         }),
         /***/ "./src/app/payroll/payroll.component.ts": 
@@ -1645,19 +1690,38 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PayrollComponent", function () { return PayrollComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _services_payroll_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/payroll.service */ "./src/app/payroll/services/payroll.service.ts");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var PayrollComponent = /** @class */ (function () {
-                function PayrollComponent() {
+                function PayrollComponent(dialog, _payService, data) {
+                    this.dialog = dialog;
+                    this._payService = _payService;
+                    this.data = data;
+                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required
+                        // Validators.email,
+                    ]);
                 }
                 PayrollComponent.prototype.ngOnInit = function () {
                 };
+                PayrollComponent.prototype.confirmAdd = function () {
+                    this._payService.addPayroll(this.data);
+                };
                 return PayrollComponent;
             }());
+            PayrollComponent.ctorParameters = function () { return [
+                { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
+                { type: _services_payroll_service__WEBPACK_IMPORTED_MODULE_3__["PayrollService"] },
+                { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] }
+            ]; };
             PayrollComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-payroll',
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./payroll.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./payroll.component.css */ "./src/app/payroll/payroll.component.css")).default]
-                })
+                }),
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
             ], PayrollComponent);
             /***/ 
         }),
@@ -1715,6 +1779,61 @@
             ], PayrollService);
             /***/ 
         }),
+        /***/ "./src/app/training/services/training.service.ts": 
+        /*!*******************************************************!*\
+          !*** ./src/app/training/services/training.service.ts ***!
+          \*******************************************************/
+        /*! exports provided: TrainingService */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrainingService", function () { return TrainingService; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+            var TrainingService = /** @class */ (function () {
+                function TrainingService(_httpClientService) {
+                    this._httpClientService = _httpClientService;
+                    this._trainingDetails = [];
+                    this._trainingDetail = [
+                        { TrainingId: 1, TrainingProvider: 'Rahi', Trainee: 'SS', TrainingLocation: 'Dhaka', StartDate: '13/11/2019', EndDate: '13/11/2019', Status: 'Done' },
+                        { TrainingId: 2, TrainingProvider: 'Ovi', Trainee: 'RR', TrainingLocation: 'Mirpur', StartDate: '4/11/2019', EndDate: '13/11/2019', Status: 'Not Done' },
+                        { TrainingId: 3, TrainingProvider: 'Shaon', Trainee: 'NN', TrainingLocation: 'Delhi', StartDate: '15/11/2019', EndDate: '13/11/2019', Status: 'Done' },
+                        { TrainingId: 4, TrainingProvider: 'Ashik', Trainee: 'KK', TrainingLocation: 'Goran', StartDate: '17/11/2019', EndDate: '13/11/2019', Status: 'Pending' },
+                        { TrainingId: 5, TrainingProvider: 'Ala Police', Trainee: 'LL', TrainingLocation: 'Kerala', StartDate: '19/11/2019', EndDate: '13/11/2019', Status: 'Ongoing' },
+                    ];
+                }
+                TrainingService.prototype.getDialogData = function () {
+                    return this.dialogData;
+                };
+                TrainingService.prototype.addTraining = function (addTrain) {
+                    addTrain.TrainingId = this._trainingDetail.length + 1;
+                    this._trainingDetail.push(addTrain);
+                };
+                TrainingService.prototype.editTraining = function (editTraining) {
+                    var index = this._trainingDetail.findIndex(function (c) { return c.TrainingId === editTraining.TrainingId; });
+                    this._trainingDetail[index] = editTraining;
+                    this._trainingDetail.push(editTraining);
+                };
+                TrainingService.prototype.deleteTraining = function (id) {
+                    var delTraining = this._trainingDetail.findIndex(function (c) { return c.TrainingId === id; });
+                    this._trainingDetail.splice(delTraining, 1);
+                };
+                TrainingService.prototype.getTraining = function () {
+                    return this._trainingDetail;
+                };
+                return TrainingService;
+            }());
+            TrainingService.ctorParameters = function () { return [
+                { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+            ]; };
+            TrainingService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+                    providedIn: 'root'
+                })
+            ], TrainingService);
+            /***/ 
+        }),
         /***/ "./src/app/training/training-list/training-list.component.css": 
         /*!********************************************************************!*\
           !*** ./src/app/training/training-list/training-list.component.css ***!
@@ -1737,13 +1856,60 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrainingListComponent", function () { return TrainingListComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _services_training_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/training.service */ "./src/app/training/services/training.service.ts");
+            /* harmony import */ var _training_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../training.component */ "./src/app/training/training.component.ts");
             var TrainingListComponent = /** @class */ (function () {
-                function TrainingListComponent() {
+                function TrainingListComponent(dialog, _trainService) {
+                    this.dialog = dialog;
+                    this._trainService = _trainService;
+                    this.trainingList = [];
+                    this.trainingFullList = [];
                 }
                 TrainingListComponent.prototype.ngOnInit = function () {
+                    this.trainingList = this._trainService.getTraining();
+                    this.trainingFullList = this.trainingList;
+                };
+                TrainingListComponent.prototype.search = function () {
+                    var _this = this;
+                    if (this.searchText != "") {
+                        this.trainingFullList = this.trainingFullList.filter(function (res) {
+                            return res.TrainingProvider.toLocaleLowerCase().match(_this.searchText.toLocaleLowerCase());
+                        });
+                    }
+                    else if (this.searchText == "") {
+                        this.ngOnInit();
+                    }
+                };
+                TrainingListComponent.prototype.addTraining = function () {
+                    var dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogConfig"]();
+                    this.isPopupOpened = true;
+                    var dialogRef = this.dialog.open(_training_component__WEBPACK_IMPORTED_MODULE_4__["TrainingComponent"], {
+                        data: {}
+                    });
+                    dialogRef.afterClosed().subscribe(function (result) {
+                    });
+                    //dialogConfig.width = '60px';
+                };
+                TrainingListComponent.prototype.editTraining = function (id) {
+                    this.isPopupOpened = true;
+                    var tax = this._trainService.getTraining().find(function (c) { return c.TrainingId === id; });
+                    var dialogRef = this.dialog.open(_training_component__WEBPACK_IMPORTED_MODULE_4__["TrainingComponent"], {
+                        data: {}
+                    });
+                    dialogRef.afterClosed().subscribe(function (result) {
+                        data: tax;
+                    });
+                };
+                TrainingListComponent.prototype.deleteTraining = function (id) {
+                    this._trainService.deleteTraining(id);
                 };
                 return TrainingListComponent;
             }());
+            TrainingListComponent.ctorParameters = function () { return [
+                { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
+                { type: _services_training_service__WEBPACK_IMPORTED_MODULE_3__["TrainingService"] }
+            ]; };
             TrainingListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-training-list',
@@ -1761,7 +1927,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RyYWluaW5nL3RyYWluaW5nLmNvbXBvbmVudC5jc3MifQ== */");
+            /* harmony default export */ __webpack_exports__["default"] = (".container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n  \r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n  \r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdHJhaW5pbmcvdHJhaW5pbmcuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsZ0JBQWdCO0VBQ2xCOztFQUVBO0lBQ0UsV0FBVztFQUNiOztFQUVBO0lBQ0UsYUFBYTtJQUNiLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLGVBQWU7SUFDZixZQUFZO0VBQ2QiLCJmaWxlIjoic3JjL2FwcC90cmFpbmluZy90cmFpbmluZy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIG1pbi13aWR0aDogNDUwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5jb250YWluZXIgPiAqIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuICBcclxuICAuZm9ybSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgcGFkZGluZy10b3A6IDZweDtcclxuICB9XHJcbiAgXHJcbiAgLm1hdC1mb3JtLWZpZWxkIHtcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgIGZsZXgtZ3JvdzogMTtcclxuICB9Il19 */");
             /***/ 
         }),
         /***/ "./src/app/training/training.component.ts": 
@@ -1775,19 +1941,38 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrainingComponent", function () { return TrainingComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _services_training_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/training.service */ "./src/app/training/services/training.service.ts");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var TrainingComponent = /** @class */ (function () {
-                function TrainingComponent() {
+                function TrainingComponent(dialog, _trainService, data) {
+                    this.dialog = dialog;
+                    this._trainService = _trainService;
+                    this.data = data;
+                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required
+                        // Validators.email,
+                    ]);
                 }
                 TrainingComponent.prototype.ngOnInit = function () {
                 };
+                TrainingComponent.prototype.confirmAdd = function () {
+                    this._trainService.addTraining(this.data);
+                };
                 return TrainingComponent;
             }());
+            TrainingComponent.ctorParameters = function () { return [
+                { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
+                { type: _services_training_service__WEBPACK_IMPORTED_MODULE_3__["TrainingService"] },
+                { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] }
+            ]; };
             TrainingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-training',
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./training.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/training/training.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./training.component.css */ "./src/app/training/training.component.css")).default]
-                })
+                }),
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
             ], TrainingComponent);
             /***/ 
         }),
