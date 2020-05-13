@@ -61,7 +61,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee First Name\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Last Name \" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Full Name\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Father Name\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Birth\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Sex\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Religion\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Marital Status\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Nationality\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee House\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Street\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee City\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee State\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee PIN\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Phone Number\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Mobile Number\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Image\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Email\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Join\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Confirm\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Department\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Designation\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee BasicSalary\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Salary Per Day\" >\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  [formGroup]=\"empForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" formControlName=\"EmployeeId\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee First Name\" formControlName=\"EmployeeFirstName\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Last Name\" formControlName=\"EmployeeLastName\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Full Name\" formControlName=\"EmployeeFullName\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Father Name\" formControlName=\"EmployeeFatherName\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Birth\" formControlName=\"EmployeeDateOfBirth\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Sex\" formControlName=\"EmployeeSex\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Religion\" formControlName=\"EmployeeReligion\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Marital Status\" formControlName=\"EmployeeMaritalStatus\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Nationality\" formControlName=\"EmployeeNationality\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee House\" formControlName=\"EmployeeHouse\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Street\" formControlName=\"EmployeeStreet\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee City\" formControlName=\"EmployeeCity\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee State\" formControlName=\"EmployeeState\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee PIN\" formControlName=\"EmployeePIN\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Phone Number\" formControlName=\"EmployeePhoneNumber\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Mobile Number\" formControlName=\"EmployeeMobileNumber\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Image\" formControlName=\"EmployeeImage\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Email\" formControlName=\"EmployeeEmail\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Join\" formControlName=\"EmployeeDateOfJoin\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Date Of Confirm\" formControlName=\"EmployeeDateOfConfirm\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Department\" formControlName=\"EmployeeDepartment\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Designation\" formControlName=\"EmployeeDesignation\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Basic Salary\" formControlName=\"EmployeeBasicSalary\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Employee Salary Per Day\" formControlName=\"EmployeeSalaryPerDay\">\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button  [disabled]=\"!empForm.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.html": 
@@ -94,7 +94,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click) = \"addLeave()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput  placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Leave Id</th>\n          <th>Employee Id</th>\n          <th>Month</th>\n          <th>From Date</th>\n          <th>To Date</th>\n          <th>No Of Days</th>\n          <th>Leave Period</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let leave of leaveFullList \">\n          <td>{{leave.LeaveId}}</td>\n          <td>{{leave.EmployeeId}}</td>\n          <td>{{leave.Month}}</td>\n          <td>{{leave.FromDate}}</td>\n          <td>{{leave.ToDate}}</td>\n          <td>{{leave.NoOfDays}}</td>\n          <td>{{leave.LeavePeriod}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editLeave(leave.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteLeave(leave.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"addLeave()\">\n    <mat-icon>add</mat-icon>\n  </button>\n  <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field>\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\">\n    <table class=\"table\">\n      <thead>\n      <th>Leave Id</th>\n      <th>Employee Id</th>\n      <th>Month</th>\n      <th>From Date</th>\n      <th>To Date</th>\n      <th>No Of Days</th>\n      <th>Leave Period</th>\n      <th>Edit/Delete</th>\n\n      </thead>\n      <tr *ngFor=\"let leave of leaveFullList \">\n        <td>{{leave.LeaveId}}</td>\n        <td>{{leave.EmployeeId}}</td>\n        <td>{{leave.Month}}</td>\n        <td>{{leave.FromDate}}</td>\n        <td>{{leave.ToDate}}</td>\n        <td>{{leave.NoOfDays}}</td>\n        <td>{{leave.LeavePeriod}}</td>\n        <td>\n          <button mat-icon-button color=\"accent\" (click)=\"editLeave(leave.LeaveId)\">\n            <mat-icon>edit</mat-icon>\n          </button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteLeave(leave.LeaveId)\">\n            <mat-icon>delete_outline</mat-icon>\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n</mat-card-content>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/leave/leave.component.html": 
@@ -105,7 +105,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Leave Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div> -->\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Month\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"From Date\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"To Date\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave Period\" >\n        </mat-form-field>\n      </div>\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n  <h3 mat-dialog-title>Add New Leave</h3>\n\n  <form class=\"mat-dialog-content\" [formGroup]=\"leaveForm\">\n\n    <div class=\"form\">\n      <mat-form-field color=\"accent\">\n        <input matInput type=\"number\" formControlName=\"LeaveId\" class=\"form-control\" placeholder=\"Leave Id\" required>\n      </mat-form-field>\n    </div>\n    <input matInput type=\"number\" formControlName=\"EmployeeId\"  hidden>\n    <div class=\"form\">\n      <mat-form-field color=\"accent\">\n        <input matInput formControlName=\"Month\" placeholder=\"Month\">\n      </mat-form-field>\n    </div>\n    <div class=\"form\">\n      <mat-form-field color=\"accent\">\n        <input matInput formControlName=\"FromDate\" placeholder=\"From Date\">\n      </mat-form-field>\n    </div>\n\n    <div class=\"form\">\n      <mat-form-field color=\"accent\">\n        <input matInput formControlName=\"ToDate\" placeholder=\"To Date\">\n      </mat-form-field>\n    </div>\n\n    <div class=\"form\">\n      <mat-form-field color=\"accent\">\n        <input matInput formControlName=\"NoOfDays\" placeholder=\"No Of Days\">\n      </mat-form-field>\n    </div>\n\n    <div class=\"form\">\n      <mat-form-field color=\"accent\">\n        <input matInput formControlName=\"LeavePeriod\" placeholder=\"Leave Period\">\n      </mat-form-field>\n    </div>\n    <div mat-dialog-actions>\n      <button mat-button  (click)=\"submitForm()\"  [disabled]=\"!leaveForm.valid\" [mat-dialog-close]=\"1\">Save</button>\n      <button mat-button tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n    </div>\n  </form>\n</div>\n\n\n\n\n<!--\n<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n\n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Leave Id\"  required >\n        </mat-form-field>\n      </div>\n\n      &lt;!&ndash;Textarea for demo purposes&ndash;&gt;\n      &lt;!&ndash; <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div> &ndash;&gt;\n\n      &lt;!&ndash;Contains mat-hint for characters count and has maxLengt set&ndash;&gt;\n      &lt;!&ndash; <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> &ndash;&gt;\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Month\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"From Date\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"To Date\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave Period\" >\n        </mat-form-field>\n      </div>\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n-->\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/loan/loan-list/loan-list.component.html": 
@@ -116,7 +116,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addLoan()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Loan Id</th>\n          <th>Type Of Loan</th>\n          <th>Date Of Application</th>\n          <th>Proposed Amount</th>\n          <th>No Of Inst Recovery</th>\n          <th>Start Date Of Recovery</th>\n          <th>End Date Of Recovery</th>\n          <th>No Of Days</th>\n          <th>Interest Rate</th>\n          <th>Interest Amount</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let loan of loanFullList \">\n          <td>{{loan.LoanId}}</td>\n          <td>{{loan.TypeOfLoan}}</td>\n          <td>{{loan.DateOfApplication}}</td>\n          <td>{{loan.ProposedAmount}}</td>\n          <td>{{loan.NoOfInstRecovery}}</td>\n          <td>{{loan.StartDateOfRecovery}}</td>\n          <td>{{loan.EndDateOfRecovery}}</td>\n          <td>{{loan.NoOfDays}}</td>\n          <td>{{loan.InterestRate}}</td>\n          <td>{{loan.InterestAmount}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editLoan(loan.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteLoan(loan.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addLoan()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Loan Id</th>\n          <th>Type Of Loan</th>\n          <th>Date Of Application</th>\n          <th>Proposed Amount</th>\n          <th>No Of Inst Recovery</th>\n          <th>Start Date Of Recovery</th>\n          <th>End Date Of Recovery</th>\n          <th>No Of Days</th>\n          <th>Interest Rate</th>\n          <th>Interest Amount</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let loan of loanFullList \">\n          <td>{{loan.LoanId}}</td>\n          <td>{{loan.TypeOfLoan}}</td>\n          <td>{{loan.DateOfApplication}}</td>\n          <td>{{loan.ProposedAmount}}</td>\n          <td>{{loan.NoOfInstRecovery}}</td>\n          <td>{{loan.StartDateOfRecovery}}</td>\n          <td>{{loan.EndDateOfRecovery}}</td>\n          <td>{{loan.NoOfDays}}</td>\n          <td>{{loan.InterestRate}}</td>\n          <td>{{loan.InterestAmount}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editLoan(loan.Id)\">\n                <mat-icon>edit</mat-icon>\n              </button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteLoan(loan.Id)\">\n                <mat-icon>delete_outline</mat-icon>\n              </button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/loan/loan.component.html": 
@@ -127,7 +127,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Loan Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Type Of Loan\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Date Of Application\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Proposed Amount\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Inst Recovery\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date Of Recovery\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date Of Recovery\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" >\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Rate\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Amount\" >\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Loan</h3>\n  \n    <form class=\"mat-dialog-content\"  [formGroup]=\"loanForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input type=\"number\" class=\"form-control\" formControlName=\"LoanId\" placeholder=\"Loan Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" formControlName=\"TypeOfLoan\" placeholder=\"Type Of Loan\"  required >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"DateOfApplication\" placeholder=\"Date Of Application\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Proposed Amount\" formControlName=\"ProposedAmount\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Inst Recovery\" formControlName=\"NoOfInstRecovery\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date Of Recovery\" formControlName=\"StartDateOfRecovery\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date Of Recovery\" formControlName=\"EndDateOfRecovery\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"No Of Days\" formControlName=\"NoOfDays\">\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Rate\" formControlName=\"InterestRate\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Interest Amount\" formControlName=\"InterestAmount\">\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button  [disabled]=\"!loanForm.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/navbar/navbar.component.html": 
@@ -160,7 +160,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Payroll</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\" Payroll Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Month\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Year\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Present\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Absent\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave Days\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Deduction\" >\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Festival Advance\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Housing Loan\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Vehicle Loan\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Loan\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Loss Of Pay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"TDS\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Professional Fees\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Deductions\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Earnings\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Pay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Basic Salary\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Salary Per Day\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Pay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Earnings\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Deductions\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Net Pay\" >\n        </mat-form-field>\n      </div>\n\n\n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Payroll</h3>\n  \n    <form class=\"mat-dialog-content\"  [formGroup]=\"payForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" formControlName=\"PayrollId\" placeholder=\"Payroll Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" formControlName=\"EmployeeId\" placeholder=\"Employee Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"Month\" placeholder=\"Month\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Year\" formControlName=\"Year\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Present\" formControlName=\"TotalPresent\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Absent\" formControlName=\"TotalAbsent\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave Days\" formControlName=\"LeaveDays\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Deduction\" formControlName=\"Deduction\" >\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Leave\" formControlName=\"Leave\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Festival Advance\" formControlName=\"FestivalAdvance\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Housing Loan\" formControlName=\"HousingLoan\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Vehicle Loan\" formControlName=\"VehicleLoan\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Loan\" formControlName=\"OtherLoan\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Loss Of Pay\" formControlName=\"LossOfPay\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"TDS\" formControlName=\"TDS\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Professional Fees\" formControlName=\"ProfessionalFees\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Deductions\" formControlName=\"OtherDeductions\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Total Earnings\" formControlName=\"TotalEarnings\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Other Pay\" formControlName=\"OtherPay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Basic Salary\" formControlName=\"BasicSalary\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Salary Per Day\" formControlName=\"SalaryPerDay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Pay\" formControlName=\"Pay\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Earnings\" formControlName=\"Earnings\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Deductions\" formControlName=\"Deductions\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Net Pay\" formControlName=\"NetPay\" >\n        </mat-form-field>\n      </div>\n\n\n      <div mat-dialog-actions>\n        <button mat-button  [disabled]=\"!payForm.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/training/training-list/training-list.component.html": 
@@ -182,7 +182,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Payroll</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"Training Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"Training Provider\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Trainee\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Training Location\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Status\" >\n        </mat-form-field>\n      </div>\n\n     <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Trainee</h3>\n  \n    <form class=\"mat-dialog-content\"  [formGroup]=\"trainForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" formControlName=\"TrainingId\" placeholder=\"Training Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" formControlName=\"TrainingProvider\" placeholder=\"Training Provider\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Trainee\" formControlName=\"Trainee\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Training Location\" formControlName=\"TrainingLocation\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date\" formControlName=\"StartDate\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date\" formControlName=\"EndDate\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Status\" formControlName=\"Status\" >\n        </mat-form-field>\n      </div>\n\n     <div mat-dialog-actions>\n        <button mat-button [disabled]=\"!trainForm.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-list/user-list.component.html": 
@@ -215,7 +215,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\"  #formControl=\"ngForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" placeholder=\"User Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" placeholder=\"User Name\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Contains mat-hint for characters count and has maxLengt set-->\n      <!-- <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #inputstate class=\"form-control\" placeholder=\"State\"   maxlength=\"10\" required >\n          <mat-hint align=\"end\"></mat-hint>\n        </mat-form-field>\n      </div> -->\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Password\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"User Gender\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Role\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Token\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Attendance\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"IpAddress\" >\n        </mat-form-field>\n      </div>\n  \n      <div mat-dialog-actions>\n        <button mat-button [type]=\"submit\" [disabled]=\"!formControl.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\">Cancel</button>\n      </div>\n    </form>\n  </div>");
+            /* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\">\n    <h3 mat-dialog-title>Add New User</h3>\n  \n    <form class=\"mat-dialog-content\" [formGroup]=\"userForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" formControlName=\"UserId\" placeholder=\"User Id\"  required >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" formControlName=\"UserName\" placeholder=\"User Name\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Password\" formControlName=\"Password\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"User Gender\" formControlName=\"UserGender\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Role\" formControlName=\"Role\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Token\" formControlName=\"Token\">\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Attendance\" formControlName=\"Attendance\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"IpAddress\" formControlName=\"IpAddress\">\n        </mat-form-field>\n      </div>\n  \n      <div mat-dialog-actions>\n        <button mat-button [disabled]=\"!userForm.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -643,6 +643,7 @@
                         // ReactiveFormsModule
                     ],
                     imports: [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_21__["ReactiveFormsModule"],
                         _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
                         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
                         _angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"],
@@ -946,23 +947,52 @@
             /* harmony import */ var _services_employee_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/employee.service */ "./src/app/employee/services/employee.service.ts");
             /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var EmployeeComponent = /** @class */ (function () {
-                function EmployeeComponent(dialog, _empService, data) {
+                function EmployeeComponent(fb, dialog, _empService, data) {
+                    this.fb = fb;
                     this.dialog = dialog;
                     this._empService = _empService;
                     this.data = data;
-                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', [
-                        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required
-                        // Validators.email,
-                    ]);
                 }
                 EmployeeComponent.prototype.ngOnInit = function () {
+                    this.reactiveForm();
+                };
+                EmployeeComponent.prototype.reactiveForm = function () {
+                    this.empForm = this.fb.group({
+                        EmployeeId: [this.data.EmployeeId, ''],
+                        EmployeeFirstName: [this.data.EmployeeFirstName, ''],
+                        EmployeeLastName: [this.data.EmployeeLastName, ''],
+                        EmployeeFullName: [this.data.EmployeeFullName, ''],
+                        EmployeeFatherName: [this.data.EmployeeFatherName, ''],
+                        EmployeeDateOfBirth: [this.data.EmployeeDateOfBirth, ''],
+                        EmployeeSex: [this.data.EmployeeSex, ''],
+                        EmployeeReligion: [this.data.EmployeeReligion, ''],
+                        EmployeeMaritalStatus: [this.data.EmployeeMaritalStatus, ''],
+                        EmployeeNationality: [this.data.EmployeeNationality, ''],
+                        EmployeeHouse: [this.data.EmployeeHouse, ''],
+                        EmployeeStreet: [this.data.EmployeeStreet, ''],
+                        EmployeeCity: [this.data.EmployeeCity, ''],
+                        EmployeeState: [this.data.EmployeeState, ''],
+                        EmployeePIN: [this.data.EmployeePIN, ''],
+                        EmployeePhoneNumber: [this.data.EmployeePhoneNumber, ''],
+                        EmployeeMobileNumber: [this.data.EmployeeMobileNumber, ''],
+                        EmployeeImage: [this.data.EmployeeImage, ''],
+                        EmployeeEmail: [this.data.EmployeeEmail, ''],
+                        EmployeeDateOfJoin: [this.data.EmployeeDateOfJoin, ''],
+                        EmployeeDateOfConfirm: [this.data.EmployeeDateOfConfirm, ''],
+                        EmployeeDepartment: [this.data.EmployeeDepartment, ''],
+                        EmployeeDesignation: [this.data.EmployeeDesignation, ''],
+                        EmployeeBasicSalary: [this.data.EmployeeBasicSalary, ''],
+                        EmployeeSalaryPerDay: [this.data.EmployeeSalaryPerDay, ''],
+                    });
                 };
                 EmployeeComponent.prototype.confirmAdd = function () {
-                    this._empService.addEmployee(this.data);
+                    this.data = this.empForm.value;
+                    this._empService.addOrUpdateEmployee(this.data);
                 };
                 return EmployeeComponent;
             }());
             EmployeeComponent.ctorParameters = function () { return [
+                { type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"] },
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
                 { type: _services_employee_service__WEBPACK_IMPORTED_MODULE_3__["EmployeeService"] },
                 { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] }
@@ -973,7 +1003,7 @@
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employee.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee/employee.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employee.component.css */ "./src/app/employee/employee.component.css")).default]
                 }),
-                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
             ], EmployeeComponent);
             /***/ 
         }),
@@ -1012,11 +1042,27 @@
                     this._employeeDetail.push(editEmployee);
                 };
                 EmployeeService.prototype.deleteEmployee = function (id) {
-                    var delEmployee = this._employeeDetail.findIndex(function (c) { return c.EmployeeId === id; });
+                    var delEmployee = this.getEmployeeId(id);
                     this._employeeDetail.splice(delEmployee, 1);
                 };
                 EmployeeService.prototype.getEmployee = function () {
                     return this._employeeDetail;
+                };
+                EmployeeService.prototype.addOrUpdateEmployee = function (isEmp) {
+                    var existEmp = this.getEmployeeId(isEmp.EmployeeId);
+                    if (existEmp === -1) {
+                        //will creates leave
+                        isEmp.EmployeeId = this._employeeDetail.length + 1;
+                        this._employeeDetail.push(isEmp);
+                    }
+                    else {
+                        //will updates leave
+                        this.deleteEmployee(isEmp.EmployeeId);
+                        this._employeeDetail.push(isEmp);
+                    }
+                };
+                EmployeeService.prototype.getEmployeeId = function (employeeId) {
+                    return this._employeeDetail.findIndex(function (x) { return x.EmployeeId === employeeId; });
                 };
                 return EmployeeService;
             }());
@@ -1164,8 +1210,10 @@
             /* harmony import */ var _services_leave_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/leave.service */ "./src/app/leave/services/leave.service.ts");
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _leave_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../leave.component */ "./src/app/leave/leave.component.ts");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var LeaveListComponent = /** @class */ (function () {
-                function LeaveListComponent(dialog, _leaveService) {
+                function LeaveListComponent(fb, dialog, _leaveService) {
+                    this.fb = fb;
                     this.dialog = dialog;
                     this._leaveService = _leaveService;
                     this.leaveList = [];
@@ -1177,23 +1225,22 @@
                 };
                 LeaveListComponent.prototype.search = function () {
                     var _this = this;
-                    if (this.searchText != "") {
+                    if (this.searchText != '') {
                         this.leaveFullList = this.leaveFullList.filter(function (res) {
                             return res.Month.toLocaleLowerCase().match(_this.searchText.toLocaleLowerCase());
                         });
                     }
-                    else if (this.searchText == "") {
+                    else if (this.searchText == '') {
                         this.ngOnInit();
                     }
                 };
                 LeaveListComponent.prototype.editLeave = function (id) {
                     this.isPopupOpened = true;
-                    var tax = this._leaveService.getLeave().find(function (c) { return c.LeaveId === id; });
+                    var leaveData = this._leaveService.getLeave().find(function (c) { return c.LeaveId === id; });
                     var dialogRef = this.dialog.open(_leave_component__WEBPACK_IMPORTED_MODULE_4__["LeaveComponent"], {
-                        data: {}
+                        data: leaveData
                     });
                     dialogRef.afterClosed().subscribe(function (result) {
-                        data: tax;
                     });
                 };
                 LeaveListComponent.prototype.deleteLeave = function (id) {
@@ -1212,6 +1259,7 @@
                 return LeaveListComponent;
             }());
             LeaveListComponent.ctorParameters = function () { return [
+                { type: _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormBuilder"] },
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_leave_service__WEBPACK_IMPORTED_MODULE_2__["LeaveService"] }
             ]; };
@@ -1248,20 +1296,39 @@
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _services_leave_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/leave.service */ "./src/app/leave/services/leave.service.ts");
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var LeaveComponent = /** @class */ (function () {
-                function LeaveComponent(dialog, _leaveService, data) {
+                function LeaveComponent(fb, dialog, _leaveService, data) {
+                    this.fb = fb;
                     this.dialog = dialog;
                     this._leaveService = _leaveService;
                     this.data = data;
                 }
                 LeaveComponent.prototype.ngOnInit = function () {
+                    this.reactiveForm();
+                };
+                LeaveComponent.prototype.reactiveForm = function () {
+                    this.leaveForm = this.fb.group({
+                        LeaveId: [this.data.LeaveId, ''],
+                        Month: [this.data.Month, ''],
+                        EmployeeId: [this.data.EmployeeId, ''],
+                        FromDate: [this.data.FromDate, ''],
+                        ToDate: [this.data.ToDate, ''],
+                        LeavePeriod: [this.data.LeavePeriod, ''],
+                        NoOfDays: [this.data.NoOfDays, '']
+                    });
+                };
+                LeaveComponent.prototype.submitForm = function () {
+                    this.data = this.leaveForm.value;
+                    this._leaveService.addOrUpdateLeave(this.data);
                 };
                 LeaveComponent.prototype.confirmAdd = function () {
-                    this._leaveService.addLeave(this.data);
+                    this._leaveService.addOrUpdateLeave(this.data);
                 };
                 return LeaveComponent;
             }());
             LeaveComponent.ctorParameters = function () { return [
+                { type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"] },
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_leave_service__WEBPACK_IMPORTED_MODULE_2__["LeaveService"] },
                 { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] }
@@ -1272,7 +1339,7 @@
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./leave.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/leave/leave.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./leave.component.css */ "./src/app/leave/leave.component.css")).default]
                 }),
-                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
             ], LeaveComponent);
             /***/ 
         }),
@@ -1293,28 +1360,42 @@
                     this.httpClient = httpClient;
                     this.httpService = httpService;
                     this._leaveDetails = [];
-                    this._leaveDetail = [
+                    this.leaveDetailsList = [
                         { LeaveId: 1, EmployeeId: 1, Month: 'Jan', FromDate: '11/11/2019', ToDate: '13/11/2019', NoOfDays: '3', LeavePeriod: 'a' },
                         { LeaveId: 2, EmployeeId: 2, Month: 'Feb', FromDate: '10/11/2019', ToDate: '12/11/2019', NoOfDays: '3', LeavePeriod: 'b' },
                         { LeaveId: 3, EmployeeId: 3, Month: 'Mar', FromDate: '09/11/2019', ToDate: '11/11/2019', NoOfDays: '3', LeavePeriod: 'ca' },
                         { LeaveId: 4, EmployeeId: 4, Month: 'April', FromDate: '08/11/2019', ToDate: '10/11/2019', NoOfDays: '3', LeavePeriod: 'd' },
                     ];
                 }
-                LeaveService.prototype.addLeave = function (addLeave) {
-                    addLeave.LeaveId = this._leaveDetail.length + 1;
-                    this._leaveDetail.push(addLeave);
+                LeaveService.prototype.addOrUpdateLeave = function (leave) {
+                    var existLeave = this.getLeaveId(leave.LeaveId);
+                    if (existLeave === -1) {
+                        //will creates leave
+                        leave.LeaveId = this.leaveDetailsList.length + 1;
+                        leave.EmployeeId = this.leaveDetailsList.length + 1;
+                        this.leaveDetailsList.push(leave);
+                    }
+                    else {
+                        //will updates leave
+                        this.deleteLeave(leave.LeaveId);
+                        this.leaveDetailsList.push(leave);
+                    }
                 };
+                //not used
                 LeaveService.prototype.editLeave = function (editLeave) {
-                    var index = this._leaveDetail.findIndex(function (c) { return c.LeaveId === editLeave.LeaveId; });
-                    this._leaveDetail[index] = editLeave;
-                    this._leaveDetail.push(editLeave);
+                    var index = this.leaveDetailsList.findIndex(function (c) { return c.LeaveId === editLeave.LeaveId; });
+                    this.leaveDetailsList[index] = editLeave;
+                    this.leaveDetailsList.push(editLeave);
                 };
                 LeaveService.prototype.deleteLeave = function (id) {
-                    var delLeave = this._leaveDetail.findIndex(function (c) { return c.LeaveId === id; });
-                    this._leaveDetail.splice(delLeave, 1);
+                    var delLeave = this.getLeaveId(id);
+                    this.leaveDetailsList.splice(delLeave, 1);
                 };
                 LeaveService.prototype.getLeave = function () {
-                    return this._leaveDetail;
+                    return this.leaveDetailsList;
+                };
+                LeaveService.prototype.getLeaveId = function (leaveId) {
+                    return this.leaveDetailsList.findIndex(function (leave) { return leave.LeaveId === leaveId; });
                 };
                 return LeaveService;
             }());
@@ -1354,14 +1435,14 @@
             /* harmony import */ var _loan_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../loan.component */ "./src/app/loan/loan.component.ts");
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_loan_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/loan.service */ "./src/app/loan/services/loan.service.ts");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var LoanListComponent = /** @class */ (function () {
-                function LoanListComponent(dialog, _loanService) {
+                function LoanListComponent(fb, dialog, _loanService) {
+                    this.fb = fb;
                     this.dialog = dialog;
                     this._loanService = _loanService;
                     this.loanList = [];
                     this.loanFullList = [];
-                    this.displayedColumns = ['addtaxid', 'taxname', 'taxvalue', 'status', 'actions'];
-                    this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTableDataSource"](this._loanService._loanDetails);
                 }
                 LoanListComponent.prototype.ngOnInit = function () {
                     this.loanList = this._loanService.getLoan();
@@ -1388,14 +1469,13 @@
                     });
                     // dialogConfig.width = '60px';
                 };
-                LoanListComponent.prototype.editUser = function (id) {
+                LoanListComponent.prototype.editLoan = function (id) {
                     this.isPopupOpened = true;
-                    var tax = this._loanService.getLoan().find(function (c) { return c.LoanId === id; });
+                    var loanData = this._loanService.getLoan().find(function (c) { return c.LoanId === id; });
                     var dialogRef = this.dialog.open(_loan_component__WEBPACK_IMPORTED_MODULE_2__["LoanComponent"], {
-                        data: {}
+                        data: { loanData: loanData }
                     });
                     dialogRef.afterClosed().subscribe(function (result) {
-                        data: tax;
                     });
                 };
                 LoanListComponent.prototype.deleteLoan = function (id) {
@@ -1404,6 +1484,7 @@
                 return LoanListComponent;
             }());
             LoanListComponent.ctorParameters = function () { return [
+                { type: _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormBuilder"] },
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_loan_service__WEBPACK_IMPORTED_MODULE_4__["LoanService"] }
             ]; };
@@ -1442,23 +1523,37 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_loan_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/loan.service */ "./src/app/loan/services/loan.service.ts");
             var LoanComponent = /** @class */ (function () {
-                function LoanComponent(dialog, _loanService, data) {
+                function LoanComponent(fb, dialog, _loanService, data) {
+                    this.fb = fb;
                     this.dialog = dialog;
                     this._loanService = _loanService;
                     this.data = data;
-                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [
-                        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required
-                        // Validators.email,
-                    ]);
                 }
                 LoanComponent.prototype.ngOnInit = function () {
+                    this.reactiveForm();
+                };
+                LoanComponent.prototype.reactiveForm = function () {
+                    this.loanForm = this.fb.group({
+                        LoanId: [this.data.LoanId, ''],
+                        TypeOfLoan: [this.data.TypeOfLoan, ''],
+                        DateOfApplication: [this.data.DateOfApplication, ''],
+                        ProposedAmount: [this.data.ProposedAmount, ''],
+                        NoOfInstRecovery: [this.data.NoOfInstRecovery, ''],
+                        StartDateOfRecovery: [this.data.StartDateOfRecovery, ''],
+                        EndDateOfRecovery: [this.data.EndDateOfRecovery, ''],
+                        NoOfDays: [this.data.NoOfDays, ''],
+                        InterestRate: [this.data.InterestRate, ''],
+                        InterestAmount: [this.data.InterestAmount, '']
+                    });
                 };
                 LoanComponent.prototype.confirmAdd = function () {
-                    this._loanService.addLoan(this.data);
+                    this.data = this.loanForm.value;
+                    this._loanService.addOrUpdateLoan(this.data);
                 };
                 return LoanComponent;
             }());
             LoanComponent.ctorParameters = function () { return [
+                { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_loan_service__WEBPACK_IMPORTED_MODULE_4__["LoanService"] },
                 { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] }
@@ -1469,7 +1564,7 @@
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./loan.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/loan/loan.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./loan.component.css */ "./src/app/loan/loan.component.css")).default]
                 }),
-                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
             ], LoanComponent);
             /***/ 
         }),
@@ -1506,17 +1601,33 @@
                     addLoan.LoanId = this._loanDetail.length + 1;
                     this._loanDetail.push(addLoan);
                 };
+                LoanService.prototype.addOrUpdateLoan = function (loan) {
+                    var existLoan = this.getLoanId(loan.LoanId);
+                    if (existLoan === -1) {
+                        //will creates leave
+                        loan.LoanId = this._loanDetail.length + 1;
+                        this._loanDetail.push(loan);
+                    }
+                    else {
+                        //will updates leave
+                        this.deleteLoan(loan.LoanId);
+                        this._loanDetail.push(loan);
+                    }
+                };
                 LoanService.prototype.editLoan = function (editLoan) {
                     var index = this._loanDetail.findIndex(function (c) { return c.LoanId === editLoan.LoanId; });
                     this._loanDetail[index] = editLoan;
                     this._loanDetail.push(editLoan);
                 };
                 LoanService.prototype.deleteLoan = function (id) {
-                    var delLoan = this._loanDetail.findIndex(function (c) { return c.LoanId === id; });
+                    var delLoan = this.getLoanId(id);
                     this._loanDetail.splice(delLoan, 1);
                 };
                 LoanService.prototype.getLoan = function () {
                     return this._loanDetail;
+                };
+                LoanService.prototype.getLoanId = function (loanId) {
+                    return this._loanDetail.findIndex(function (loan) { return loan.LoanId === loanId; });
                 };
                 return LoanService;
             }());
@@ -1610,10 +1721,8 @@
                 function PayrollListComponent(dialog, _payrollService) {
                     this.dialog = dialog;
                     this._payrollService = _payrollService;
-                    this.displayedColumns = ['addtaxid', 'taxname', 'taxvalue', 'status', 'actions'];
                     this.payrollList = [];
                     this.payrollFullList = [];
-                    this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this._payrollService._payrollDetails);
                 }
                 PayrollListComponent.prototype.ngOnInit = function () {
                     this.payrollList = this._payrollService.getPayroll();
@@ -1642,12 +1751,11 @@
                 };
                 PayrollListComponent.prototype.editPayroll = function (id) {
                     this.isPopupOpened = true;
-                    var tax = this._payrollService.getPayroll().find(function (c) { return c.PayrollId === id; });
+                    var editPayrollTest = this._payrollService.getPayroll().find(function (c) { return c.PayrollId === id; });
                     var dialogRef = this.dialog.open(_payroll_component__WEBPACK_IMPORTED_MODULE_4__["PayrollComponent"], {
-                        data: {}
+                        data: { editPayrollTest: editPayrollTest }
                     });
                     dialogRef.afterClosed().subscribe(function (result) {
-                        data: tax;
                     });
                 };
                 PayrollListComponent.prototype.deletePayroll = function (id) {
@@ -1694,23 +1802,52 @@
             /* harmony import */ var _services_payroll_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/payroll.service */ "./src/app/payroll/services/payroll.service.ts");
             /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var PayrollComponent = /** @class */ (function () {
-                function PayrollComponent(dialog, _payService, data) {
+                function PayrollComponent(fb, dialog, _payService, data) {
+                    this.fb = fb;
                     this.dialog = dialog;
                     this._payService = _payService;
                     this.data = data;
-                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', [
-                        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required
-                        // Validators.email,
-                    ]);
                 }
                 PayrollComponent.prototype.ngOnInit = function () {
+                    this.reactiveForm();
+                };
+                PayrollComponent.prototype.reactiveForm = function () {
+                    this.payForm = this.fb.group({
+                        PayrollId: [this.data.PayrollId, ''],
+                        EmployeeId: [this.data.EmployeeId, ''],
+                        Month: [this.data.Month, ''],
+                        Year: [this.data.Year, ''],
+                        TotalPresent: [this.data.TotalPresent, ''],
+                        TotalAbsent: [this.data.TotalAbsent, ''],
+                        LeaveDays: [this.data.LeaveDays, ''],
+                        Deduction: [this.data.Deduction, ''],
+                        Leave: [this.data.Leave, ''],
+                        FestivalAdvance: [this.data.FestivalAdvance, ''],
+                        HousingLoan: [this.data.HousingLoan, ''],
+                        VehicleLoan: [this.data.VehicleLoan, ''],
+                        OtherLoan: [this.data.OtherLoan, ''],
+                        LossOfPay: [this.data.LossOfPay, ''],
+                        TDS: [this.data.TDS, ''],
+                        ProfessionalFees: [this.data.ProfessionalFees, ''],
+                        OtherDeductions: [this.data.OtherDeductions, ''],
+                        TotalEarnings: [this.data.TotalEarnings, ''],
+                        OtherPay: [this.data.OtherPay, ''],
+                        BasicSalary: [this.data.BasicSalary, ''],
+                        SalaryPerDay: [this.data.SalaryPerDay, ''],
+                        Pay: [this.data.Pay, ''],
+                        Earnings: [this.data.Earnings, ''],
+                        Deductions: [this.data.Deductions, ''],
+                        NetPay: [this.data.NetPay, '']
+                    });
                 };
                 PayrollComponent.prototype.confirmAdd = function () {
-                    this._payService.addPayroll(this.data);
+                    this.data = this.payForm.value;
+                    this._payService.addOrUpdatePayroll(this.data);
                 };
                 return PayrollComponent;
             }());
             PayrollComponent.ctorParameters = function () { return [
+                { type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"] },
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
                 { type: _services_payroll_service__WEBPACK_IMPORTED_MODULE_3__["PayrollService"] },
                 { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] }
@@ -1721,7 +1858,7 @@
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./payroll.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./payroll.component.css */ "./src/app/payroll/payroll.component.css")).default]
                 }),
-                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
             ], PayrollComponent);
             /***/ 
         }),
@@ -1759,12 +1896,29 @@
                     this._payrollDetail[index] = editPayroll;
                     this._payrollDetail.push(editPayroll);
                 };
+                PayrollService.prototype.addOrUpdatePayroll = function (payroll) {
+                    var existPay = this.getPayrollId(payroll.PayrollId);
+                    if (existPay === -1) {
+                        //will creates leave
+                        payroll.PayrollId = this._payrollDetail.length + 1;
+                        payroll.EmployeeId = this._payrollDetail.length + 1;
+                        this._payrollDetail.push(payroll);
+                    }
+                    else {
+                        //will updates leave
+                        this.deletePayroll(payroll.PayrollId);
+                        this._payrollDetail.push(payroll);
+                    }
+                };
                 PayrollService.prototype.deletePayroll = function (id) {
-                    var delPayroll = this._payrollDetail.findIndex(function (c) { return c.PayrollId === id; });
+                    var delPayroll = this.getPayrollId(id);
                     this._payrollDetail.splice(delPayroll, 1);
                 };
                 PayrollService.prototype.getPayroll = function () {
                     return this._payrollDetail;
+                };
+                PayrollService.prototype.getPayrollId = function (payrollId) {
+                    return this._payrollDetail.findIndex(function (x) { return x.PayrollId === payrollId; });
                 };
                 return PayrollService;
             }());
@@ -1815,8 +1969,24 @@
                     this._trainingDetail[index] = editTraining;
                     this._trainingDetail.push(editTraining);
                 };
+                TrainingService.prototype.addOrUpdateTraining = function (train) {
+                    var existTrain = this.getTrainId(train.TrainingId);
+                    if (existTrain === -1) {
+                        //will creates leave
+                        train.TrainingId = this._trainingDetail.length + 1;
+                        this._trainingDetail.push(train);
+                    }
+                    else {
+                        //will updates leave
+                        this.deleteTraining(train.TrainingId);
+                        this._trainingDetail.push(train);
+                    }
+                };
+                TrainingService.prototype.getTrainId = function (trainingId) {
+                    return this._trainingDetail.findIndex(function (x) { return x.TrainingId === trainingId; });
+                };
                 TrainingService.prototype.deleteTraining = function (id) {
-                    var delTraining = this._trainingDetail.findIndex(function (c) { return c.TrainingId === id; });
+                    var delTraining = this.getTrainId(id);
                     this._trainingDetail.splice(delTraining, 1);
                 };
                 TrainingService.prototype.getTraining = function () {
@@ -1945,23 +2115,34 @@
             /* harmony import */ var _services_training_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/training.service */ "./src/app/training/services/training.service.ts");
             /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var TrainingComponent = /** @class */ (function () {
-                function TrainingComponent(dialog, _trainService, data) {
+                function TrainingComponent(fb, dialog, _trainService, data) {
+                    this.fb = fb;
                     this.dialog = dialog;
                     this._trainService = _trainService;
                     this.data = data;
-                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]('', [
-                        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required
-                        // Validators.email,
-                    ]);
                 }
                 TrainingComponent.prototype.ngOnInit = function () {
+                    this.reactiveForm();
+                };
+                TrainingComponent.prototype.reactiveForm = function () {
+                    this.trainForm = this.fb.group({
+                        TrainingId: [this.data.TrainingId, ''],
+                        TrainingProvider: [this.data.TrainingProvider, ''],
+                        Trainee: [this.data.Trainee, ''],
+                        TrainingLocation: [this.data.TrainingLocation, ''],
+                        StartDate: [this.data.StartDate, ''],
+                        EndDate: [this.data.EndDate, ''],
+                        Status: [this.data.Status, '']
+                    });
                 };
                 TrainingComponent.prototype.confirmAdd = function () {
-                    this._trainService.addTraining(this.data);
+                    this.data = this.trainForm.value;
+                    this._trainService.addOrUpdateTraining(this.data);
                 };
                 return TrainingComponent;
             }());
             TrainingComponent.ctorParameters = function () { return [
+                { type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"] },
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
                 { type: _services_training_service__WEBPACK_IMPORTED_MODULE_3__["TrainingService"] },
                 { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] }
@@ -1972,7 +2153,7 @@
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./training.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/training/training.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./training.component.css */ "./src/app/training/training.component.css")).default]
                 }),
-                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
             ], TrainingComponent);
             /***/ 
         }),
@@ -2012,17 +2193,34 @@
                 UserService.prototype.getLocation = function () {
                     return this.httpClient.get('');
                 };
+                UserService.prototype.addOrUpdateUser = function (addUser) {
+                    var users = this.getUserId(addUser.UserId);
+                    if (users === -1) {
+                        //will creates leave
+                        addUser.UserId = this._userDetail.length + 1;
+                        // addUser.EmployeeId = this._userDetail.length + 1;
+                        this._userDetail.push(addUser);
+                    }
+                    else {
+                        //will updates leave
+                        this.deleteUserDetail(addUser.UserId);
+                        this._userDetail.push(addUser);
+                    }
+                };
                 UserService.prototype.editUserDetail = function (addUser) {
                     var index = this._userDetail.findIndex(function (c) { return c.UserId === addUser.UserId; });
                     this._userDetail[index] = addUser;
                     this._userDetail.push(addUser);
                 };
-                UserService.prototype.deleteUserDetail = function (id) {
-                    var addUsers = this._userDetail.findIndex(function (c) { return c.UserId === id; });
-                    this._userDetail.splice(addUsers, 1);
-                };
                 UserService.prototype.getUserDetail = function () {
                     return this._userDetail;
+                };
+                UserService.prototype.deleteUserDetail = function (id) {
+                    var delUser = this.getUserId(id);
+                    this._userDetail.splice(delUser, 1);
+                };
+                UserService.prototype.getUserId = function (userId) {
+                    return this._userDetail.findIndex(function (x) { return x.UserId === userId; });
                 };
                 return UserService;
             }());
@@ -2092,12 +2290,12 @@
                 };
                 UserListComponent.prototype.editUser = function (id) {
                     this.isPopupOpened = true;
-                    var tax = this._userService.getUserDetail().find(function (c) { return c.UserId === id; });
+                    var usersList = this._userService.getUserDetail().find(function (c) { return c.UserId === id; });
                     var dialogRef = this.dialog.open(_user_component__WEBPACK_IMPORTED_MODULE_4__["UserComponent"], {
-                        data: {}
+                        data: { usersList: usersList }
                     });
                     dialogRef.afterClosed().subscribe(function (result) {
-                        data: tax;
+                        data: usersList;
                     });
                 };
                 UserListComponent.prototype.deleteUser = function (id) {
@@ -2215,26 +2413,35 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/user.service */ "./src/app/user/services/user.service.ts");
             var UserComponent = /** @class */ (function () {
-                function UserComponent(dialog, _userService, data) {
+                function UserComponent(fb, dialog, _userService, data) {
+                    this.fb = fb;
                     this.dialog = dialog;
                     this._userService = _userService;
                     this.data = data;
-                    this.formControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [
-                        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required
-                        // Validators.email,
-                    ]);
                 }
                 UserComponent.prototype.ngOnInit = function () {
+                    this.reactiveForm();
                 };
-                UserComponent.prototype.onNoClick = function () {
-                    this.dialog.closeAll();
+                UserComponent.prototype.reactiveForm = function () {
+                    this.userForm = this.fb.group({
+                        UserId: [this.data.UserId, ''],
+                        UserName: [this.data.UserName, ''],
+                        Password: [this.data.Password, ''],
+                        UserGender: [this.data.UserGender, ''],
+                        Role: [this.data.Role, ''],
+                        Token: [this.data.Token, ''],
+                        Attendance: [this.data.Attendance, ''],
+                        IpAddress: [this.data.IpAddress, '']
+                    });
                 };
                 UserComponent.prototype.confirmAdd = function () {
-                    this._userService.addUserDetail(this.data);
+                    this.data = this.userForm.value;
+                    this._userService.addOrUpdateUser(this.data);
                 };
                 return UserComponent;
             }());
             UserComponent.ctorParameters = function () { return [
+                { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"] },
                 { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] }
@@ -2245,7 +2452,7 @@
                     template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./user.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user.component.html")).default,
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./user.component.css */ "./src/app/user/user.component.css")).default]
                 }),
-                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
+                tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
             ], UserComponent);
             /***/ 
         }),
