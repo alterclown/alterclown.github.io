@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab  (click)=\"addEmployee()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <!-- {{searchText}} -->\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <!-- <th>Employee Id</th>\n          <th>Employee First Name</th>\n          <th>Employee Last Name</th> -->\n          <th>Employee Full Name</th>\n          <!-- <th>Employee Father Name</th> -->\n          <th>Employee Date Of Birth</th>\n          <th>Employee Sex</th>\n          <th>Employee Religion</th>\n          <th>Employee Marital Status</th>\n          <th>Employee Nationality</th>\n          <!-- <th>Employee House</th>\n          <th>Employee Street</th>\n          <th>Employee City</th>\n          <th>Employee State</th>\n          <th>Employee PIN</th> -->\n          <th>Employee Phone Number</th>\n          <th>Employee Mobile Number</th>\n          <th>Employee Image</th>\n          <th>Employee Email</th>\n          <th>Employee Date Of Join</th>\n          <th>Employee Date Of Confirm</th>\n          <th>Employee Department</th>\n          <!-- <th>Employee Designation</th>\n          <th>Employee Basic Salary</th>\n          <th>Employee Salary PerDay</th> -->\n          <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let employee of employeeFullList \">\n          <!-- <td>{{employee.EmployeeId}}</td>\n          <td>{{employee.EmployeeFirstName}}</td>\n          <td>{{employee.EmployeeLastName}}</td> -->\n          <td>{{employee.EmployeeFullName}}</td>\n          <!-- <td>{{employee.EmployeeFatherName}}</td> -->\n          <td>{{employee.EmployeeDateOfBirth}}</td>\n          <td>{{employee.EmployeeSex}}</td>\n\n          <td>{{employee.EmployeeReligion}}</td>\n          <td>{{employee.EmployeeMaritalStatus}}</td>\n          <td>{{employee.EmployeeNationality}}</td>\n          <!-- <td>{{employee.EmployeeHouse}}</td>\n          <td>{{employee.EmployeeStreet}}</td>\n          <td>{{employee.EmployeeCity}}</td>\n          <td>{{employee.EmployeeState}}</td>\n\n          <td>{{employee.EmployeePIN}}</td> -->\n          <td>{{employee.EmployeePhoneNumber}}</td>\n          <td>{{employee.EmployeeMobileNumber}}</td>\n          <td>{{employee.EmployeeImage}}</td>\n          <td>{{employee.EmployeeEmail}}</td>\n          <td>{{employee.EmployeeDateOfJoin}}</td>\n          <td>{{employee.EmployeeDateOfConfirm}}</td>\n          <td>{{employee.EmployeeDepartment}}</td>\n          <!-- <td>{{employee.EmployeeDesignation}}</td>\n          <td>{{employee.EmployeeBasicSalary}}</td>\n          <td>{{employee.EmployeeSalaryPerDay}}</td> -->\n          \n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editEmployee(employee.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteEmployee(employee.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab  (click)=\"addEmployee()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <!-- {{searchText}} -->\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <!-- <th>Employee Id</th>\n          <th>Employee First Name</th>\n          <th>Employee Last Name</th> -->\n          <th>Employee Full Name</th>\n          <!-- <th>Employee Father Name</th> -->\n          <th>Employee Date Of Birth</th>\n          <th>Employee Sex</th>\n          <th>Employee Religion</th>\n          <th>Employee Marital Status</th>\n          <th>Employee Nationality</th>\n          <!-- <th>Employee House</th>\n          <th>Employee Street</th>\n          <th>Employee City</th>\n          <th>Employee State</th>\n          <th>Employee PIN</th> -->\n          <th>Employee Phone Number</th>\n          <th>Employee Mobile Number</th>\n          <th>Employee Image</th>\n          <th>Employee Email</th>\n          <th>Employee Date Of Join</th>\n          <th>Employee Date Of Confirm</th>\n          <th>Employee Department</th>\n          <!-- <th>Employee Designation</th>\n          <th>Employee Basic Salary</th>\n          <th>Employee Salary PerDay</th> -->\n          <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let employee of employeeFullList \">\n          <!-- <td>{{employee.EmployeeId}}</td>\n          <td>{{employee.EmployeeFirstName}}</td>\n          <td>{{employee.EmployeeLastName}}</td> -->\n          <td>{{employee.EmployeeFullName}}</td>\n          <!-- <td>{{employee.EmployeeFatherName}}</td> -->\n          <td>{{employee.EmployeeDateOfBirth}}</td>\n          <td>{{employee.EmployeeSex}}</td>\n\n          <td>{{employee.EmployeeReligion}}</td>\n          <td>{{employee.EmployeeMaritalStatus}}</td>\n          <td>{{employee.EmployeeNationality}}</td>\n          <!-- <td>{{employee.EmployeeHouse}}</td>\n          <td>{{employee.EmployeeStreet}}</td>\n          <td>{{employee.EmployeeCity}}</td>\n          <td>{{employee.EmployeeState}}</td>\n\n          <td>{{employee.EmployeePIN}}</td> -->\n          <td>{{employee.EmployeePhoneNumber}}</td>\n          <td>{{employee.EmployeeMobileNumber}}</td>\n          <td>{{employee.EmployeeImage}}</td>\n          <td>{{employee.EmployeeEmail}}</td>\n          <td>{{employee.EmployeeDateOfJoin}}</td>\n          <td>{{employee.EmployeeDateOfConfirm}}</td>\n          <td>{{employee.EmployeeDepartment}}</td>\n          <!-- <td>{{employee.EmployeeDesignation}}</td>\n          <td>{{employee.EmployeeBasicSalary}}</td>\n          <td>{{employee.EmployeeSalaryPerDay}}</td> -->\n          \n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editEmployee(employee.EmployeeId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteEmployee(employee.EmployeeId)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
 
 /***/ }),
 
@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"addLeave()\">\n    <mat-icon>add</mat-icon>\n  </button>\n  <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field>\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\">\n    <table class=\"table\">\n      <thead>\n      <th>Leave Id</th>\n      <th>Employee Id</th>\n      <th>Month</th>\n      <th>From Date</th>\n      <th>To Date</th>\n      <th>No Of Days</th>\n      <th>Leave Period</th>\n      <th>Edit/Delete</th>\n\n      </thead>\n      <tr *ngFor=\"let leave of leaveFullList \">\n        <td>{{leave.LeaveId}}</td>\n        <td>{{leave.EmployeeId}}</td>\n        <td>{{leave.Month}}</td>\n        <td>{{leave.FromDate}}</td>\n        <td>{{leave.ToDate}}</td>\n        <td>{{leave.NoOfDays}}</td>\n        <td>{{leave.LeavePeriod}}</td>\n        <td>\n          <button mat-icon-button color=\"accent\" (click)=\"editLeave(leave.LeaveId)\">\n            <mat-icon>edit</mat-icon>\n          </button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteLeave(leave.LeaveId)\">\n            <mat-icon>delete_outline</mat-icon>\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n</mat-card-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"addLeave()\">\n    <mat-icon>add</mat-icon>\n  </button>\n  <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field>\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\">\n    <table class=\"table\">\n      <thead>\n      <th>Leave Id</th>\n      <th>Employee Id</th>\n      <th>Month</th>\n      <th>From Date</th>\n      <th>To Date</th>\n      <th>No Of Days</th>\n      <th>Leave Period</th>\n      <th>Edit/Delete</th>\n      </thead>\n      <tr *ngFor=\"let leave of leaveFullList \">\n        <td>{{leave.LeaveId}}</td>\n        <td>{{leave.EmployeeId}}</td>\n        <td>{{leave.Month}}</td>\n        <td>{{leave.FromDate}}</td>\n        <td>{{leave.ToDate}}</td>\n        <td>{{leave.NoOfDays}}</td>\n        <td>{{leave.LeavePeriod}}</td>\n        <td>\n          <button mat-icon-button color=\"accent\" (click)=\"editLeave(leave.LeaveId)\">\n            <mat-icon>edit</mat-icon>\n          </button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteLeave(leave.LeaveId)\">\n            <mat-icon>delete_outline</mat-icon>\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n</mat-card-content>\n");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addLoan()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Loan Id</th>\n          <th>Type Of Loan</th>\n          <th>Date Of Application</th>\n          <th>Proposed Amount</th>\n          <th>No Of Inst Recovery</th>\n          <th>Start Date Of Recovery</th>\n          <th>End Date Of Recovery</th>\n          <th>No Of Days</th>\n          <th>Interest Rate</th>\n          <th>Interest Amount</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let loan of loanFullList \">\n          <td>{{loan.LoanId}}</td>\n          <td>{{loan.TypeOfLoan}}</td>\n          <td>{{loan.DateOfApplication}}</td>\n          <td>{{loan.ProposedAmount}}</td>\n          <td>{{loan.NoOfInstRecovery}}</td>\n          <td>{{loan.StartDateOfRecovery}}</td>\n          <td>{{loan.EndDateOfRecovery}}</td>\n          <td>{{loan.NoOfDays}}</td>\n          <td>{{loan.InterestRate}}</td>\n          <td>{{loan.InterestAmount}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editLoan(loan.Id)\">\n                <mat-icon>edit</mat-icon>\n              </button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteLoan(loan.Id)\">\n                <mat-icon>delete_outline</mat-icon>\n              </button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"addLoan()\">\n    <mat-icon>add</mat-icon>\n  </button>\n  <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field>\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\">\n    <table class=\"table\">\n      <thead>\n      <th>Loan Id</th>\n      <th>Type Of Loan</th>\n      <th>Date Of Application</th>\n      <th>Proposed Amount</th>\n      <th>No Of Inst Recovery</th>\n      <th>Start Date Of Recovery</th>\n      <th>End Date Of Recovery</th>\n      <th>No Of Days</th>\n      <th>Interest Rate</th>\n      <th>Interest Amount</th>\n      <th>Edit/Delete</th>\n\n      </thead>\n      <tr *ngFor=\"let loan of loanFullList\">\n        <td>{{loan.LoanId}}</td>\n        <td>{{loan.TypeOfLoan}}</td>\n        <td>{{loan.DateOfApplication}}</td>\n        <td>{{loan.ProposedAmount}}</td>\n        <td>{{loan.NoOfInstRecovery}}</td>\n        <td>{{loan.StartDateOfRecovery}}</td>\n        <td>{{loan.EndDateOfRecovery}}</td>\n        <td>{{loan.NoOfDays}}</td>\n        <td>{{loan.InterestRate}}</td>\n        <td>{{loan.InterestAmount}}</td>\n        <td>\n          <button mat-icon-button color=\"accent\" (click)=\"editLoan(loan.LoanId)\">\n            <mat-icon>edit</mat-icon>\n          </button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteLoan(loan.LoanId)\">\n            <mat-icon>delete_outline</mat-icon>\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n</mat-card-content>\n\n");
 
 /***/ }),
 
@@ -175,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addPayroll()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>PayrollId</th>\n          <th>EmployeeId</th>\n          <th>Month</th>\n          <th>Year</th>\n          <th>TotalPresent</th>\n          <th>TotalAbsent</th>\n          <th>LeaveDays</th>\n\n          <th>Deduction</th>\n          <th>Leave</th>\n          <th>FestivalAdvance</th>\n          <th>HousingLoan</th>\n          <th>VehicleLoan</th>\n          <!-- <th>OtherLoan</th>\n          <th>LossOfPay</th>\n          <th>TDS</th>\n          <th>ProfessionalFees</th>\n          <th>OtherDeductions</th>\n          <th>TotalEarnings</th>\n          <th>OtherPay</th>\n          <th>BasicSalary</th>\n          <th>SalaryPerDay</th>\n          <th>Pay</th>\n          <th>Earnings</th>\n          <th>Deductions</th>\n          <th>NetPay</th> -->\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let payroll of payrollFullList \">\n          <td>{{payroll.PayrollId}}</td>\n          <td>{{payroll.EmployeeId}}</td>\n          <td>{{payroll.Month}}</td>\n          <td>{{payroll.Year}}</td>\n          <td>{{payroll.TotalPresent}}</td>\n          <td>{{payroll.TotalAbsent}}</td>\n          <td>{{payroll.LeaveDays}}</td>\n\n          <td>{{payroll.Deduction}}</td>\n          <td>{{payroll.Leave}}</td>\n          <td>{{payroll.FestivalAdvance}}</td>\n          <td>{{payroll.HousingLoan}}</td>\n          <td>{{payroll.VehicleLoan}}</td>\n          <!-- <td>{{payroll.OtherLoan}}</td>\n          <td>{{payroll.LossOfPay}}</td>\n\n          <td>{{payroll.TDS}}</td>\n          <td>{{payroll.ProfessionalFees}}</td>\n          <td>{{payroll.OtherDeductions}}</td>\n          <td>{{payroll.TotalEarnings}}</td>\n          <td>{{payroll.OtherPay}}</td>\n          <td>{{payroll.BasicSalary}}</td>\n          <td>{{payroll.SalaryPerDay}}</td>\n\n          <td>{{payroll.Pay}}</td>\n          <td>{{payroll.Earnings}}</td>\n          <td>{{payroll.Deductions}}</td>\n          <td>{{payroll.NetPay}}</td> -->\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editPayroll(payroll.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deletePayroll(payroll.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addPayroll()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>PayrollId</th>\n          <th>EmployeeId</th>\n          <th>Month</th>\n          <th>Year</th>\n          <th>TotalPresent</th>\n          <th>TotalAbsent</th>\n          <th>LeaveDays</th>\n\n          <th>Deduction</th>\n          <th>Leave</th>\n          <th>FestivalAdvance</th>\n          <th>HousingLoan</th>\n          <th>VehicleLoan</th>\n          <!-- <th>OtherLoan</th>\n          <th>LossOfPay</th>\n          <th>TDS</th>\n          <th>ProfessionalFees</th>\n          <th>OtherDeductions</th>\n          <th>TotalEarnings</th>\n          <th>OtherPay</th>\n          <th>BasicSalary</th>\n          <th>SalaryPerDay</th>\n          <th>Pay</th>\n          <th>Earnings</th>\n          <th>Deductions</th>\n          <th>NetPay</th> -->\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let payroll of payrollFullList \">\n          <td>{{payroll.PayrollId}}</td>\n          <td>{{payroll.EmployeeId}}</td>\n          <td>{{payroll.Month}}</td>\n          <td>{{payroll.Year}}</td>\n          <td>{{payroll.TotalPresent}}</td>\n          <td>{{payroll.TotalAbsent}}</td>\n          <td>{{payroll.LeaveDays}}</td>\n\n          <td>{{payroll.Deduction}}</td>\n          <td>{{payroll.Leave}}</td>\n          <td>{{payroll.FestivalAdvance}}</td>\n          <td>{{payroll.HousingLoan}}</td>\n          <td>{{payroll.VehicleLoan}}</td>\n          <!-- <td>{{payroll.OtherLoan}}</td>\n          <td>{{payroll.LossOfPay}}</td>\n\n          <td>{{payroll.TDS}}</td>\n          <td>{{payroll.ProfessionalFees}}</td>\n          <td>{{payroll.OtherDeductions}}</td>\n          <td>{{payroll.TotalEarnings}}</td>\n          <td>{{payroll.OtherPay}}</td>\n          <td>{{payroll.BasicSalary}}</td>\n          <td>{{payroll.SalaryPerDay}}</td>\n\n          <td>{{payroll.Pay}}</td>\n          <td>{{payroll.Earnings}}</td>\n          <td>{{payroll.Deductions}}</td>\n          <td>{{payroll.NetPay}}</td> -->\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editPayroll(payroll.PayrollId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deletePayroll(payroll.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
 
 /***/ }),
 
@@ -201,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addTraining()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Training Id</th>\n          <th>Training Provider</th>\n          <th>Trainee</th>\n          <th>Training Location</th>\n          <th>Start Date</th>\n          <th>End Date</th>\n          <th>Status</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let training of trainingFullList \">\n          <td>{{training.TrainingId}}</td>\n          <td>{{training.TrainingProvider}}</td>\n          <td>{{training.Trainee}}</td>\n          <td>{{training.TrainingLocation}}</td>\n          <td>{{training.StartDate}}</td>\n          <td>{{training.EndDate}}</td>\n          <td>{{training.Status}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editTraining(training.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteTraining(training.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addTraining()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Training Id</th>\n          <th>Training Provider</th>\n          <th>Trainee</th>\n          <th>Training Location</th>\n          <th>Start Date</th>\n          <th>End Date</th>\n          <th>Status</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let training of trainingList \">\n          <td>{{training.TrainingId}}</td>\n          <td>{{training.TrainingProvider}}</td>\n          <td>{{training.Trainee}}</td>\n          <td>{{training.TrainingLocation}}</td>\n          <td>{{training.StartDate}}</td>\n          <td>{{training.EndDate}}</td>\n          <td>{{training.Status}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editTraining(training.TrainingId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteTraining(training.TrainingId)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
 
 /***/ }),
 
@@ -214,7 +214,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Trainee</h3>\n  \n    <form class=\"mat-dialog-content\"  [formGroup]=\"trainForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" formControlName=\"TrainingId\" placeholder=\"Training Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" formControlName=\"TrainingProvider\" placeholder=\"Training Provider\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Trainee\" formControlName=\"Trainee\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Training Location\" formControlName=\"TrainingLocation\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date\" formControlName=\"StartDate\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date\" formControlName=\"EndDate\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Status\" formControlName=\"Status\" >\n        </mat-form-field>\n      </div>\n\n     <div mat-dialog-actions>\n        <button mat-button [disabled]=\"!trainForm.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Trainee</h3>\n  \n    <form class=\"mat-dialog-content\"  [formGroup]=\"trainForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" type=\"number\" formControlName=\"TrainingId\" placeholder=\"Training Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" formControlName=\"TrainingProvider\" placeholder=\"Training Provider\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Trainee\" formControlName=\"Trainee\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Training Location\" formControlName=\"TrainingLocation\" >\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Start Date\" formControlName=\"StartDate\" >\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"End Date\" formControlName=\"EndDate\" >\n        </mat-form-field>\n      </div>\n      \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput placeholder=\"Status\" formControlName=\"Status\" >\n        </mat-form-field>\n      </div>\n\n     <div mat-dialog-actions>\n        <button mat-button [disabled]=\"!trainForm.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
 
 /***/ }),
 
@@ -589,6 +589,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/fesm2015/agm-core.js");
 /* harmony import */ var _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./user/user-location/user-location.component */ "./src/app/user/user-location/user-location.component.ts");
 /* harmony import */ var _auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./auth/auth-guard.service */ "./src/app/auth/auth-guard.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+
 
 
 
@@ -706,7 +708,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             ]),
             _agm_core__WEBPACK_IMPORTED_MODULE_40__["AgmCoreModule"].forRoot({
                 apiKey: ''
-            })
+            }),
+            _angular_material__WEBPACK_IMPORTED_MODULE_43__["MatCardModule"]
         ],
         entryComponents: [_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"]],
         exports: [
@@ -906,8 +909,6 @@ let EmployeeListComponent = class EmployeeListComponent {
     constructor(dialog, _employeeService) {
         this.dialog = dialog;
         this._employeeService = _employeeService;
-        this.displayedColumns = ['EmployeeId', 'EmployeeFirstName', 'EmployeeLastName', 'EmployeeFullName', 'EmployeeFatherName', 'EmployeeDateOfBirth', 'EmployeeSex', 'EmployeeReligion', 'EmployeeMaritalStatus', 'EmployeeNationality', 'EmployeeHouse', 'EmployeeStreet', 'EmployeeCity', 'EmployeeState', 'EmployeePIN', 'EmployeePhoneNumber', 'EmployeeMobileNumber', 'EmployeeImage', 'EmployeeEmail', 'EmployeeDateOfJoin', 'EmployeeDateOfConfirm', 'EmployeeDepartment', 'EmployeeDesignation', 'EmployeeBasicSalary', 'EmployeeSalaryPerDay'];
-        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTableDataSource"](this._employeeService._employeeDetail);
         this.employeeList = [];
         this.employeeFullList = [];
     }
@@ -940,12 +941,12 @@ let EmployeeListComponent = class EmployeeListComponent {
     }
     editEmployee(id) {
         this.isPopupOpened = true;
-        const tax = this._employeeService.getEmployee().find(c => c.EmployeeId === id);
+        const editEmployees = this._employeeService.getEmployee().find(c => c.EmployeeId === id);
         const dialogRef = this.dialog.open(_employee_component__WEBPACK_IMPORTED_MODULE_4__["EmployeeComponent"], {
-            data: {}
+            data: editEmployees
         });
         dialogRef.afterClosed().subscribe(result => {
-            data: tax;
+            data: editEmployees;
         });
     }
     deleteEmployee(id) {
@@ -1543,19 +1544,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _loan_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../loan.component */ "./src/app/loan/loan.component.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _services_loan_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/loan.service */ "./src/app/loan/services/loan.service.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-
 
 
 
 
 
 let LoanListComponent = class LoanListComponent {
-    constructor(fb, dialog, _loanService) {
-        this.fb = fb;
+    constructor(dialog, _loanService) {
         this.dialog = dialog;
         this._loanService = _loanService;
-        this.loanList = [];
+        this.loanList = []; //should be loan type
         this.loanFullList = [];
     }
     ngOnInit() {
@@ -1563,12 +1561,12 @@ let LoanListComponent = class LoanListComponent {
         this.loanFullList = this.loanList;
     }
     search() {
-        if (this.searchText != "") {
+        if (this.searchText != '') {
             this.loanFullList = this.loanFullList.filter(res => {
                 return res.TypeOfLoan.toLocaleLowerCase().match(this.searchText.toLocaleLowerCase());
             });
         }
-        else if (this.searchText == "") {
+        else if (this.searchText == '') {
             this.ngOnInit();
         }
     }
@@ -1586,7 +1584,7 @@ let LoanListComponent = class LoanListComponent {
         this.isPopupOpened = true;
         const loanData = this._loanService.getLoan().find(c => c.LoanId === id);
         const dialogRef = this.dialog.open(_loan_component__WEBPACK_IMPORTED_MODULE_2__["LoanComponent"], {
-            data: { loanData }
+            data: loanData // loan data itself a object
         });
         dialogRef.afterClosed().subscribe(result => {
         });
@@ -1596,7 +1594,6 @@ let LoanListComponent = class LoanListComponent {
     }
 };
 LoanListComponent.ctorParameters = () => [
-    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormBuilder"] },
     { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
     { type: _services_loan_service__WEBPACK_IMPORTED_MODULE_4__["LoanService"] }
 ];
@@ -1901,7 +1898,7 @@ let PayrollListComponent = class PayrollListComponent {
         this.isPopupOpened = true;
         const editPayrollTest = this._payrollService.getPayroll().find(c => c.PayrollId === id);
         const dialogRef = this.dialog.open(_payroll_component__WEBPACK_IMPORTED_MODULE_4__["PayrollComponent"], {
-            data: { editPayrollTest }
+            data: editPayrollTest
         });
         dialogRef.afterClosed().subscribe(result => {
         });
@@ -2242,12 +2239,11 @@ let TrainingListComponent = class TrainingListComponent {
     }
     editTraining(id) {
         this.isPopupOpened = true;
-        const tax = this._trainService.getTraining().find(c => c.TrainingId === id);
+        const training = this._trainService.getTraining().find(c => c.TrainingId === id);
         const dialogRef = this.dialog.open(_training_component__WEBPACK_IMPORTED_MODULE_4__["TrainingComponent"], {
-            data: {}
+            data: training
         });
         dialogRef.afterClosed().subscribe(result => {
-            data: tax;
         });
     }
     deleteTraining(id) {
