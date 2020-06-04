@@ -45,7 +45,111 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"/user-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Users\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/employee-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Employee\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/leave-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Leave\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/loan-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Loan\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/payroll-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Payroll\n    </button>\n\n    \n</div>\n\n<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"/training-list\" routerLinkActive=\"active\">\n        <mat-icon>donut_small</mat-icon>Training\n        </button>\n\n    <!-- <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button> -->\n</div>\n\n<!-- <div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n        <mat-icon>donut_small</mat-icon>\n    </button>\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n</div> -->\n\n<!-- <router-outlet></router-outlet> -->\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"/user-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>\n    <!-- <h5 >\n    <small>Users</small>\n    </h5> -->\n    Users</button>\n    \n   <button  class=\"button\" mat-raised-button  routerLink=\"/employee-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Employee\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/leave-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Leave\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/loan-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Loan\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"/payroll-list\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Payroll\n    </button>\n\n    \n\n\n<div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"/training-list\" routerLinkActive=\"active\">\n        <mat-icon>donut_small</mat-icon>Training\n        </button>\n\n        <button  class=\"button\" mat-raised-button  routerLink=\"/department-list\" routerLinkActive=\"active\">\n            <mat-icon>donut_small</mat-icon>Department\n            </button>\n\n            <button  class=\"button\" mat-raised-button  routerLink=\"/employee-salary-list\" routerLinkActive=\"active\">\n                <mat-icon>donut_small</mat-icon>EmpSalary\n                </button>\n\n\n                <button  class=\"button\" mat-raised-button  routerLink=\"/employee-project-list\" routerLinkActive=\"active\">\n                    <mat-icon>donut_small</mat-icon>EmpProjcet\n                    </button>\n\n\n                    <button  class=\"button\" mat-raised-button  routerLink=\"/employee-attendance-list\" routerLinkActive=\"active\">\n                        <mat-icon>donut_small</mat-icon>EmpAttendance\n                        </button>\n            </div>\n        </div>\n    <!-- <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button> -->\n\n\n<!-- <div class=\"box\">\n    <button class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n        <mat-icon>donut_small</mat-icon>\n    </button>\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n\n    <button  class=\"button\" mat-raised-button  routerLink=\"app-dashboard\" routerLinkActive=\"active\">\n    <mat-icon>donut_small</mat-icon>Add User\n    </button>\n</div> -->\n\n<!-- <router-outlet></router-outlet> -->\n\n\n<footer class=\"footer\">\n    <div class=\"main-content\">\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-lg-3 col-md-6 col-sm-6\">\n                    <div class=\"card card-stats\">\n                        <div class=\"card-header card-header-warning card-header-icon\">\n                            <div class=\"card-icon\">\n                                <i class=\"material-icons\">content_copy</i>\n                            </div>\n                            <p class=\"card-category\">Total Users</p>\n                            <h3 class=\"card-title\">50\n                                <small></small>\n                            </h3>\n                        </div>\n                        <div class=\"card-footer\">\n                            <div class=\"stats\">\n                                <!-- <i class=\"material-icons text-danger\">warning</i>\n                                <a href=\"javascript:void(0)\">Get More Space...</a> -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-lg-3 col-md-6 col-sm-6\">\n                    <div class=\"card card-stats\">\n                        <div class=\"card-header card-header-success card-header-icon\">\n                            <div class=\"card-icon\">\n                                <i class=\"material-icons\">store</i>\n                            </div>\n                            <p class=\"card-category\">Employees On Training</p>\n                            <h3 class=\"card-title\">25</h3>\n                        </div>\n                        <div class=\"card-footer\">\n                            <div class=\"stats\">\n                                <!-- <i class=\"material-icons\">date_range</i> Last 24 Hours -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-lg-3 col-md-6 col-sm-6\">\n                    <div class=\"card card-stats\">\n                        <div class=\"card-header card-header-danger card-header-icon\">\n                            <div class=\"card-icon\">\n                                <i class=\"material-icons\">info_outline</i>\n                            </div>\n                            <p class=\"card-category\">Projects Going On</p>\n                            <h3 class=\"card-title\">5</h3>\n                        </div>\n                        <div class=\"card-footer\">\n                            <div class=\"stats\">\n                                <!-- <i class=\"material-icons\">local_offer</i> Tracked from Github -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-lg-3 col-md-6 col-sm-6\">\n                    <div class=\"card card-stats\">\n                        <div class=\"card-header card-header-info card-header-icon\">\n                            <div class=\"card-icon\">\n                                <i class=\"fa fa-twitter\"></i>\n                            </div>\n                            <p class=\"card-category\">Attended Today</p>\n                            <h3 class=\"card-title\">48/50</h3>\n                        </div>\n                        <div class=\"card-footer\">\n                            <div class=\"stats\">\n                                <!-- <i class=\"material-icons\">update</i> Just Updated -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</footer>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/department/department-list/department-list.component.html":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/department/department-list/department-list.component.html ***!
+  \*****************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addDepartment()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Department Id</th>\n          <th>Department Name</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let dept of departmentFullList \">\n          <td>{{dept.DepartmentId}}</td>\n          <td>{{dept.DepartmentName}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editDepartment(dept.DepartmentId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteDepartment(dept.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/department/department.component.html":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/department/department.component.html ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Department</h3>\n  \n    <form class=\"mat-dialog-content\"  [formGroup]=\"deptForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput #input class=\"form-control\" formControlName=\"DepartmentId\" placeholder=\"Department Id\"  required >\n        </mat-form-field>\n      </div>\n  \n      <!--Textarea for demo purposes-->\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n            <input matInput #input class=\"form-control\" formControlName=\"DepartmentName\" placeholder=\"Department Name\"  required >\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button  [disabled]=\"!deptForm.valid\" [mat-dialog-close]=\"1\" (click)=\"confirmAdd()\">Save</button>\n        <button mat-button  tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.html":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.html ***!
+  \********************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addAttendance()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n        <th>Employee Id</th>\n        <th>Time In</th>\n        <th>Time Out</th>\n        <th>Remarks</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let attend of attendFullList \">\n          <td>{{attend.EmployeeId}}</td>\n          <td>{{attend.TimeIn}}</td>\n          <td>{{attend.TimeOut}}</td>\n          <td>{{attend.Remarks}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editAttendance(attend.EmployeeId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteAttendance(attend.EmployeeId)\">\n              <mat-icon>delete_outline</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-attendance/employee-attendance.component.html":
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/employee-attendance/employee-attendance.component.html ***!
+  \**************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Leave</h3>\n  \n    <form class=\"mat-dialog-content\" [formGroup]=\"attendForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput type=\"number\" formControlName=\"EmployeeId\" class=\"form-control\" placeholder=\"Employee Id\" required>\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"TimeIn\" placeholder=\"Time In\">\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"TimeOut\" placeholder=\"Time Out\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"Remarks\" placeholder=\"Remarks\">\n        </mat-form-field>\n      </div>\n      <div mat-dialog-actions>\n        <button mat-button  (click)=\"confirmAdd()\"  [disabled]=\"!attendForm.valid\" [mat-dialog-close]=\"1\">Save</button>\n        <button mat-button tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-project/employee-project-list/employee-project-list.component.html":
+/*!***********************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/employee-project/employee-project-list/employee-project-list.component.html ***!
+  \***********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addProject()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n        <th>Project Handle Id</th>\n        <th>Project Name</th>\n        <th>Date Started</th>\n        <th>Date Ended</th>\n        <th>Status</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let project of projectFullList \">\n          <td>{{project.ProjectHandleId}}</td>\n          <td>{{project.ProjectName}}</td>\n          <td>{{project.DateStarted}}</td>\n          <td>{{project.DateEnded}}</td>\n          <td>{{project.Status}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editProject(project.ProjectHandleId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteProject(project.ProjectHandleId)\">\n              <mat-icon>delete_outline</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-project/employee-project.component.html":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/employee-project/employee-project.component.html ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Leave</h3>\n  \n    <form class=\"mat-dialog-content\" [formGroup]=\"proForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput type=\"number\" formControlName=\"ProjectHandleId\" class=\"form-control\" placeholder=\"Project Handle Id\" required>\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"ProjectName\" placeholder=\"Project Name\">\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"DateStarted\" placeholder=\"Date Started\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"DateEnded\" placeholder=\"Date Ended\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"Status\" placeholder=\"Status\">\n        </mat-form-field>\n      </div>\n\n      <div mat-dialog-actions>\n        <button mat-button  (click)=\"confirmAdd()\"  [disabled]=\"!proForm.valid\" [mat-dialog-close]=\"1\">Save</button>\n        <button mat-button tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-salary/employee-salary-list/employee-salary-list.component.html":
+/*!********************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/employee-salary/employee-salary-list/employee-salary-list.component.html ***!
+  \********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addSalary()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n        <th>Salary Id</th>\n        <th>Salary Amount</th>\n        <th>Tax</th>\n        <th>Status</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let salary of salaryFullList \">\n          <td>{{salary.SalaryId}}</td>\n          <td>{{salary.SalaryAmount}}</td>\n          <td>{{salary.Tax}}</td>\n          <td>{{salary.Status}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editSalary(salary.SalaryId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteSalary(salary.SalaryId)\">\n              <mat-icon>delete_outline</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-salary/employee-salary.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/employee-salary/employee-salary.component.html ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <h3 mat-dialog-title>Add New Leave</h3>\n  \n    <form class=\"mat-dialog-content\" [formGroup]=\"salForm\">\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput type=\"number\" formControlName=\"SalaryId\" class=\"form-control\" placeholder=\"Salary Id\" required>\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"SalaryAmount\" placeholder=\"Salary Amount\">\n        </mat-form-field>\n      </div>\n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"Tax\" placeholder=\"Tax\">\n        </mat-form-field>\n      </div>\n  \n      <div class=\"form\">\n        <mat-form-field color=\"accent\">\n          <input matInput formControlName=\"Status\" placeholder=\"Status\">\n        </mat-form-field>\n      </div>\n      <div mat-dialog-actions>\n        <button mat-button  (click)=\"confirmAdd()\"  [disabled]=\"!salForm.valid\" [mat-dialog-close]=\"1\">Save</button>\n        <button mat-button tabindex=\"-1\" [mat-dialog-close]=\"1\">Cancel</button>\n      </div>\n    </form>\n  </div>\n");
 
 /***/ }),
 
@@ -227,7 +331,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click) = \"addUser()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon>\n   \n  </div>\n\n \n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n\n  <div class=\"col-sm-6 col-md-4 col-xl-3\">\n    <div class=\"card bg-light\">\n        <div class=\"card-body\">\n          \n            <h6 class=\"card-title text-uppercase text-truncate py-2\">User Info\n              <button mat-stroked-button color=\"warn\" (click)=\"mapUser()\">Show Location</button>\n            </h6>\n            \n            <div class=\"items border border-light\" *ngFor=\"let user of getUserList \">\n                <div class=\"card draggable shadow-sm\" >\n                    <div class=\"card-body p-2\" >      \n                      <p><input type=\"checkbox\" [(ngModel)]=\"isChecked\"> Select</p>\n                        <p>\n                          {{user.UserName}} ||\n                          {{user.Attendance}} ||\n                          {{user.IpAddress}}\n                        </p>                        \n                    </div>\n                </div>\n                </div>\n              </div>\n            </div>\n          </div>         \n\n<div class=\"maps\">\n  <app-user-location ></app-user-location>\n</div>\n\n\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click) = \"addUser()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon>\n   \n  </div>\n\n \n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n  <button mat-stroked-button color=\"warn\"  (click)=\"sendData()\">Show Location</button>\n  <div class=\"col-sm-6 col-md-4 col-xl-3\">\n    <div class=\"card bg-light\">\n        <div class=\"card-body\">\n          \n            <h6 class=\"card-title text-uppercase text-truncate py-2\">User Info\n\n            </h6>\n            \n            <div class=\"items border border-light\" *ngFor=\"let user of getUserList \">\n                <div class=\"card draggable shadow-sm\">\n                    <div class=\"card-body p-2\" >      \n                      <input type=\"checkbox\"  (change)=\"onCheckboxChange($event)\" > Select\n                        <p>\n                          {{user.UserName}} ||\n                          {{user.Attendance}} ||\n                          {{user.IpAddress}}\n                        </p>                        \n                    </div>\n                </div>\n                </div>\n              </div>\n            </div>\n          </div>         \n\n<div class=\"maps\">\n  <app-user-location ></app-user-location>\n</div>\n\n\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
 
 /***/ }),
 
@@ -240,7 +344,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<agm-map [latitude]=\"lat\" [longitude] = \"lng\">\n    <agm-marker [latitude]=\"lat\" [longitude] = \"lng\">\n  </agm-marker>\n  </agm-map>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<agm-map [latitude]=\"lat\" [longitude] = \"lng\">\n    <agm-marker [latitude]=\"lat\" [longitude] = \"lng\" (userList) = \"getData($event)\">\n  </agm-marker>\n  </agm-map>\n");
 
 /***/ }),
 
@@ -590,6 +694,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./user/user-location/user-location.component */ "./src/app/user/user-location/user-location.component.ts");
 /* harmony import */ var _auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./auth/auth-guard.service */ "./src/app/auth/auth-guard.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _department_department_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./department/department.component */ "./src/app/department/department.component.ts");
+/* harmony import */ var _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./department/department-list/department-list.component */ "./src/app/department/department-list/department-list.component.ts");
+/* harmony import */ var _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./employee-salary/employee-salary.component */ "./src/app/employee-salary/employee-salary.component.ts");
+/* harmony import */ var _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./employee-salary/employee-salary-list/employee-salary-list.component */ "./src/app/employee-salary/employee-salary-list/employee-salary-list.component.ts");
+/* harmony import */ var _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./employee-project/employee-project.component */ "./src/app/employee-project/employee-project.component.ts");
+/* harmony import */ var _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./employee-project/employee-project-list/employee-project-list.component */ "./src/app/employee-project/employee-project-list/employee-project-list.component.ts");
+/* harmony import */ var _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./employee-attendance/employee-attendance.component */ "./src/app/employee-attendance/employee-attendance.component.ts");
+/* harmony import */ var _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./employee-attendance/employee-attendance-list/employee-attendance-list.component */ "./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.ts");
+
+
+
+
+
+
+
+
 
 
 
@@ -657,7 +777,15 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__["LoanListComponent"],
             _training_training_component__WEBPACK_IMPORTED_MODULE_38__["TrainingComponent"],
             _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"],
-            _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"]
+            _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"],
+            _department_department_component__WEBPACK_IMPORTED_MODULE_44__["DepartmentComponent"],
+            _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_45__["DepartmentListComponent"],
+            _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_46__["EmployeeSalaryComponent"],
+            _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_47__["EmployeeSalaryListComponent"],
+            _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_48__["EmployeeProjectComponent"],
+            _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_49__["EmployeeProjectListComponent"],
+            _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_50__["EmployeeAttendanceComponent"],
+            _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_51__["EmployeeAttendanceListComponent"]
             // FormsModule,
             // ReactiveFormsModule
         ],
@@ -704,6 +832,14 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 { path: 'training', component: _training_training_component__WEBPACK_IMPORTED_MODULE_38__["TrainingComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
                 { path: 'training-list', component: _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
                 { path: 'user-location', component: _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                { path: 'department', component: _department_department_component__WEBPACK_IMPORTED_MODULE_44__["DepartmentComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                { path: 'department-list', component: _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_45__["DepartmentListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                { path: 'employee-salary', component: _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_46__["EmployeeSalaryComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                { path: 'employee-salary-list', component: _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_47__["EmployeeSalaryListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                { path: 'employee-attendance', component: _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_50__["EmployeeAttendanceComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                { path: 'employee-attendance-list', component: _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_51__["EmployeeAttendanceListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                { path: 'employee-project', component: _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_48__["EmployeeProjectComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                { path: 'employee-project-list', component: _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_49__["EmployeeProjectListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
                 { path: '**', redirectTo: '/' }
             ]),
             _agm_core__WEBPACK_IMPORTED_MODULE_40__["AgmCoreModule"].forRoot({
@@ -834,7 +970,7 @@ AuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".button { /* Safari */\r\n    transition-duration: 0.4s;\r\n    height:50px;\r\n    width:50px;\r\n    padding-right: 4px 12px;\r\n    font-size: 10px;\r\n    margin: 10px;\r\n  }\r\n  \r\n  .button:hover {\r\n    background-color: #4cafad; /* Green */\r\n    color: white;\r\n  }\r\n  \r\n  .box {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n  \r\n  .box div {\r\n    width: 50px;\r\n    height: 50px;\r\n  }\r\n       \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFVBQ3VDLFdBQVc7SUFDOUMseUJBQXlCO0lBQ3pCLFdBQVc7SUFDWCxVQUFVO0lBQ1YsdUJBQXVCO0lBQ3ZCLGVBQWU7SUFDZixZQUFZO0VBQ2Q7O0VBRUE7SUFDRSx5QkFBeUIsRUFBRSxVQUFVO0lBQ3JDLFlBQVk7RUFDZDs7RUFFQTtJQUNFLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0VBQ3pCOztFQUVBO0lBQ0UsV0FBVztJQUNYLFlBQVk7RUFDZCIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5idXR0b24ge1xyXG4gICAgLXdlYmtpdC10cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjRzOyAvKiBTYWZhcmkgKi9cclxuICAgIHRyYW5zaXRpb24tZHVyYXRpb246IDAuNHM7XHJcbiAgICBoZWlnaHQ6NTBweDtcclxuICAgIHdpZHRoOjUwcHg7XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiA0cHggMTJweDtcclxuICAgIGZvbnQtc2l6ZTogMTBweDtcclxuICAgIG1hcmdpbjogMTBweDtcclxuICB9XHJcbiAgXHJcbiAgLmJ1dHRvbjpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGNhZmFkOyAvKiBHcmVlbiAqL1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gIH1cclxuXHJcbiAgLmJveCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIH1cclxuICBcclxuICAuYm94IGRpdiB7XHJcbiAgICB3aWR0aDogNTBweDtcclxuICAgIGhlaWdodDogNTBweDtcclxuICB9XHJcbiAgICAgICAiXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".button { /* Safari */\r\n    transition-duration: 0.4s;\r\n    height:50px;\r\n    width:50px;\r\n    padding-right: 4px 12px;\r\n    font-size: 10px;\r\n    margin: 10px;\r\n  }\r\n  \r\n  .button:hover {\r\n    background-color: #4cafad; /* Green */\r\n    color: white;\r\n  }\r\n  \r\n  .box {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    height: 100px;\r\n    width: 100%;\r\n    position: absolute;\r\n    top: 100px;\r\n  }\r\n  \r\n  .box div {\r\n    width: 50px;\r\n    height: 50px;\r\n  }\r\n  \r\n  .footer {\r\n    height: 100px;\r\n    width: 100%;\r\n    position: absolute;\r\n    top: 400px;\r\n}\r\n  \r\n  .card-title{\r\n  text-align: left;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFVBQ3VDLFdBQVc7SUFDOUMseUJBQXlCO0lBQ3pCLFdBQVc7SUFDWCxVQUFVO0lBQ1YsdUJBQXVCO0lBQ3ZCLGVBQWU7SUFDZixZQUFZO0VBQ2Q7O0VBRUE7SUFDRSx5QkFBeUIsRUFBRSxVQUFVO0lBQ3JDLFlBQVk7RUFDZDs7RUFFQTtJQUNFLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGFBQWE7SUFDYixXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLFVBQVU7RUFDWjs7RUFFQTtJQUNFLFdBQVc7SUFDWCxZQUFZO0VBQ2Q7O0VBQ0E7SUFDRSxhQUFhO0lBQ2IsV0FBVztJQUNYLGtCQUFrQjtJQUNsQixVQUFVO0FBQ2Q7O0VBQ0E7RUFDRSxnQkFBZ0I7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9kYXNoYm9hcmQvZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uIHtcclxuICAgIC13ZWJraXQtdHJhbnNpdGlvbi1kdXJhdGlvbjogMC40czsgLyogU2FmYXJpICovXHJcbiAgICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjRzO1xyXG4gICAgaGVpZ2h0OjUwcHg7XHJcbiAgICB3aWR0aDo1MHB4O1xyXG4gICAgcGFkZGluZy1yaWdodDogNHB4IDEycHg7XHJcbiAgICBmb250LXNpemU6IDEwcHg7XHJcbiAgICBtYXJnaW46IDEwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5idXR0b246aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzRjYWZhZDsgLyogR3JlZW4gKi9cclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC5ib3gge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGhlaWdodDogMTAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMTAwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5ib3ggZGl2IHtcclxuICAgIHdpZHRoOiA1MHB4O1xyXG4gICAgaGVpZ2h0OiA1MHB4O1xyXG4gIH1cclxuICAuZm9vdGVyIHtcclxuICAgIGhlaWdodDogMTAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNDAwcHg7XHJcbn1cclxuLmNhcmQtdGl0bGV7XHJcbiAgdGV4dC1hbGlnbjogbGVmdDtcclxufSJdfQ== */");
 
 /***/ }),
 
@@ -867,6 +1003,997 @@ DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./dashboard.component.css */ "./src/app/dashboard/dashboard.component.css")).default]
     })
 ], DashboardComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/department/department-list/department-list.component.css":
+/*!**************************************************************************!*\
+  !*** ./src/app/department/department-list/department-list.component.css ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2RlcGFydG1lbnQvZGVwYXJ0bWVudC1saXN0L2RlcGFydG1lbnQtbGlzdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/department/department-list/department-list.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/department/department-list/department-list.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: DepartmentListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DepartmentListComponent", function() { return DepartmentListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_department_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/department.service */ "./src/app/department/services/department.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _department_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../department.component */ "./src/app/department/department.component.ts");
+
+
+
+
+
+let DepartmentListComponent = class DepartmentListComponent {
+    constructor(dialog, _departmentService) {
+        this.dialog = dialog;
+        this._departmentService = _departmentService;
+        this.departmentList = [];
+        this.departmentFullList = [];
+    }
+    ngOnInit() {
+        this.departmentList = this._departmentService.getDepartment();
+        this.departmentFullList = this.departmentList;
+    }
+    search() {
+        if (this.searchText != "") {
+            this.departmentFullList = this.departmentFullList.filter(res => {
+                return res.DepartmentName.toLocaleLowerCase().match(this.searchText.toLocaleLowerCase());
+            });
+        }
+        else if (this.searchText == "") {
+            this.ngOnInit();
+        }
+    }
+    addDepartment() {
+        const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
+        this.isPopupOpened = true;
+        const dialogRef = this.dialog.open(_department_component__WEBPACK_IMPORTED_MODULE_4__["DepartmentComponent"], {
+            data: {}
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+        //dialogConfig.width = '60px';
+    }
+    editDepartment(id) {
+        this.isPopupOpened = true;
+        const editDepartment = this._departmentService.getDepartment().find(c => c.DepartmentId === id);
+        const dialogRef = this.dialog.open(_department_component__WEBPACK_IMPORTED_MODULE_4__["DepartmentComponent"], {
+            data: editDepartment
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+    }
+    deleteDepartment(id) {
+        this._departmentService.deleteDepartment(id);
+    }
+};
+DepartmentListComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+    { type: _services_department_service__WEBPACK_IMPORTED_MODULE_2__["DepartmentService"] }
+];
+DepartmentListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-department-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./department-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/department/department-list/department-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./department-list.component.css */ "./src/app/department/department-list/department-list.component.css")).default]
+    })
+], DepartmentListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/department/department.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/department/department.component.css ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n  \r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n  \r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGVwYXJ0bWVudC9kZXBhcnRtZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxlQUFlO0lBQ2YsWUFBWTtFQUNkIiwiZmlsZSI6InNyYy9hcHAvZGVwYXJ0bWVudC9kZXBhcnRtZW50LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgbWluLXdpZHRoOiA0NTBweDtcclxuICB9XHJcbiAgXHJcbiAgLmNvbnRhaW5lciA+ICoge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5mb3JtIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBwYWRkaW5nLXRvcDogNnB4O1xyXG4gIH1cclxuICBcclxuICAubWF0LWZvcm0tZmllbGQge1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgZmxleC1ncm93OiAxO1xyXG4gIH0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/department/department.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/department/department.component.ts ***!
+  \****************************************************/
+/*! exports provided: DepartmentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DepartmentComponent", function() { return DepartmentComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_department_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/department.service */ "./src/app/department/services/department.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+
+
+
+
+
+let DepartmentComponent = class DepartmentComponent {
+    constructor(fb, dialog, _depService, data) {
+        this.fb = fb;
+        this.dialog = dialog;
+        this._depService = _depService;
+        this.data = data;
+    }
+    ngOnInit() {
+        this.reactiveForm();
+    }
+    reactiveForm() {
+        this.deptForm = this.fb.group({
+            DepartmentId: [this.data.DepartmentId, ''],
+            DepartmentName: [this.data.DepartmentName, '']
+        });
+    }
+    confirmAdd() {
+        this.data = this.deptForm.value;
+        this._depService.addOrUpdateDepartment(this.data);
+    }
+};
+DepartmentComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
+    { type: _services_department_service__WEBPACK_IMPORTED_MODULE_2__["DepartmentService"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_4__["MAT_DIALOG_DATA"],] }] }
+];
+DepartmentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-department',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./department.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/department/department.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./department.component.css */ "./src/app/department/department.component.css")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_4__["MAT_DIALOG_DATA"]))
+], DepartmentComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/department/services/department.service.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/department/services/department.service.ts ***!
+  \***********************************************************/
+/*! exports provided: DepartmentService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DepartmentService", function() { return DepartmentService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let DepartmentService = class DepartmentService {
+    constructor(httpClient, httpService) {
+        this.httpClient = httpClient;
+        this.httpService = httpService;
+        this._departmentDetails = [];
+        this._departmentDetail = [
+            { DepartmentId: 1, DepartmentName: 'HRM', },
+            { DepartmentId: 2, DepartmentName: 'CSE', },
+            { DepartmentId: 3, DepartmentName: 'EEE', },
+            { DepartmentId: 4, DepartmentName: 'IPE', },
+        ];
+    }
+    addDepartment(addDepartment) {
+        addDepartment.DepartmentId = this._departmentDetail.length + 1;
+        this._departmentDetail.push(addDepartment);
+    }
+    editDepartment(editDepartment) {
+        const index = this._departmentDetail.findIndex(c => c.DepartmentId === editDepartment.DepartmentId);
+        this._departmentDetail[index] = editDepartment;
+        this._departmentDetail.push(editDepartment);
+    }
+    addOrUpdateDepartment(dept) {
+        const existDepartment = this.getDepartmentId(dept.DepartmentId);
+        if (existDepartment === -1) {
+            //will creates leave
+            dept.DepartmentId = this._departmentDetail.length + 1;
+            //dept.DepartmentId = this._departmentDetail.length + 1;
+            this._departmentDetail.push(dept);
+        }
+        else {
+            //will updates leave
+            this.deleteDepartment(dept.DepartmentId);
+            this._departmentDetail.push(dept);
+        }
+    }
+    deleteDepartment(id) {
+        const delDepartment = this.getDepartmentId(id);
+        this._departmentDetail.splice(delDepartment, 1);
+    }
+    getDepartment() {
+        return this._departmentDetail;
+    }
+    getDepartmentId(departmentId) {
+        return this._departmentDetail.findIndex(x => x.DepartmentId === departmentId);
+    }
+};
+DepartmentService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+DepartmentService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], DepartmentService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.css":
+/*!*****************************************************************************************************!*\
+  !*** ./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.css ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2VtcGxveWVlLWF0dGVuZGFuY2UvZW1wbG95ZWUtYXR0ZW5kYW5jZS1saXN0L2VtcGxveWVlLWF0dGVuZGFuY2UtbGlzdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.ts":
+/*!****************************************************************************************************!*\
+  !*** ./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.ts ***!
+  \****************************************************************************************************/
+/*! exports provided: EmployeeAttendanceListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeAttendanceListComponent", function() { return EmployeeAttendanceListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _services_employeeAttendance_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/employeeAttendance.service */ "./src/app/employee-attendance/services/employeeAttendance.service.ts");
+/* harmony import */ var _employee_attendance_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../employee-attendance.component */ "./src/app/employee-attendance/employee-attendance.component.ts");
+
+
+
+
+
+
+let EmployeeAttendanceListComponent = class EmployeeAttendanceListComponent {
+    constructor(fb, dialog, _employeeAttendService) {
+        this.fb = fb;
+        this.dialog = dialog;
+        this._employeeAttendService = _employeeAttendService;
+        this.attendList = [];
+        this.attendFullList = [];
+    }
+    ngOnInit() {
+        this.attendList = this._employeeAttendService.getAttendance();
+        this.attendFullList = this.attendList;
+    }
+    search() {
+        if (this.searchText != '') {
+            this.attendFullList = this.attendFullList.filter(res => {
+                return res.Remarks.toLocaleLowerCase().match(this.searchText.toLocaleLowerCase());
+            });
+        }
+        else if (this.searchText == '') {
+            this.ngOnInit();
+        }
+    }
+    editAttendance(id) {
+        this.isPopupOpened = true;
+        const atData = this._employeeAttendService.getAttendance().find(c => c.EmployeeId === id);
+        const dialogRef = this.dialog.open(_employee_attendance_component__WEBPACK_IMPORTED_MODULE_5__["EmployeeAttendanceComponent"], {
+            data: atData
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+    }
+    deleteAttendance(id) {
+        this._employeeAttendService.deleteAttendance(id);
+    }
+    addAttendance() {
+        const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
+        this.isPopupOpened = true;
+        const dialogRef = this.dialog.open(_employee_attendance_component__WEBPACK_IMPORTED_MODULE_5__["EmployeeAttendanceComponent"], {
+            data: {}
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+        // dialogConfig.width = '60px';
+    }
+};
+EmployeeAttendanceListComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+    { type: _services_employeeAttendance_service__WEBPACK_IMPORTED_MODULE_4__["EmployeeAttendanceService"] }
+];
+EmployeeAttendanceListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-employee-attendance-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employee-attendance-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employee-attendance-list.component.css */ "./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.css")).default]
+    })
+], EmployeeAttendanceListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-attendance/employee-attendance.component.css":
+/*!***********************************************************************!*\
+  !*** ./src/app/employee-attendance/employee-attendance.component.css ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n  \r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n  \r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZW1wbG95ZWUtYXR0ZW5kYW5jZS9lbXBsb3llZS1hdHRlbmRhbmNlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxlQUFlO0lBQ2YsWUFBWTtFQUNkIiwiZmlsZSI6InNyYy9hcHAvZW1wbG95ZWUtYXR0ZW5kYW5jZS9lbXBsb3llZS1hdHRlbmRhbmNlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgbWluLXdpZHRoOiA0NTBweDtcclxuICB9XHJcbiAgXHJcbiAgLmNvbnRhaW5lciA+ICoge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5mb3JtIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBwYWRkaW5nLXRvcDogNnB4O1xyXG4gIH1cclxuICBcclxuICAubWF0LWZvcm0tZmllbGQge1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgZmxleC1ncm93OiAxO1xyXG4gIH0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/employee-attendance/employee-attendance.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/employee-attendance/employee-attendance.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: EmployeeAttendanceComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeAttendanceComponent", function() { return EmployeeAttendanceComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _services_employeeAttendance_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/employeeAttendance.service */ "./src/app/employee-attendance/services/employeeAttendance.service.ts");
+
+
+
+
+
+let EmployeeAttendanceComponent = class EmployeeAttendanceComponent {
+    constructor(fb, dialog, _employeeService, data) {
+        this.fb = fb;
+        this.dialog = dialog;
+        this._employeeService = _employeeService;
+        this.data = data;
+    }
+    ngOnInit() {
+        this.reactiveForm();
+    }
+    reactiveForm() {
+        this.attendForm = this.fb.group({
+            EmployeeId: [this.data.EmployeeId, ''],
+            TimeIn: [this.data.TimeIn, ''],
+            TimeOut: [this.data.TimeOut, ''],
+            Remarks: [this.data.Remarks, '']
+        });
+    }
+    // public submitForm(): void {
+    //   this.data = this.salForm.value;
+    //   this._salaryService.addOrUpdateSalary(this.data);
+    // }
+    confirmAdd() {
+        this.data = this.attendForm.value;
+        this._employeeService.addOrUpdateEmployeeAttendance(this.data);
+    }
+};
+EmployeeAttendanceComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+    { type: _services_employeeAttendance_service__WEBPACK_IMPORTED_MODULE_4__["EmployeeAttendanceService"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] }
+];
+EmployeeAttendanceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-employee-attendance',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employee-attendance.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-attendance/employee-attendance.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employee-attendance.component.css */ "./src/app/employee-attendance/employee-attendance.component.css")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
+], EmployeeAttendanceComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-attendance/services/employeeAttendance.service.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/employee-attendance/services/employeeAttendance.service.ts ***!
+  \****************************************************************************/
+/*! exports provided: EmployeeAttendanceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeAttendanceService", function() { return EmployeeAttendanceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let EmployeeAttendanceService = class EmployeeAttendanceService {
+    constructor(httpClient, httpService) {
+        this.httpClient = httpClient;
+        this.httpService = httpService;
+        this._employeeAttendDetails = [];
+        this._employeeAttendDetail = [
+            { EmployeeId: 1, TimeIn: '10:00', TimeOut: '05:00', Remarks: 'Present' },
+            { EmployeeId: 2, TimeIn: 'Null', TimeOut: 'Null', Remarks: 'Absent' },
+            { EmployeeId: 3, TimeIn: '10:00', TimeOut: '06:00', Remarks: 'Present' },
+            { EmployeeId: 4, TimeIn: 'Null', TimeOut: 'Null', Remarks: 'Absent' },
+        ];
+    }
+    addOrUpdateEmployeeAttendance(empAttend) {
+        const existAttend = this.getAttendanceId(empAttend.EmployeeId);
+        if (existAttend === -1) {
+            //will creates leave
+            empAttend.EmployeeId = this._employeeAttendDetail.length + 1;
+            //  empSalary.EmployeeId = this.leaveDetailsList.length + 1;
+            this._employeeAttendDetail.push(empAttend);
+        }
+        else {
+            //will updates leave
+            this.deleteAttendance(empAttend.EmployeeId);
+            this._employeeAttendDetail.push(empAttend);
+        }
+    }
+    //not used
+    editSalary(empAttend) {
+        const index = this._employeeAttendDetail.findIndex(c => c.EmployeeId === empAttend.EmployeeId);
+        this._employeeAttendDetail[index] = empAttend;
+        this._employeeAttendDetail.push(empAttend);
+    }
+    deleteAttendance(id) {
+        const deleteAttendance = this.getAttendanceId(id);
+        this._employeeAttendDetail.splice(deleteAttendance, 1);
+    }
+    getAttendance() {
+        return this._employeeAttendDetail;
+    }
+    getAttendanceId(employeeId) {
+        return this._employeeAttendDetail.findIndex(sal => sal.EmployeeId === employeeId);
+    }
+};
+EmployeeAttendanceService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+EmployeeAttendanceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], EmployeeAttendanceService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-project/employee-project-list/employee-project-list.component.css":
+/*!********************************************************************************************!*\
+  !*** ./src/app/employee-project/employee-project-list/employee-project-list.component.css ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2VtcGxveWVlLXByb2plY3QvZW1wbG95ZWUtcHJvamVjdC1saXN0L2VtcGxveWVlLXByb2plY3QtbGlzdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/employee-project/employee-project-list/employee-project-list.component.ts":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/employee-project/employee-project-list/employee-project-list.component.ts ***!
+  \*******************************************************************************************/
+/*! exports provided: EmployeeProjectListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeProjectListComponent", function() { return EmployeeProjectListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _services_employee_project_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/employee-project.service */ "./src/app/employee-project/services/employee-project.service.ts");
+/* harmony import */ var _employee_project_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../employee-project.component */ "./src/app/employee-project/employee-project.component.ts");
+
+
+
+
+
+
+let EmployeeProjectListComponent = class EmployeeProjectListComponent {
+    constructor(fb, dialog, _employeeProService) {
+        this.fb = fb;
+        this.dialog = dialog;
+        this._employeeProService = _employeeProService;
+        this.projectList = [];
+        this.projectFullList = [];
+    }
+    ngOnInit() {
+        this.projectList = this._employeeProService.getProject();
+        this.projectFullList = this.projectList;
+    }
+    search() {
+        if (this.searchText != '') {
+            this.projectFullList = this.projectFullList.filter(res => {
+                return res.ProjectName.toLocaleLowerCase().match(this.searchText.toLocaleLowerCase());
+            });
+        }
+        else if (this.searchText == '') {
+            this.ngOnInit();
+        }
+    }
+    editProject(id) {
+        this.isPopupOpened = true;
+        const atData = this._employeeProService.getProject().find(c => c.ProjectHandleId === id);
+        const dialogRef = this.dialog.open(_employee_project_component__WEBPACK_IMPORTED_MODULE_5__["EmployeeProjectComponent"], {
+            data: atData
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+    }
+    deleteProject(id) {
+        this._employeeProService.deleteProject(id);
+    }
+    addProject() {
+        const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
+        this.isPopupOpened = true;
+        const dialogRef = this.dialog.open(_employee_project_component__WEBPACK_IMPORTED_MODULE_5__["EmployeeProjectComponent"], {
+            data: {}
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+        // dialogConfig.width = '60px';
+    }
+};
+EmployeeProjectListComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+    { type: _services_employee_project_service__WEBPACK_IMPORTED_MODULE_4__["EmployeeProjectService"] }
+];
+EmployeeProjectListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-employee-project-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employee-project-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-project/employee-project-list/employee-project-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employee-project-list.component.css */ "./src/app/employee-project/employee-project-list/employee-project-list.component.css")).default]
+    })
+], EmployeeProjectListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-project/employee-project.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/employee-project/employee-project.component.css ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n  \r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n  \r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZW1wbG95ZWUtcHJvamVjdC9lbXBsb3llZS1wcm9qZWN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxlQUFlO0lBQ2YsWUFBWTtFQUNkIiwiZmlsZSI6InNyYy9hcHAvZW1wbG95ZWUtcHJvamVjdC9lbXBsb3llZS1wcm9qZWN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgbWluLXdpZHRoOiA0NTBweDtcclxuICB9XHJcbiAgXHJcbiAgLmNvbnRhaW5lciA+ICoge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5mb3JtIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBwYWRkaW5nLXRvcDogNnB4O1xyXG4gIH1cclxuICBcclxuICAubWF0LWZvcm0tZmllbGQge1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgZmxleC1ncm93OiAxO1xyXG4gIH0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/employee-project/employee-project.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/employee-project/employee-project.component.ts ***!
+  \****************************************************************/
+/*! exports provided: EmployeeProjectComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeProjectComponent", function() { return EmployeeProjectComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _services_employee_project_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/employee-project.service */ "./src/app/employee-project/services/employee-project.service.ts");
+
+
+
+
+
+let EmployeeProjectComponent = class EmployeeProjectComponent {
+    constructor(fb, dialog, _employeeService, data) {
+        this.fb = fb;
+        this.dialog = dialog;
+        this._employeeService = _employeeService;
+        this.data = data;
+    }
+    ngOnInit() {
+        this.reactiveForm();
+    }
+    reactiveForm() {
+        this.proForm = this.fb.group({
+            ProjectHandleId: [this.data.ProjectHandleId, ''],
+            ProjectName: [this.data.ProjectName, ''],
+            DateStarted: [this.data.DateStarted, ''],
+            DateEnded: [this.data.DateEnded, ''],
+            Status: [this.data.Status, '']
+        });
+    }
+    // public submitForm(): void {
+    //   this.data = this.salForm.value;
+    //   this._salaryService.addOrUpdateSalary(this.data);
+    // }
+    confirmAdd() {
+        this.data = this.proForm.value;
+        this._employeeService.addOrUpdateProject(this.data);
+    }
+};
+EmployeeProjectComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+    { type: _services_employee_project_service__WEBPACK_IMPORTED_MODULE_4__["EmployeeProjectService"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] }
+];
+EmployeeProjectComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-employee-project',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employee-project.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-project/employee-project.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employee-project.component.css */ "./src/app/employee-project/employee-project.component.css")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
+], EmployeeProjectComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-project/services/employee-project.service.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/employee-project/services/employee-project.service.ts ***!
+  \***********************************************************************/
+/*! exports provided: EmployeeProjectService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeProjectService", function() { return EmployeeProjectService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let EmployeeProjectService = class EmployeeProjectService {
+    constructor(httpClient, httpService) {
+        this.httpClient = httpClient;
+        this.httpService = httpService;
+        this._employeeProjectDetails = [];
+        this._employeeProjectDetail = [
+            { ProjectHandleId: 1, ProjectName: "HRM", DateStarted: "Jan", DateEnded: '11/11/2019', Status: 'On Going' },
+            { ProjectHandleId: 2, ProjectName: "ERP", DateStarted: "Jan", DateEnded: '11/11/2019', Status: 'On Going' },
+            { ProjectHandleId: 3, ProjectName: "LMS", DateStarted: "Jan", DateEnded: '11/11/2019', Status: 'On Going' },
+            { ProjectHandleId: 4, ProjectName: "UMS", DateStarted: "Jan", DateEnded: '11/11/2019', Status: 'On Going' },
+            { ProjectHandleId: 5, ProjectName: "IMS", DateStarted: "Jan", DateEnded: '11/11/2019', Status: 'On Going' },
+        ];
+    }
+    addOrUpdateProject(empProject) {
+        const existPro = this.getProjectById(empProject.ProjectHandleId);
+        if (existPro === -1) {
+            //will creates leave
+            empProject.ProjectHandleId = this._employeeProjectDetail.length + 1;
+            //empProject.EmployeeId = this._employeeProjectDetail.length + 1;
+            this._employeeProjectDetail.push(empProject);
+        }
+        else {
+            //will updates leave
+            this.deleteProject(empProject.ProjectHandleId);
+            this._employeeProjectDetail.push(empProject);
+        }
+    }
+    //not used
+    editProject(empProject) {
+        const index = this._employeeProjectDetail.findIndex(c => c.ProjectHandleId === empProject.ProjectHandleId);
+        this._employeeProjectDetail[index] = empProject;
+        this._employeeProjectDetail.push(empProject);
+    }
+    deleteProject(id) {
+        const delLeave = this.getProjectById(id);
+        this._employeeProjectDetail.splice(delLeave, 1);
+    }
+    getProject() {
+        return this._employeeProjectDetail;
+    }
+    getProjectById(projectHandleId) {
+        return this._employeeProjectDetail.findIndex(x => x.ProjectHandleId === projectHandleId);
+    }
+};
+EmployeeProjectService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+EmployeeProjectService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], EmployeeProjectService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-salary/employee-salary-list/employee-salary-list.component.css":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/employee-salary/employee-salary-list/employee-salary-list.component.css ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2VtcGxveWVlLXNhbGFyeS9lbXBsb3llZS1zYWxhcnktbGlzdC9lbXBsb3llZS1zYWxhcnktbGlzdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/employee-salary/employee-salary-list/employee-salary-list.component.ts":
+/*!****************************************************************************************!*\
+  !*** ./src/app/employee-salary/employee-salary-list/employee-salary-list.component.ts ***!
+  \****************************************************************************************/
+/*! exports provided: EmployeeSalaryListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeSalaryListComponent", function() { return EmployeeSalaryListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _services_employeSalary_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/employeSalary.service */ "./src/app/employee-salary/services/employeSalary.service.ts");
+/* harmony import */ var _employee_salary_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../employee-salary.component */ "./src/app/employee-salary/employee-salary.component.ts");
+
+
+
+
+
+
+let EmployeeSalaryListComponent = class EmployeeSalaryListComponent {
+    constructor(fb, dialog, _employeeSalaryService) {
+        this.fb = fb;
+        this.dialog = dialog;
+        this._employeeSalaryService = _employeeSalaryService;
+        this.salaryList = [];
+        this.salaryFullList = [];
+    }
+    ngOnInit() {
+        this.salaryList = this._employeeSalaryService.getSalary();
+        this.salaryFullList = this.salaryList;
+    }
+    search() {
+        if (this.searchText != '') {
+            this.salaryFullList = this.salaryFullList.filter(res => {
+                return res.Status.toLocaleLowerCase().match(this.searchText.toLocaleLowerCase());
+            });
+        }
+        else if (this.searchText == '') {
+            this.ngOnInit();
+        }
+    }
+    editSalary(id) {
+        this.isPopupOpened = true;
+        const leaveData = this._employeeSalaryService.getSalary().find(c => c.SalaryId === id);
+        const dialogRef = this.dialog.open(_employee_salary_component__WEBPACK_IMPORTED_MODULE_5__["EmployeeSalaryComponent"], {
+            data: leaveData
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+    }
+    deleteSalary(id) {
+        this._employeeSalaryService.deleteSalary(id);
+    }
+    addSalary() {
+        const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
+        this.isPopupOpened = true;
+        const dialogRef = this.dialog.open(_employee_salary_component__WEBPACK_IMPORTED_MODULE_5__["EmployeeSalaryComponent"], {
+            data: {}
+        });
+        dialogRef.afterClosed().subscribe(result => {
+        });
+        // dialogConfig.width = '60px';
+    }
+};
+EmployeeSalaryListComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+    { type: _services_employeSalary_service__WEBPACK_IMPORTED_MODULE_4__["EmployeeSalaryService"] }
+];
+EmployeeSalaryListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-employee-salary-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employee-salary-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-salary/employee-salary-list/employee-salary-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employee-salary-list.component.css */ "./src/app/employee-salary/employee-salary-list/employee-salary-list.component.css")).default]
+    })
+], EmployeeSalaryListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-salary/employee-salary.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/employee-salary/employee-salary.component.css ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 450px;\r\n  }\r\n  \r\n  .container > * {\r\n    width: 100%;\r\n  }\r\n  \r\n  .form {\r\n    display: flex;\r\n    padding-top: 6px;\r\n  }\r\n  \r\n  .mat-form-field {\r\n    font-size: 16px;\r\n    flex-grow: 1;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZW1wbG95ZWUtc2FsYXJ5L2VtcGxveWVlLXNhbGFyeS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxXQUFXO0VBQ2I7O0VBRUE7SUFDRSxhQUFhO0lBQ2IsZ0JBQWdCO0VBQ2xCOztFQUVBO0lBQ0UsZUFBZTtJQUNmLFlBQVk7RUFDZCIsImZpbGUiOiJzcmMvYXBwL2VtcGxveWVlLXNhbGFyeS9lbXBsb3llZS1zYWxhcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBtaW4td2lkdGg6IDQ1MHB4O1xyXG4gIH1cclxuICBcclxuICAuY29udGFpbmVyID4gKiB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgXHJcbiAgLmZvcm0ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIHBhZGRpbmctdG9wOiA2cHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5tYXQtZm9ybS1maWVsZCB7XHJcbiAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgICBmbGV4LWdyb3c6IDE7XHJcbiAgfSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/employee-salary/employee-salary.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/employee-salary/employee-salary.component.ts ***!
+  \**************************************************************/
+/*! exports provided: EmployeeSalaryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeSalaryComponent", function() { return EmployeeSalaryComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_employeSalary_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/employeSalary.service */ "./src/app/employee-salary/services/employeSalary.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+
+
+
+
+
+let EmployeeSalaryComponent = class EmployeeSalaryComponent {
+    constructor(fb, dialog, _salaryService, data) {
+        this.fb = fb;
+        this.dialog = dialog;
+        this._salaryService = _salaryService;
+        this.data = data;
+    }
+    ngOnInit() {
+        this.reactiveForm();
+    }
+    reactiveForm() {
+        this.salForm = this.fb.group({
+            SalaryId: [this.data.SalaryId, ''],
+            SalaryAmount: [this.data.SalaryAmount, ''],
+            Tax: [this.data.Tax, ''],
+            Status: [this.data.Status, '']
+        });
+    }
+    // public submitForm(): void {
+    //   this.data = this.salForm.value;
+    //   this._salaryService.addOrUpdateSalary(this.data);
+    // }
+    confirmAdd() {
+        this.data = this.salForm.value;
+        this._salaryService.addOrUpdateSalary(this.data);
+    }
+};
+EmployeeSalaryComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
+    { type: _services_employeSalary_service__WEBPACK_IMPORTED_MODULE_2__["EmployeeSalaryService"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_4__["MAT_DIALOG_DATA"],] }] }
+];
+EmployeeSalaryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-employee-salary',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./employee-salary.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-salary/employee-salary.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./employee-salary.component.css */ "./src/app/employee-salary/employee-salary.component.css")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_4__["MAT_DIALOG_DATA"]))
+], EmployeeSalaryComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/employee-salary/services/employeSalary.service.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/employee-salary/services/employeSalary.service.ts ***!
+  \*******************************************************************/
+/*! exports provided: EmployeeSalaryService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeSalaryService", function() { return EmployeeSalaryService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let EmployeeSalaryService = class EmployeeSalaryService {
+    constructor(httpClient, httpService) {
+        this.httpClient = httpClient;
+        this.httpService = httpService;
+        this._employeeSalaryDetails = [];
+        this._employeeSalaryList = [
+            { SalaryId: 1, SalaryAmount: 100000, Tax: 10, Status: 'Paid' },
+            { SalaryId: 2, SalaryAmount: 120000, Tax: 11, Status: 'UnPaid' },
+            { SalaryId: 3, SalaryAmount: 130000, Tax: 12, Status: 'Paid' },
+            { SalaryId: 4, SalaryAmount: 140000, Tax: 13, Status: 'UnPaid' }
+        ];
+    }
+    addOrUpdateSalary(empSalary) {
+        const existLeave = this.getSalaryId(empSalary.SalaryId);
+        if (existLeave === -1) {
+            //will creates leave
+            empSalary.SalaryId = this._employeeSalaryList.length + 1;
+            //  empSalary.EmployeeId = this.leaveDetailsList.length + 1;
+            this._employeeSalaryList.push(empSalary);
+        }
+        else {
+            //will updates leave
+            this.deleteSalary(empSalary.SalaryId);
+            this._employeeSalaryList.push(empSalary);
+        }
+    }
+    //not used
+    editSalary(empSalary) {
+        const index = this._employeeSalaryList.findIndex(c => c.SalaryId === empSalary.SalaryId);
+        this._employeeSalaryList[index] = empSalary;
+        this._employeeSalaryList.push(empSalary);
+    }
+    deleteSalary(id) {
+        const deleteSalary = this.getSalaryId(id);
+        this._employeeSalaryList.splice(deleteSalary, 1);
+    }
+    getSalary() {
+        return this._employeeSalaryList;
+    }
+    getSalaryId(salaryId) {
+        return this._employeeSalaryList.findIndex(sal => sal.SalaryId === salaryId);
+    }
+};
+EmployeeSalaryService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+EmployeeSalaryService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], EmployeeSalaryService);
 
 
 
@@ -2366,15 +3493,15 @@ let UserService = class UserService {
         this.httpService = httpService;
         this._userDetails = [];
         this._userDetail = [
-            { UserId: 1, UserName: 'admin', Password: 'admin', UserGender: 'Male', Role: 'Admin', Token: 'asd55689654', Attendance: 1, IpAddress: '172.72.82.0' },
-            { UserId: 2, UserName: 'Maria', Password: 'maria', UserGender: 'Female', Role: 'User', Token: 'asd588989654', Attendance: 2, IpAddress: '172.82.92.0' },
-            { UserId: 3, UserName: 'Shaon', Password: 'shaon', UserGender: 'Male', Role: 'User', Token: 'asd567889654', Attendance: 5, IpAddress: '164.92.81.1' },
-            { UserId: 4, UserName: 'Tara', Password: 'tara', UserGender: 'Female', Role: 'User', Token: 'asd5559589654', Attendance: 6, IpAddress: '172.72.82.0' },
-            { UserId: 5, UserName: 'Rahi', Password: 'rahi', UserGender: 'Male', Role: 'User', Token: 'asd589654', Attendance: 3, IpAddress: '172.72.82.0' },
-            { UserId: 6, UserName: 'Kriti', Password: 'kriti', UserGender: 'Female', Role: 'User', Token: 'asd589654', Attendance: 3, IpAddress: '172.72.82.0' },
-            { UserId: 7, UserName: 'Raman', Password: 'raman', UserGender: 'Male', Role: 'User', Token: 'asdasd589654', Attendance: 2, IpAddress: '172.72.82.0' },
-            { UserId: 8, UserName: 'Rashi', Password: 'rashi', UserGender: 'Female', Role: 'User', Token: 'asda245sd589654', Attendance: 10, IpAddress: '172.72.82.0' },
-            { UserId: 9, UserName: 'Kiren', Password: 'kiren', UserGender: 'Male', Role: 'User', Token: 'asd578asd589654', Attendance: 11, IpAddress: '172.72.82.0' },
+            { UserId: 1, UserName: 'admin', Password: 'admin', UserGender: 'Male', Role: 'Admin', Token: 'asd55689654', Attendance: 1, IpAddress: '172.72.82.0', latS: 23.7272, lngS: 90.4039 },
+            { UserId: 2, UserName: 'Maria', Password: 'maria', UserGender: 'Female', Role: 'User', Token: 'asd588989654', Attendance: 2, IpAddress: '172.82.92.0', latS: 23.7272, lngS: 90.4039 },
+            { UserId: 3, UserName: 'Shaon', Password: 'shaon', UserGender: 'Male', Role: 'User', Token: 'asd567889654', Attendance: 5, IpAddress: '164.92.81.1', latS: 23.7272, lngS: 90.4039 },
+            { UserId: 4, UserName: 'Tara', Password: 'tara', UserGender: 'Female', Role: 'User', Token: 'asd5559589654', Attendance: 6, IpAddress: '172.72.82.0', latS: 23.7272, lngS: 90.4039 },
+            { UserId: 5, UserName: 'Rahi', Password: 'rahi', UserGender: 'Male', Role: 'User', Token: 'asd589654', Attendance: 3, IpAddress: '172.72.82.0', latS: 23.7272, lngS: 90.4039 },
+            { UserId: 6, UserName: 'Kriti', Password: 'kriti', UserGender: 'Female', Role: 'User', Token: 'asd589654', Attendance: 3, IpAddress: '172.72.82.0', latS: 23.7272, lngS: 90.4039 },
+            { UserId: 7, UserName: 'Raman', Password: 'raman', UserGender: 'Male', Role: 'User', Token: 'asdasd589654', Attendance: 2, IpAddress: '172.72.82.0', latS: 23.7272, lngS: 90.4039 },
+            { UserId: 8, UserName: 'Rashi', Password: 'rashi', UserGender: 'Female', Role: 'User', Token: 'asda245sd589654', Attendance: 10, IpAddress: '172.72.82.0', latS: 23.7272, lngS: 90.4039 },
+            { UserId: 9, UserName: 'Kiren', Password: 'kiren', UserGender: 'Male', Role: 'User', Token: 'asd578asd589654', Attendance: 11, IpAddress: '172.72.82.0', latS: 23.7272, lngS: 90.4039 },
         ];
     }
     addUserDetail(addUser) {
@@ -2456,10 +3583,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/user.service */ "./src/app/user/services/user.service.ts");
 /* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../user.component */ "./src/app/user/user.component.ts");
-/* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
-/* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! html2canvas */ "./node_modules/html2canvas/dist/npm/index.js");
-/* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(html2canvas__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+/* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! html2canvas */ "./node_modules/html2canvas/dist/npm/index.js");
+/* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(html2canvas__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -2471,9 +3600,10 @@ let UserListComponent = class UserListComponent {
     constructor(dialog, _userService) {
         this.dialog = dialog;
         this._userService = _userService;
+        this.isChecked = false;
         this.getUserList = [];
-        this.displayedColumns = ['addtaxid', 'taxname', 'taxvalue', 'status', 'actions'];
         this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this._userService._userDetail);
+        this.userList = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
     }
     ngOnInit() {
         this.getUserList = this._userService.getUserDetail();
@@ -2481,6 +3611,28 @@ let UserListComponent = class UserListComponent {
     // get userList() {
     //   return this._userService.getUserDetail();
     // }
+    sendMapData() {
+        if (this.isChecked == true) {
+            this.sendData();
+        }
+        else {
+            alert("Danger");
+        }
+    }
+    onCheckboxChange(e) {
+        const isSelect = this.form.get('isSelect');
+        if (e.target.checked) {
+            isSelect.push(new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"](e.target.value));
+        }
+        else {
+            const index = isSelect.controls.findIndex(x => x.value === e.target.value);
+            isSelect.removeAt(index);
+        }
+    }
+    sendData() {
+        this.userList.emit(this.getUserList);
+        console.log("Clicked");
+    }
     addUser() {
         const dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogConfig"]();
         this.isPopupOpened = true;
@@ -2509,14 +3661,14 @@ let UserListComponent = class UserListComponent {
     }
     captureScreen() {
         var data = document.getElementById('contentToConvert');
-        html2canvas__WEBPACK_IMPORTED_MODULE_6___default()(data).then(canvas => {
+        html2canvas__WEBPACK_IMPORTED_MODULE_7___default()(data).then(canvas => {
             // Few necessary setting options  
             var imgWidth = 208;
             var pageHeight = 295;
             var imgHeight = canvas.height * imgWidth / canvas.width;
             var heightLeft = imgHeight;
             const contentDataURL = canvas.toDataURL('image/png');
-            let pdf = new jspdf__WEBPACK_IMPORTED_MODULE_5__('p', 'mm', 'a4'); // A4 size page of PDF  
+            let pdf = new jspdf__WEBPACK_IMPORTED_MODULE_6__('p', 'mm', 'a4'); // A4 size page of PDF  
             var position = 0;
             pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight);
             pdf.save('MYPdf.pdf'); // Generated PDF   
@@ -2530,6 +3682,9 @@ UserListComponent.ctorParameters = () => [
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
 ], UserListComponent.prototype, "userLists", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
+], UserListComponent.prototype, "userList", void 0);
 UserListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-user-list',
@@ -2576,13 +3731,17 @@ let UserLocationComponent = class UserLocationComponent {
         this._userService = _userService;
         this.lat = 23.7272;
         this.lng = 90.4093;
+        this.userList = [];
     }
     ngOnInit() {
         this._userService.getLocation().subscribe(data => {
             console.log(data);
-            // this.lat = data.latitude;
-            // this.lng = data.longitude;
+            this.lat = this.userList;
+            this.lng = this.userList;
         });
+    }
+    getData($event) {
+        this.userList = $event;
     }
 };
 UserLocationComponent.ctorParameters = () => [
