@@ -50,7 +50,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addDepartment()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n    <!-- <form class=\"navbar-form\">\n    <div class=\"input-group no-border\">\n      <input type=\"text\" value=\"\" class=\"form-control\" placeholder=\"Search...\">\n      <button mat-raised-button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n          <i class=\"material-icons\">search</i>\n          <div class=\"ripple-container\"></div>\n      </button>\n  </div>\n </form> -->\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Department Id</th>\n          <th>Department Name</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let dept of departmentFullList \">\n          <td>{{dept.DepartmentId}}</td>\n          <td>{{dept.DepartmentName}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editDepartment(dept.DepartmentId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteDepartment(dept.Id)\"><mat-icon>delete_forever</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n\n  <!-- <div class=\"main-content\">\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <div class=\"card\">\n                    <div class=\"card-header card-header-danger\">\n                        <h4 class=\"card-title \">Simple Table</h4>\n                        <p class=\"card-category\"> Here is a subtitle for this table</p>\n                    </div>\n                    <div class=\"card-body\">\n                        <div class=\"table-responsive\">\n                            <table class=\"table\">\n                                <thead class=\" text-primary\">\n                                    <th>\n                                        ID\n                                    </th>\n                                    <th>\n                                        Name\n                                    </th>\n                                    <th>\n                                        Country\n                                    </th>\n                                    <th>\n                                        City\n                                    </th>\n                                    <th>\n                                        Salary\n                                    </th>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>\n                                            1\n                                        </td>\n                                        <td>\n                                            Dakota Rice\n                                        </td>\n                                        <td>\n                                            Niger\n                                        </td>\n                                        <td>\n                                            Oud-Turnhout\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $36,738\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            2\n                                        </td>\n                                        <td>\n                                            Minerva Hooper\n                                        </td>\n                                        <td>\n                                            Curaçao\n                                        </td>\n                                        <td>\n                                            Sinaai-Waas\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $23,789\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            3\n                                        </td>\n                                        <td>\n                                            Sage Rodriguez\n                                        </td>\n                                        <td>\n                                            Netherlands\n                                        </td>\n                                        <td>\n                                            Baileux\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $56,142\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            4\n                                        </td>\n                                        <td>\n                                            Philip Chaney\n                                        </td>\n                                        <td>\n                                            Korea, South\n                                        </td>\n                                        <td>\n                                            Overland Park\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $38,735\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            5\n                                        </td>\n                                        <td>\n                                            Doris Greene\n                                        </td>\n                                        <td>\n                                            Malawi\n                                        </td>\n                                        <td>\n                                            Feldkirchen in Kärnten\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $63,542\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            6\n                                        </td>\n                                        <td>\n                                            Mason Porter\n                                        </td>\n                                        <td>\n                                            Chile\n                                        </td>\n                                        <td>\n                                            Gloucester\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $78,615\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div> -->");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addDepartment()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n      \n    </mat-form-field>\n\n    <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n        <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n      </button>\n    <!-- <form class=\"navbar-form\">\n    <div class=\"input-group no-border\">\n      <input type=\"text\" value=\"\" class=\"form-control\" placeholder=\"Search...\">\n      <button mat-raised-button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n          <i class=\"material-icons\">search</i>\n          <div class=\"ripple-container\"></div>\n      </button>\n  </div>\n </form> -->\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n      <table class=\"table\">\n        <thead>\n          <th>Department Id</th>\n          <th>Department Name</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let dept of departmentFullList \">\n          <td>{{dept.DepartmentId}}</td>\n          <td>{{dept.DepartmentName}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editDepartment(dept.DepartmentId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteDepartment(dept.Id)\"><mat-icon>delete_forever</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n\n  <!-- <div class=\"main-content\">\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <div class=\"card\">\n                    <div class=\"card-header card-header-danger\">\n                        <h4 class=\"card-title \">Simple Table</h4>\n                        <p class=\"card-category\"> Here is a subtitle for this table</p>\n                    </div>\n                    <div class=\"card-body\">\n                        <div class=\"table-responsive\">\n                            <table class=\"table\">\n                                <thead class=\" text-primary\">\n                                    <th>\n                                        ID\n                                    </th>\n                                    <th>\n                                        Name\n                                    </th>\n                                    <th>\n                                        Country\n                                    </th>\n                                    <th>\n                                        City\n                                    </th>\n                                    <th>\n                                        Salary\n                                    </th>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>\n                                            1\n                                        </td>\n                                        <td>\n                                            Dakota Rice\n                                        </td>\n                                        <td>\n                                            Niger\n                                        </td>\n                                        <td>\n                                            Oud-Turnhout\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $36,738\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            2\n                                        </td>\n                                        <td>\n                                            Minerva Hooper\n                                        </td>\n                                        <td>\n                                            Curaçao\n                                        </td>\n                                        <td>\n                                            Sinaai-Waas\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $23,789\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            3\n                                        </td>\n                                        <td>\n                                            Sage Rodriguez\n                                        </td>\n                                        <td>\n                                            Netherlands\n                                        </td>\n                                        <td>\n                                            Baileux\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $56,142\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            4\n                                        </td>\n                                        <td>\n                                            Philip Chaney\n                                        </td>\n                                        <td>\n                                            Korea, South\n                                        </td>\n                                        <td>\n                                            Overland Park\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $38,735\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            5\n                                        </td>\n                                        <td>\n                                            Doris Greene\n                                        </td>\n                                        <td>\n                                            Malawi\n                                        </td>\n                                        <td>\n                                            Feldkirchen in Kärnten\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $63,542\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>\n                                            6\n                                        </td>\n                                        <td>\n                                            Mason Porter\n                                        </td>\n                                        <td>\n                                            Chile\n                                        </td>\n                                        <td>\n                                            Gloucester\n                                        </td>\n                                        <td class=\"text-primary\">\n                                            $78,615\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div> -->");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/department/department.component.html": 
@@ -72,7 +72,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addAttendance()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n        <th>Employee Id</th>\n        <th>Time In</th>\n        <th>Time Out</th>\n        <th>Remarks</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let attend of attendFullList \">\n          <td>{{attend.EmployeeId}}</td>\n          <td>{{attend.TimeIn}}</td>\n          <td>{{attend.TimeOut}}</td>\n          <td>{{attend.Remarks}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editAttendance(attend.EmployeeId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteAttendance(attend.EmployeeId)\">\n              <mat-icon>delete_forever</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addAttendance()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n\n    <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n      <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n    </button>\n\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n      <table class=\"table\">\n        <thead>\n        <th>Employee Id</th>\n        <th>Time In</th>\n        <th>Time Out</th>\n        <th>Remarks</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let attend of attendFullList \">\n          <td>{{attend.EmployeeId}}</td>\n          <td>{{attend.TimeIn}}</td>\n          <td>{{attend.TimeOut}}</td>\n          <td>{{attend.Remarks}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editAttendance(attend.EmployeeId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteAttendance(attend.EmployeeId)\">\n              <mat-icon>delete_forever</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-attendance/employee-attendance.component.html": 
@@ -94,7 +94,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addProject()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n        <th>Project Handle Id</th>\n        <th>Project Name</th>\n        <th>Date Started</th>\n        <th>Date Ended</th>\n        <th>Status</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let project of projectFullList \">\n          <td>{{project.ProjectHandleId}}</td>\n          <td>{{project.ProjectName}}</td>\n          <td>{{project.DateStarted}}</td>\n          <td>{{project.DateEnded}}</td>\n          <td>{{project.Status}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editProject(project.ProjectHandleId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteProject(project.ProjectHandleId)\">\n              <mat-icon>delete_forever</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addProject()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n\n    <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n      <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n    </button>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n      <table class=\"table\">\n        <thead>\n        <th>Project Handle Id</th>\n        <th>Project Name</th>\n        <th>Date Started</th>\n        <th>Date Ended</th>\n        <th>Status</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let project of projectFullList \">\n          <td>{{project.ProjectHandleId}}</td>\n          <td>{{project.ProjectName}}</td>\n          <td>{{project.DateStarted}}</td>\n          <td>{{project.DateEnded}}</td>\n          <td>{{project.Status}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editProject(project.ProjectHandleId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteProject(project.ProjectHandleId)\">\n              <mat-icon>delete_forever</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-project/employee-project.component.html": 
@@ -116,7 +116,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addSalary()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n        <th>Salary Id</th>\n        <th>Salary Amount</th>\n        <th>Tax</th>\n        <th>Status</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let salary of salaryFullList \">\n          <td>{{salary.SalaryId}}</td>\n          <td>{{salary.SalaryAmount}}</td>\n          <td>{{salary.Tax}}</td>\n          <td>{{salary.Status}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editSalary(salary.SalaryId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteSalary(salary.SalaryId)\">\n              <mat-icon>delete_forever</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addSalary()\">\n      <mat-icon>add</mat-icon>\n    </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n\n    <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n      <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n    </button>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n      <table class=\"table\">\n        <thead>\n        <th>Salary Id</th>\n        <th>Salary Amount</th>\n        <th>Tax</th>\n        <th>Status</th>\n        <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let salary of salaryFullList \">\n          <td>{{salary.SalaryId}}</td>\n          <td>{{salary.SalaryAmount}}</td>\n          <td>{{salary.Tax}}</td>\n          <td>{{salary.Status}}</td>\n          <td>\n            <button mat-icon-button color=\"accent\" (click)=\"editSalary(salary.SalaryId)\">\n              <mat-icon>edit</mat-icon>\n            </button>\n            <button mat-icon-button color=\"warn\" (click)=\"deleteSalary(salary.SalaryId)\">\n              <mat-icon>delete_forever</mat-icon>\n            </button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </mat-card-content>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee-salary/employee-salary.component.html": 
@@ -138,7 +138,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab  (click)=\"addEmployee()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <!-- {{searchText}} -->\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <!-- <th>Employee Id</th>\n          <th>Employee First Name</th>\n          <th>Employee Last Name</th> -->\n          <th>Employee Full Name</th>\n          <!-- <th>Employee Father Name</th> -->\n          <th>Employee Date Of Birth</th>\n          <th>Employee Sex</th>\n          <th>Employee Religion</th>\n          <th>Employee Marital Status</th>\n          <th>Employee Nationality</th>\n          <!-- <th>Employee House</th>\n          <th>Employee Street</th>\n          <th>Employee City</th>\n          <th>Employee State</th>\n          <th>Employee PIN</th> -->\n          <th>Employee Phone Number</th>\n          <th>Employee Mobile Number</th>\n          <th>Employee Image</th>\n          <th>Employee Email</th>\n          <th>Employee Date Of Join</th>\n          <th>Employee Date Of Confirm</th>\n          <th>Employee Department</th>\n          <!-- <th>Employee Designation</th>\n          <th>Employee Basic Salary</th>\n          <th>Employee Salary PerDay</th> -->\n          <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let employee of employeeFullList \">\n          <!-- <td>{{employee.EmployeeId}}</td>\n          <td>{{employee.EmployeeFirstName}}</td>\n          <td>{{employee.EmployeeLastName}}</td> -->\n          <td>{{employee.EmployeeFullName}}</td>\n          <!-- <td>{{employee.EmployeeFatherName}}</td> -->\n          <td>{{employee.EmployeeDateOfBirth}}</td>\n          <td>{{employee.EmployeeSex}}</td>\n\n          <td>{{employee.EmployeeReligion}}</td>\n          <td>{{employee.EmployeeMaritalStatus}}</td>\n          <td>{{employee.EmployeeNationality}}</td>\n          <!-- <td>{{employee.EmployeeHouse}}</td>\n          <td>{{employee.EmployeeStreet}}</td>\n          <td>{{employee.EmployeeCity}}</td>\n          <td>{{employee.EmployeeState}}</td>\n\n          <td>{{employee.EmployeePIN}}</td> -->\n          <td>{{employee.EmployeePhoneNumber}}</td>\n          <td>{{employee.EmployeeMobileNumber}}</td>\n          <td>{{employee.EmployeeImage}}</td>\n          <td>{{employee.EmployeeEmail}}</td>\n          <td>{{employee.EmployeeDateOfJoin}}</td>\n          <td>{{employee.EmployeeDateOfConfirm}}</td>\n          <td>{{employee.EmployeeDepartment}}</td>\n          <!-- <td>{{employee.EmployeeDesignation}}</td>\n          <td>{{employee.EmployeeBasicSalary}}</td>\n          <td>{{employee.EmployeeSalaryPerDay}}</td> -->\n          \n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editEmployee(employee.EmployeeId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteEmployee(employee.EmployeeId)\"><mat-icon>delete_forever</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab  (click)=\"addEmployee()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\">\n      <!-- {{searchText}} -->\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n    <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n      <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n    </button>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n      <table class=\"table\">\n        <thead>\n          <!-- <th>Employee Id</th>\n          <th>Employee First Name</th>\n          <th>Employee Last Name</th> -->\n          <th>Employee Full Name</th>\n          <!-- <th>Employee Father Name</th> -->\n          <th>Employee Date Of Birth</th>\n          <th>Employee Sex</th>\n          <th>Employee Religion</th>\n          <th>Employee Marital Status</th>\n          <th>Employee Nationality</th>\n          <!-- <th>Employee House</th>\n          <th>Employee Street</th>\n          <th>Employee City</th>\n          <th>Employee State</th>\n          <th>Employee PIN</th> -->\n          <th>Employee Phone Number</th>\n          <th>Employee Mobile Number</th>\n          <th>Employee Image</th>\n          <th>Employee Email</th>\n          <th>Employee Date Of Join</th>\n          <th>Employee Date Of Confirm</th>\n          <th>Employee Department</th>\n          <!-- <th>Employee Designation</th>\n          <th>Employee Basic Salary</th>\n          <th>Employee Salary PerDay</th> -->\n          <th>Edit/Delete</th>\n        </thead>\n        <tr *ngFor=\"let employee of employeeFullList \">\n          <!-- <td>{{employee.EmployeeId}}</td>\n          <td>{{employee.EmployeeFirstName}}</td>\n          <td>{{employee.EmployeeLastName}}</td> -->\n          <td>{{employee.EmployeeFullName}}</td>\n          <!-- <td>{{employee.EmployeeFatherName}}</td> -->\n          <td>{{employee.EmployeeDateOfBirth}}</td>\n          <td>{{employee.EmployeeSex}}</td>\n\n          <td>{{employee.EmployeeReligion}}</td>\n          <td>{{employee.EmployeeMaritalStatus}}</td>\n          <td>{{employee.EmployeeNationality}}</td>\n          <!-- <td>{{employee.EmployeeHouse}}</td>\n          <td>{{employee.EmployeeStreet}}</td>\n          <td>{{employee.EmployeeCity}}</td>\n          <td>{{employee.EmployeeState}}</td>\n\n          <td>{{employee.EmployeePIN}}</td> -->\n          <td>{{employee.EmployeePhoneNumber}}</td>\n          <td>{{employee.EmployeeMobileNumber}}</td>\n          <td>{{employee.EmployeeImage}}</td>\n          <td>{{employee.EmployeeEmail}}</td>\n          <td>{{employee.EmployeeDateOfJoin}}</td>\n          <td>{{employee.EmployeeDateOfConfirm}}</td>\n          <td>{{employee.EmployeeDepartment}}</td>\n          <!-- <td>{{employee.EmployeeDesignation}}</td>\n          <td>{{employee.EmployeeBasicSalary}}</td>\n          <td>{{employee.EmployeeSalaryPerDay}}</td> -->\n          \n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editEmployee(employee.EmployeeId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteEmployee(employee.EmployeeId)\"><mat-icon>delete_forever</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/employee/employee.component.html": 
@@ -182,7 +182,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"addLeave()\">\n    <mat-icon>add</mat-icon>\n  </button>\n  <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field>\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\">\n    <table class=\"table\">\n      <thead>\n      <th>Leave Id</th>\n      <th>Employee Id</th>\n      <th>Month</th>\n      <th>From Date</th>\n      <th>To Date</th>\n      <th>No Of Days</th>\n      <th>Leave Period</th>\n      <th>Edit/Delete</th>\n      </thead>\n      <tr *ngFor=\"let leave of leaveFullList \">\n        <td>{{leave.LeaveId}}</td>\n        <td>{{leave.EmployeeId}}</td>\n        <td>{{leave.Month}}</td>\n        <td>{{leave.FromDate}}</td>\n        <td>{{leave.ToDate}}</td>\n        <td>{{leave.NoOfDays}}</td>\n        <td>{{leave.LeavePeriod}}</td>\n        <td>\n          <button mat-icon-button color=\"accent\" (click)=\"editLeave(leave.LeaveId)\">\n            <mat-icon>edit</mat-icon>\n          </button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteLeave(leave.LeaveId)\">\n            <mat-icon>delete_forever</mat-icon>\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n</mat-card-content>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"addLeave()\">\n    <mat-icon>add</mat-icon>\n  </button>\n  <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field>\n  <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n    <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n  </button>\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n    <table class=\"table\">\n      <thead>\n      <th>Leave Id</th>\n      <th>Employee Id</th>\n      <th>Month</th>\n      <th>From Date</th>\n      <th>To Date</th>\n      <th>No Of Days</th>\n      <th>Leave Period</th>\n      <th>Edit/Delete</th>\n      </thead>\n      <tr *ngFor=\"let leave of leaveFullList \">\n        <td>{{leave.LeaveId}}</td>\n        <td>{{leave.EmployeeId}}</td>\n        <td>{{leave.Month}}</td>\n        <td>{{leave.FromDate}}</td>\n        <td>{{leave.ToDate}}</td>\n        <td>{{leave.NoOfDays}}</td>\n        <td>{{leave.LeavePeriod}}</td>\n        <td>\n          <button mat-icon-button color=\"accent\" (click)=\"editLeave(leave.LeaveId)\">\n            <mat-icon>edit</mat-icon>\n          </button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteLeave(leave.LeaveId)\">\n            <mat-icon>delete_forever</mat-icon>\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n</mat-card-content>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/leave/leave.component.html": 
@@ -204,7 +204,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"addLoan()\">\n    <mat-icon>add</mat-icon>\n  </button>\n  <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field>\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\">\n    <table class=\"table\">\n      <thead>\n      <th>Loan Id</th>\n      <th>Type Of Loan</th>\n      <th>Date Of Application</th>\n      <th>Proposed Amount</th>\n      <th>No Of Inst Recovery</th>\n      <th>Start Date Of Recovery</th>\n      <th>End Date Of Recovery</th>\n      <th>No Of Days</th>\n      <th>Interest Rate</th>\n      <th>Interest Amount</th>\n      <th>Edit/Delete</th>\n\n      </thead>\n      <tr *ngFor=\"let loan of loanFullList\">\n        <td>{{loan.LoanId}}</td>\n        <td>{{loan.TypeOfLoan}}</td>\n        <td>{{loan.DateOfApplication}}</td>\n        <td>{{loan.ProposedAmount}}</td>\n        <td>{{loan.NoOfInstRecovery}}</td>\n        <td>{{loan.StartDateOfRecovery}}</td>\n        <td>{{loan.EndDateOfRecovery}}</td>\n        <td>{{loan.NoOfDays}}</td>\n        <td>{{loan.InterestRate}}</td>\n        <td>{{loan.InterestAmount}}</td>\n        <td>\n          <button mat-icon-button color=\"accent\" (click)=\"editLoan(loan.LoanId)\">\n            <mat-icon>edit</mat-icon>\n          </button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteLoan(loan.LoanId)\">\n            <mat-icon>delete_forever</mat-icon>\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n</mat-card-content>\n\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n  <button mat-mini-fab (click)=\"addLoan()\">\n    <mat-icon>add</mat-icon>\n  </button>\n  <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n    <input matInput placeholder=\"Search\" autocomplete=\"off\" [(ngModel)]=\"searchText\" (input)=\"search()\">\n    <button mat-button matSuffix mat-icon-button aria-label=\"Clear\">\n      <mat-icon>close</mat-icon>\n    </button>\n  </mat-form-field>\n  <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n    <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n  </button>\n</div>\n<mat-card-content>\n  <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n    <table class=\"table\">\n      <thead>\n      <th>Loan Id</th>\n      <th>Type Of Loan</th>\n      <th>Date Of Application</th>\n      <th>Proposed Amount</th>\n      <th>No Of Inst Recovery</th>\n      <th>Start Date Of Recovery</th>\n      <th>End Date Of Recovery</th>\n      <th>No Of Days</th>\n      <th>Interest Rate</th>\n      <th>Interest Amount</th>\n      <th>Edit/Delete</th>\n\n      </thead>\n      <tr *ngFor=\"let loan of loanFullList\">\n        <td>{{loan.LoanId}}</td>\n        <td>{{loan.TypeOfLoan}}</td>\n        <td>{{loan.DateOfApplication}}</td>\n        <td>{{loan.ProposedAmount}}</td>\n        <td>{{loan.NoOfInstRecovery}}</td>\n        <td>{{loan.StartDateOfRecovery}}</td>\n        <td>{{loan.EndDateOfRecovery}}</td>\n        <td>{{loan.NoOfDays}}</td>\n        <td>{{loan.InterestRate}}</td>\n        <td>{{loan.InterestAmount}}</td>\n        <td>\n          <button mat-icon-button color=\"accent\" (click)=\"editLoan(loan.LoanId)\">\n            <mat-icon>edit</mat-icon>\n          </button>\n          <button mat-icon-button color=\"warn\" (click)=\"deleteLoan(loan.LoanId)\">\n            <mat-icon>delete_forever</mat-icon>\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n</mat-card-content>\n\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/loan/loan.component.html": 
@@ -237,7 +237,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addPayroll()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>PayrollId</th>\n          <th>EmployeeId</th>\n          <th>Month</th>\n          <th>Year</th>\n          <th>TotalPresent</th>\n          <th>TotalAbsent</th>\n          <th>LeaveDays</th>\n\n          <th>Deduction</th>\n          <th>Leave</th>\n          <th>FestivalAdvance</th>\n          <th>HousingLoan</th>\n          <th>VehicleLoan</th>\n          <!-- <th>OtherLoan</th>\n          <th>LossOfPay</th>\n          <th>TDS</th>\n          <th>ProfessionalFees</th>\n          <th>OtherDeductions</th>\n          <th>TotalEarnings</th>\n          <th>OtherPay</th>\n          <th>BasicSalary</th>\n          <th>SalaryPerDay</th>\n          <th>Pay</th>\n          <th>Earnings</th>\n          <th>Deductions</th>\n          <th>NetPay</th> -->\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let payroll of payrollFullList \">\n          <td>{{payroll.PayrollId}}</td>\n          <td>{{payroll.EmployeeId}}</td>\n          <td>{{payroll.Month}}</td>\n          <td>{{payroll.Year}}</td>\n          <td>{{payroll.TotalPresent}}</td>\n          <td>{{payroll.TotalAbsent}}</td>\n          <td>{{payroll.LeaveDays}}</td>\n\n          <td>{{payroll.Deduction}}</td>\n          <td>{{payroll.Leave}}</td>\n          <td>{{payroll.FestivalAdvance}}</td>\n          <td>{{payroll.HousingLoan}}</td>\n          <td>{{payroll.VehicleLoan}}</td>\n          <!-- <td>{{payroll.OtherLoan}}</td>\n          <td>{{payroll.LossOfPay}}</td>\n\n          <td>{{payroll.TDS}}</td>\n          <td>{{payroll.ProfessionalFees}}</td>\n          <td>{{payroll.OtherDeductions}}</td>\n          <td>{{payroll.TotalEarnings}}</td>\n          <td>{{payroll.OtherPay}}</td>\n          <td>{{payroll.BasicSalary}}</td>\n          <td>{{payroll.SalaryPerDay}}</td>\n\n          <td>{{payroll.Pay}}</td>\n          <td>{{payroll.Earnings}}</td>\n          <td>{{payroll.Deductions}}</td>\n          <td>{{payroll.NetPay}}</td> -->\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editPayroll(payroll.PayrollId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deletePayroll(payroll.Id)\"><mat-icon>delete_forever</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addPayroll()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n    <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n      <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n    </button>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n      <table class=\"table\">\n        <thead>\n          <th>PayrollId</th>\n          <th>EmployeeId</th>\n          <th>Month</th>\n          <th>Year</th>\n          <th>TotalPresent</th>\n          <th>TotalAbsent</th>\n          <th>LeaveDays</th>\n\n          <th>Deduction</th>\n          <th>Leave</th>\n          <th>FestivalAdvance</th>\n          <th>HousingLoan</th>\n          <th>VehicleLoan</th>\n          <!-- <th>OtherLoan</th>\n          <th>LossOfPay</th>\n          <th>TDS</th>\n          <th>ProfessionalFees</th>\n          <th>OtherDeductions</th>\n          <th>TotalEarnings</th>\n          <th>OtherPay</th>\n          <th>BasicSalary</th>\n          <th>SalaryPerDay</th>\n          <th>Pay</th>\n          <th>Earnings</th>\n          <th>Deductions</th>\n          <th>NetPay</th> -->\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let payroll of payrollFullList \">\n          <td>{{payroll.PayrollId}}</td>\n          <td>{{payroll.EmployeeId}}</td>\n          <td>{{payroll.Month}}</td>\n          <td>{{payroll.Year}}</td>\n          <td>{{payroll.TotalPresent}}</td>\n          <td>{{payroll.TotalAbsent}}</td>\n          <td>{{payroll.LeaveDays}}</td>\n\n          <td>{{payroll.Deduction}}</td>\n          <td>{{payroll.Leave}}</td>\n          <td>{{payroll.FestivalAdvance}}</td>\n          <td>{{payroll.HousingLoan}}</td>\n          <td>{{payroll.VehicleLoan}}</td>\n          <!-- <td>{{payroll.OtherLoan}}</td>\n          <td>{{payroll.LossOfPay}}</td>\n\n          <td>{{payroll.TDS}}</td>\n          <td>{{payroll.ProfessionalFees}}</td>\n          <td>{{payroll.OtherDeductions}}</td>\n          <td>{{payroll.TotalEarnings}}</td>\n          <td>{{payroll.OtherPay}}</td>\n          <td>{{payroll.BasicSalary}}</td>\n          <td>{{payroll.SalaryPerDay}}</td>\n\n          <td>{{payroll.Pay}}</td>\n          <td>{{payroll.Earnings}}</td>\n          <td>{{payroll.Deductions}}</td>\n          <td>{{payroll.NetPay}}</td> -->\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editPayroll(payroll.PayrollId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deletePayroll(payroll.Id)\"><mat-icon>delete_forever</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/payroll/payroll.component.html": 
@@ -259,7 +259,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addTraining()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\">\n      <table class=\"table\">\n        <thead>\n          <th>Training Id</th>\n          <th>Training Provider</th>\n          <th>Trainee</th>\n          <th>Training Location</th>\n          <th>Start Date</th>\n          <th>End Date</th>\n          <th>Status</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let training of trainingList \">\n          <td>{{training.TrainingId}}</td>\n          <td>{{training.TrainingProvider}}</td>\n          <td>{{training.Trainee}}</td>\n          <td>{{training.TrainingLocation}}</td>\n          <td>{{training.StartDate}}</td>\n          <td>{{training.EndDate}}</td>\n          <td>{{training.Status}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editTraining(training.TrainingId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteTraining(training.TrainingId)\"><mat-icon>delete_forever</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click)=\"addTraining()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\"  [(ngModel)]=\"searchText\" (input) = \"search()\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n    <button mat-icon-button color=\"accent\" (click)=\"downloadAsPDF()\">\n      <mat-icon  class =\"pdf\" >picture_as_pdf</mat-icon>\n    </button>\n  </div>\n  <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"pdfTable\" #pdfTable>\n      <table class=\"table\">\n        <thead>\n          <th>Training Id</th>\n          <th>Training Provider</th>\n          <th>Trainee</th>\n          <th>Training Location</th>\n          <th>Start Date</th>\n          <th>End Date</th>\n          <th>Status</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let training of trainingFullList \">\n          <td>{{training.TrainingId}}</td>\n          <td>{{training.TrainingProvider}}</td>\n          <td>{{training.Trainee}}</td>\n          <td>{{training.TrainingLocation}}</td>\n          <td>{{training.StartDate}}</td>\n          <td>{{training.EndDate}}</td>\n          <td>{{training.Status}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editTraining(training.TrainingId)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteTraining(training.TrainingId)\"><mat-icon>delete_forever</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content>\n");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/training/training.component.html": 
@@ -281,7 +281,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click) = \"addUser()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon>\n   \n  </div>\n\n \n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n  <button mat-stroked-button color=\"warn\"  (click)=\"sendData()\">Show Location</button>\n  <div class=\"col-sm-6 col-md-4 col-xl-3\">\n    <div class=\"card bg-light\">\n        <div class=\"card-body\">\n          \n            <h6 class=\"card-title text-uppercase text-truncate py-2\">User Info\n\n            </h6>\n            \n            <div class=\"items border border-light\" *ngFor=\"let user of getUserList \">\n                <div class=\"card draggable shadow-sm\">\n                    <div class=\"card-body p-2\" >      \n                      <input type=\"checkbox\" [(ngModel)]=\"user.isSelected\" value=\"{{user.UserId}}\" (change)=\"isAllSelected()\" > Select\n                        <p>\n                          {{user.UserName}} ||\n                          {{user.Attendance}} ||\n                          {{user.IpAddress}}\n                        </p>                        \n                    </div>\n                </div>\n                </div>\n              </div>\n            </div>\n          </div>         \n\n<div class=\"maps\">\n  <app-user-location ></app-user-location>\n</div>\n\n\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"search-div\">\n    <button mat-mini-fab (click) = \"addUser()\">\n        <mat-icon>add</mat-icon>\n      </button>\n    <mat-form-field class=\"search-form-field\" floatLabel=\"never\">\n      <input matInput  placeholder=\"Search\" autocomplete=\"off\" >\n      <button mat-button matSuffix mat-icon-button aria-label=\"Clear\" >\n        <mat-icon>close</mat-icon>\n      </button>\n    </mat-form-field>\n  <!-- <mat-icon  class =\"pdf\" value=\"CPTURE\" (click)=\"captureScreen()\">picture_as_pdf</mat-icon> -->\n   \n  </div>\n\n \n  <!-- <mat-card-content>\n    <div class=\"mat-elevation-z8\" id=\"content\" #content>\n      <table class=\"table\" id=\"contentToConvert\">\n        <thead>\n          <th>User Id</th>\n          <th>User Name</th>\n          <th>Password</th>\n          <th>User Gender</th>\n          <th>Role</th>\n          <th>Token</th>\n          <th>Attendance</th>\n          <th>Edit/Delete</th>\n         \n        </thead>\n        <tr *ngFor=\"let user of userList \">\n          <td>{{user.UserId}}</td>\n          <td>{{user.UserName}}</td>\n          <td>{{user.Password}}</td>\n          <td>{{user.UserGender}}</td>\n          <td>{{user.Role}}</td>\n          <td>{{user.Token}}</td>\n          <td>{{user.Attendance}}</td>\n          <td>\n              <button mat-icon-button color=\"accent\"(click)=\"editUser(user.Id)\"><mat-icon>edit</mat-icon></button>\n              <button mat-icon-button color=\"warn\" (click)=\"deleteUser(user.Id)\"><mat-icon>delete_outline</mat-icon></button>\n          </td>\n       </tr>\n       </table>\n      </div>\n  </mat-card-content> -->\n  <button mat-stroked-button color=\"warn\"  (click)=\"sendData()\">Show Location</button>\n  <div class=\"col-sm-6 col-md-4 col-xl-3\">\n    <div class=\"card bg-light\">\n        <div class=\"card-body\">\n          \n            <h6 class=\"card-title text-uppercase text-truncate py-2\">User Info\n\n            </h6>\n            \n            <div class=\"items border border-light\" *ngFor=\"let user of getUserList \">\n                <div class=\"card draggable shadow-sm\">\n                    <div class=\"card-body p-2\" >      \n                      <input type=\"checkbox\" [(ngModel)]=\"user.isSelected\" value=\"{{user.UserId}}\" (change)=\"isAllSelected()\" > Select\n                        <p>\n                          {{user.UserName}} ||\n                          {{user.Attendance}} ||\n                          {{user.IpAddress}}\n                        </p>                        \n                    </div>\n                </div>\n                </div>\n              </div>\n            </div>\n          </div>        \n          \n          <!-- <pdf-viewer\n          [src] = \"pdfSrc\"\n          [render-text] = \"true\"\n          style=\"display:block;\"\n          > \n          <pdf-viewer>  -->\n\n<div class=\"maps\">\n  <app-user-location ></app-user-location>\n</div>\n\n\n<!-- <div>\n  \nExample:{{exampleParent}} \n<app-hrm-login \n(valueChange) = \"parentMethod($event)\">\n</app-hrm-login>\n\n</div> -->");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/user/user-location/user-location.component.html": 
@@ -682,33 +682,34 @@
             /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
             /* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
             /* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
-            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-            /* harmony import */ var _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./hrm-login/hrm-login.component */ "./src/app/hrm-login/hrm-login.component.ts");
-            /* harmony import */ var _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./hrm-login/hrm-attendance-list/hrm-attendance-list.component */ "./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.ts");
-            /* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./user/user.component */ "./src/app/user/user.component.ts");
-            /* harmony import */ var _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./user/user-list/user-list.component */ "./src/app/user/user-list/user-list.component.ts");
-            /* harmony import */ var _leave_leave_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./leave/leave.component */ "./src/app/leave/leave.component.ts");
-            /* harmony import */ var _leave_leave_list_leave_list_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./leave/leave-list/leave-list.component */ "./src/app/leave/leave-list/leave-list.component.ts");
-            /* harmony import */ var _payroll_payroll_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./payroll/payroll.component */ "./src/app/payroll/payroll.component.ts");
-            /* harmony import */ var _payroll_payroll_list_payroll_list_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./payroll/payroll-list/payroll-list.component */ "./src/app/payroll/payroll-list/payroll-list.component.ts");
-            /* harmony import */ var _employee_employee_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./employee/employee.component */ "./src/app/employee/employee.component.ts");
-            /* harmony import */ var _employee_employee_list_employee_list_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./employee/employee-list/employee-list.component */ "./src/app/employee/employee-list/employee-list.component.ts");
-            /* harmony import */ var _loan_loan_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./loan/loan.component */ "./src/app/loan/loan.component.ts");
-            /* harmony import */ var _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./loan/loan-list/loan-list.component */ "./src/app/loan/loan-list/loan-list.component.ts");
-            /* harmony import */ var _training_training_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./training/training.component */ "./src/app/training/training.component.ts");
-            /* harmony import */ var _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./training/training-list/training-list.component */ "./src/app/training/training-list/training-list.component.ts");
-            /* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/fesm2015/agm-core.js");
-            /* harmony import */ var _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./user/user-location/user-location.component */ "./src/app/user/user-location/user-location.component.ts");
-            /* harmony import */ var _auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./auth/auth-guard.service */ "./src/app/auth/auth-guard.service.ts");
-            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-            /* harmony import */ var _department_department_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./department/department.component */ "./src/app/department/department.component.ts");
-            /* harmony import */ var _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./department/department-list/department-list.component */ "./src/app/department/department-list/department-list.component.ts");
-            /* harmony import */ var _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./employee-salary/employee-salary.component */ "./src/app/employee-salary/employee-salary.component.ts");
-            /* harmony import */ var _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./employee-salary/employee-salary-list/employee-salary-list.component */ "./src/app/employee-salary/employee-salary-list/employee-salary-list.component.ts");
-            /* harmony import */ var _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./employee-project/employee-project.component */ "./src/app/employee-project/employee-project.component.ts");
-            /* harmony import */ var _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./employee-project/employee-project-list/employee-project-list.component */ "./src/app/employee-project/employee-project-list/employee-project-list.component.ts");
-            /* harmony import */ var _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./employee-attendance/employee-attendance.component */ "./src/app/employee-attendance/employee-attendance.component.ts");
-            /* harmony import */ var _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./employee-attendance/employee-attendance-list/employee-attendance-list.component */ "./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.ts");
+            /* harmony import */ var ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ng2-pdf-viewer */ "./node_modules/ng2-pdf-viewer/fesm2015/ng2-pdf-viewer.js");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            /* harmony import */ var _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./hrm-login/hrm-login.component */ "./src/app/hrm-login/hrm-login.component.ts");
+            /* harmony import */ var _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./hrm-login/hrm-attendance-list/hrm-attendance-list.component */ "./src/app/hrm-login/hrm-attendance-list/hrm-attendance-list.component.ts");
+            /* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./user/user.component */ "./src/app/user/user.component.ts");
+            /* harmony import */ var _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./user/user-list/user-list.component */ "./src/app/user/user-list/user-list.component.ts");
+            /* harmony import */ var _leave_leave_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./leave/leave.component */ "./src/app/leave/leave.component.ts");
+            /* harmony import */ var _leave_leave_list_leave_list_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./leave/leave-list/leave-list.component */ "./src/app/leave/leave-list/leave-list.component.ts");
+            /* harmony import */ var _payroll_payroll_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./payroll/payroll.component */ "./src/app/payroll/payroll.component.ts");
+            /* harmony import */ var _payroll_payroll_list_payroll_list_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./payroll/payroll-list/payroll-list.component */ "./src/app/payroll/payroll-list/payroll-list.component.ts");
+            /* harmony import */ var _employee_employee_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./employee/employee.component */ "./src/app/employee/employee.component.ts");
+            /* harmony import */ var _employee_employee_list_employee_list_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./employee/employee-list/employee-list.component */ "./src/app/employee/employee-list/employee-list.component.ts");
+            /* harmony import */ var _loan_loan_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./loan/loan.component */ "./src/app/loan/loan.component.ts");
+            /* harmony import */ var _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./loan/loan-list/loan-list.component */ "./src/app/loan/loan-list/loan-list.component.ts");
+            /* harmony import */ var _training_training_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./training/training.component */ "./src/app/training/training.component.ts");
+            /* harmony import */ var _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./training/training-list/training-list.component */ "./src/app/training/training-list/training-list.component.ts");
+            /* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/fesm2015/agm-core.js");
+            /* harmony import */ var _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./user/user-location/user-location.component */ "./src/app/user/user-location/user-location.component.ts");
+            /* harmony import */ var _auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./auth/auth-guard.service */ "./src/app/auth/auth-guard.service.ts");
+            /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+            /* harmony import */ var _department_department_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./department/department.component */ "./src/app/department/department.component.ts");
+            /* harmony import */ var _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./department/department-list/department-list.component */ "./src/app/department/department-list/department-list.component.ts");
+            /* harmony import */ var _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./employee-salary/employee-salary.component */ "./src/app/employee-salary/employee-salary.component.ts");
+            /* harmony import */ var _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./employee-salary/employee-salary-list/employee-salary-list.component */ "./src/app/employee-salary/employee-salary-list/employee-salary-list.component.ts");
+            /* harmony import */ var _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./employee-project/employee-project.component */ "./src/app/employee-project/employee-project.component.ts");
+            /* harmony import */ var _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./employee-project/employee-project-list/employee-project-list.component */ "./src/app/employee-project/employee-project-list/employee-project-list.component.ts");
+            /* harmony import */ var _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./employee-attendance/employee-attendance.component */ "./src/app/employee-attendance/employee-attendance.component.ts");
+            /* harmony import */ var _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./employee-attendance/employee-attendance-list/employee-attendance-list.component */ "./src/app/employee-attendance/employee-attendance-list/employee-attendance-list.component.ts");
             //import { Ng2SearchPipeModule } from '@ng2-search-filter';
             var AppModule = /** @class */ (function () {
                 function AppModule() {
@@ -721,29 +722,29 @@
                         _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
                         _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"],
                         _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["DashboardComponent"],
-                        _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_26__["HrmLoginComponent"],
-                        _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_27__["HrmAttendanceListComponent"],
-                        _user_user_component__WEBPACK_IMPORTED_MODULE_28__["UserComponent"],
-                        _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_29__["UserListComponent"],
-                        _leave_leave_component__WEBPACK_IMPORTED_MODULE_30__["LeaveComponent"],
-                        _leave_leave_list_leave_list_component__WEBPACK_IMPORTED_MODULE_31__["LeaveListComponent"],
-                        _payroll_payroll_component__WEBPACK_IMPORTED_MODULE_32__["PayrollComponent"],
-                        _payroll_payroll_list_payroll_list_component__WEBPACK_IMPORTED_MODULE_33__["PayrollListComponent"],
-                        _employee_employee_component__WEBPACK_IMPORTED_MODULE_34__["EmployeeComponent"],
-                        _employee_employee_list_employee_list_component__WEBPACK_IMPORTED_MODULE_35__["EmployeeListComponent"],
-                        _loan_loan_component__WEBPACK_IMPORTED_MODULE_36__["LoanComponent"],
-                        _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__["LoanListComponent"],
-                        _training_training_component__WEBPACK_IMPORTED_MODULE_38__["TrainingComponent"],
-                        _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"],
-                        _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"],
-                        _department_department_component__WEBPACK_IMPORTED_MODULE_44__["DepartmentComponent"],
-                        _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_45__["DepartmentListComponent"],
-                        _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_46__["EmployeeSalaryComponent"],
-                        _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_47__["EmployeeSalaryListComponent"],
-                        _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_48__["EmployeeProjectComponent"],
-                        _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_49__["EmployeeProjectListComponent"],
-                        _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_50__["EmployeeAttendanceComponent"],
-                        _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_51__["EmployeeAttendanceListComponent"]
+                        _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_27__["HrmLoginComponent"],
+                        _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_28__["HrmAttendanceListComponent"],
+                        _user_user_component__WEBPACK_IMPORTED_MODULE_29__["UserComponent"],
+                        _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_30__["UserListComponent"],
+                        _leave_leave_component__WEBPACK_IMPORTED_MODULE_31__["LeaveComponent"],
+                        _leave_leave_list_leave_list_component__WEBPACK_IMPORTED_MODULE_32__["LeaveListComponent"],
+                        _payroll_payroll_component__WEBPACK_IMPORTED_MODULE_33__["PayrollComponent"],
+                        _payroll_payroll_list_payroll_list_component__WEBPACK_IMPORTED_MODULE_34__["PayrollListComponent"],
+                        _employee_employee_component__WEBPACK_IMPORTED_MODULE_35__["EmployeeComponent"],
+                        _employee_employee_list_employee_list_component__WEBPACK_IMPORTED_MODULE_36__["EmployeeListComponent"],
+                        _loan_loan_component__WEBPACK_IMPORTED_MODULE_37__["LoanComponent"],
+                        _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_38__["LoanListComponent"],
+                        _training_training_component__WEBPACK_IMPORTED_MODULE_39__["TrainingComponent"],
+                        _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_40__["TrainingListComponent"],
+                        _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_42__["UserLocationComponent"],
+                        _department_department_component__WEBPACK_IMPORTED_MODULE_45__["DepartmentComponent"],
+                        _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_46__["DepartmentListComponent"],
+                        _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_47__["EmployeeSalaryComponent"],
+                        _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_48__["EmployeeSalaryListComponent"],
+                        _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_49__["EmployeeProjectComponent"],
+                        _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_50__["EmployeeProjectListComponent"],
+                        _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_51__["EmployeeAttendanceComponent"],
+                        _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_52__["EmployeeAttendanceListComponent"]
                         // FormsModule,
                         // ReactiveFormsModule
                     ],
@@ -771,39 +772,40 @@
                         _angular_forms__WEBPACK_IMPORTED_MODULE_21__["FormsModule"],
                         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_22__["BrowserAnimationsModule"],
                         _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_6__["MatToolbarModule"],
+                        ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_25__["PdfViewerModule"],
                         // Ng2SearchPipeModule,
-                        _angular_router__WEBPACK_IMPORTED_MODULE_25__["RouterModule"].forRoot([
+                        _angular_router__WEBPACK_IMPORTED_MODULE_26__["RouterModule"].forRoot([
                             { path: 'navbar', component: _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"] },
-                            { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["DashboardComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'user', component: _user_user_component__WEBPACK_IMPORTED_MODULE_28__["UserComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'user-list', component: _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_29__["UserListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'login', component: _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_26__["HrmLoginComponent"] },
-                            { path: 'attend', component: _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_27__["HrmAttendanceListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'leave', component: _leave_leave_component__WEBPACK_IMPORTED_MODULE_30__["LeaveComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'leave-list', component: _leave_leave_list_leave_list_component__WEBPACK_IMPORTED_MODULE_31__["LeaveListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'payroll', component: _payroll_payroll_component__WEBPACK_IMPORTED_MODULE_32__["PayrollComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'payroll-list', component: _payroll_payroll_list_payroll_list_component__WEBPACK_IMPORTED_MODULE_33__["PayrollListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'employee', component: _employee_employee_component__WEBPACK_IMPORTED_MODULE_34__["EmployeeComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'employee-list', component: _employee_employee_list_employee_list_component__WEBPACK_IMPORTED_MODULE_35__["EmployeeListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'loan', component: _loan_loan_component__WEBPACK_IMPORTED_MODULE_36__["LoanComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'loan-list', component: _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_37__["LoanListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'training', component: _training_training_component__WEBPACK_IMPORTED_MODULE_38__["TrainingComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'training-list', component: _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_39__["TrainingListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'user-location', component: _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_41__["UserLocationComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'department', component: _department_department_component__WEBPACK_IMPORTED_MODULE_44__["DepartmentComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'department-list', component: _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_45__["DepartmentListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'employee-salary', component: _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_46__["EmployeeSalaryComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'employee-salary-list', component: _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_47__["EmployeeSalaryListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'employee-attendance', component: _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_50__["EmployeeAttendanceComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'employee-attendance-list', component: _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_51__["EmployeeAttendanceListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'employee-project', component: _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_48__["EmployeeProjectComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
-                            { path: 'employee-project-list', component: _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_49__["EmployeeProjectListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_42__["AuthGuardService"]] },
+                            { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["DashboardComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'user', component: _user_user_component__WEBPACK_IMPORTED_MODULE_29__["UserComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'user-list', component: _user_user_list_user_list_component__WEBPACK_IMPORTED_MODULE_30__["UserListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'login', component: _hrm_login_hrm_login_component__WEBPACK_IMPORTED_MODULE_27__["HrmLoginComponent"] },
+                            { path: 'attend', component: _hrm_login_hrm_attendance_list_hrm_attendance_list_component__WEBPACK_IMPORTED_MODULE_28__["HrmAttendanceListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'leave', component: _leave_leave_component__WEBPACK_IMPORTED_MODULE_31__["LeaveComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'leave-list', component: _leave_leave_list_leave_list_component__WEBPACK_IMPORTED_MODULE_32__["LeaveListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'payroll', component: _payroll_payroll_component__WEBPACK_IMPORTED_MODULE_33__["PayrollComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'payroll-list', component: _payroll_payroll_list_payroll_list_component__WEBPACK_IMPORTED_MODULE_34__["PayrollListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'employee', component: _employee_employee_component__WEBPACK_IMPORTED_MODULE_35__["EmployeeComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'employee-list', component: _employee_employee_list_employee_list_component__WEBPACK_IMPORTED_MODULE_36__["EmployeeListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'loan', component: _loan_loan_component__WEBPACK_IMPORTED_MODULE_37__["LoanComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'loan-list', component: _loan_loan_list_loan_list_component__WEBPACK_IMPORTED_MODULE_38__["LoanListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'training', component: _training_training_component__WEBPACK_IMPORTED_MODULE_39__["TrainingComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'training-list', component: _training_training_list_training_list_component__WEBPACK_IMPORTED_MODULE_40__["TrainingListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'user-location', component: _user_user_location_user_location_component__WEBPACK_IMPORTED_MODULE_42__["UserLocationComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'department', component: _department_department_component__WEBPACK_IMPORTED_MODULE_45__["DepartmentComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'department-list', component: _department_department_list_department_list_component__WEBPACK_IMPORTED_MODULE_46__["DepartmentListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'employee-salary', component: _employee_salary_employee_salary_component__WEBPACK_IMPORTED_MODULE_47__["EmployeeSalaryComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'employee-salary-list', component: _employee_salary_employee_salary_list_employee_salary_list_component__WEBPACK_IMPORTED_MODULE_48__["EmployeeSalaryListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'employee-attendance', component: _employee_attendance_employee_attendance_component__WEBPACK_IMPORTED_MODULE_51__["EmployeeAttendanceComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'employee-attendance-list', component: _employee_attendance_employee_attendance_list_employee_attendance_list_component__WEBPACK_IMPORTED_MODULE_52__["EmployeeAttendanceListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'employee-project', component: _employee_project_employee_project_component__WEBPACK_IMPORTED_MODULE_49__["EmployeeProjectComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
+                            { path: 'employee-project-list', component: _employee_project_employee_project_list_employee_project_list_component__WEBPACK_IMPORTED_MODULE_50__["EmployeeProjectListComponent"], canActivate: [_auth_auth_guard_service__WEBPACK_IMPORTED_MODULE_43__["AuthGuardService"]] },
                             { path: '**', redirectTo: '/' }
                         ]),
-                        _agm_core__WEBPACK_IMPORTED_MODULE_40__["AgmCoreModule"].forRoot({
+                        _agm_core__WEBPACK_IMPORTED_MODULE_41__["AgmCoreModule"].forRoot({
                             apiKey: ''
                         }),
-                        _angular_material__WEBPACK_IMPORTED_MODULE_43__["MatCardModule"]
+                        _angular_material__WEBPACK_IMPORTED_MODULE_44__["MatCardModule"]
                     ],
                     entryComponents: [_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_23__["NavbarComponent"]],
                     exports: [
@@ -970,6 +972,8 @@
             /* harmony import */ var _services_department_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/department.service */ "./src/app/department/services/department.service.ts");
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _department_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../department.component */ "./src/app/department/department.component.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_5__);
             var DepartmentListComponent = /** @class */ (function () {
                 function DepartmentListComponent(dialog, _departmentService) {
                     this.dialog = dialog;
@@ -1014,12 +1018,29 @@
                 DepartmentListComponent.prototype.deleteDepartment = function (id) {
                     this._departmentService.deleteDepartment(id);
                 };
+                DepartmentListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_5__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return DepartmentListComponent;
             }());
             DepartmentListComponent.ctorParameters = function () { return [
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_department_service__WEBPACK_IMPORTED_MODULE_2__["DepartmentService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], DepartmentListComponent.prototype, "pdfTable", void 0);
             DepartmentListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-department-list',
@@ -1188,6 +1209,8 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_employeeAttendance_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/employeeAttendance.service */ "./src/app/employee-attendance/services/employeeAttendance.service.ts");
             /* harmony import */ var _employee_attendance_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../employee-attendance.component */ "./src/app/employee-attendance/employee-attendance.component.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_6__);
             var EmployeeAttendanceListComponent = /** @class */ (function () {
                 function EmployeeAttendanceListComponent(fb, dialog, _employeeAttendService) {
                     this.fb = fb;
@@ -1233,6 +1256,20 @@
                     });
                     // dialogConfig.width = '60px';
                 };
+                EmployeeAttendanceListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_6__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return EmployeeAttendanceListComponent;
             }());
             EmployeeAttendanceListComponent.ctorParameters = function () { return [
@@ -1240,6 +1277,9 @@
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_employeeAttendance_service__WEBPACK_IMPORTED_MODULE_4__["EmployeeAttendanceService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], EmployeeAttendanceListComponent.prototype, "pdfTable", void 0);
             EmployeeAttendanceListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-employee-attendance-list',
@@ -1411,6 +1451,8 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_employee_project_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/employee-project.service */ "./src/app/employee-project/services/employee-project.service.ts");
             /* harmony import */ var _employee_project_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../employee-project.component */ "./src/app/employee-project/employee-project.component.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_6__);
             var EmployeeProjectListComponent = /** @class */ (function () {
                 function EmployeeProjectListComponent(fb, dialog, _employeeProService) {
                     this.fb = fb;
@@ -1456,6 +1498,20 @@
                     });
                     // dialogConfig.width = '60px';
                 };
+                EmployeeProjectListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_6__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return EmployeeProjectListComponent;
             }());
             EmployeeProjectListComponent.ctorParameters = function () { return [
@@ -1463,6 +1519,9 @@
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_employee_project_service__WEBPACK_IMPORTED_MODULE_4__["EmployeeProjectService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], EmployeeProjectListComponent.prototype, "pdfTable", void 0);
             EmployeeProjectListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-employee-project-list',
@@ -1636,6 +1695,8 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_employeSalary_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/employeSalary.service */ "./src/app/employee-salary/services/employeSalary.service.ts");
             /* harmony import */ var _employee_salary_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../employee-salary.component */ "./src/app/employee-salary/employee-salary.component.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_6__);
             var EmployeeSalaryListComponent = /** @class */ (function () {
                 function EmployeeSalaryListComponent(fb, dialog, _employeeSalaryService) {
                     this.fb = fb;
@@ -1681,6 +1742,20 @@
                     });
                     // dialogConfig.width = '60px';
                 };
+                EmployeeSalaryListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_6__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return EmployeeSalaryListComponent;
             }());
             EmployeeSalaryListComponent.ctorParameters = function () { return [
@@ -1688,6 +1763,9 @@
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_employeSalary_service__WEBPACK_IMPORTED_MODULE_4__["EmployeeSalaryService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], EmployeeSalaryListComponent.prototype, "pdfTable", void 0);
             EmployeeSalaryListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-employee-salary-list',
@@ -1858,6 +1936,8 @@
             /* harmony import */ var _services_employee_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/employee.service */ "./src/app/employee/services/employee.service.ts");
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _employee_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../employee.component */ "./src/app/employee/employee.component.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_5__);
             var EmployeeListComponent = /** @class */ (function () {
                 function EmployeeListComponent(dialog, _employeeService) {
                     this.dialog = dialog;
@@ -1906,12 +1986,29 @@
                 EmployeeListComponent.prototype.deleteEmployee = function (id) {
                     this._employeeService.deleteEmployee(id);
                 };
+                EmployeeListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_5__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return EmployeeListComponent;
             }());
             EmployeeListComponent.ctorParameters = function () { return [
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_employee_service__WEBPACK_IMPORTED_MODULE_2__["EmployeeService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], EmployeeListComponent.prototype, "pdfTable", void 0);
             EmployeeListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-employee-list',
@@ -2211,6 +2308,8 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _leave_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../leave.component */ "./src/app/leave/leave.component.ts");
             /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_6__);
             var LeaveListComponent = /** @class */ (function () {
                 function LeaveListComponent(fb, dialog, _leaveService) {
                     this.fb = fb;
@@ -2256,6 +2355,20 @@
                     });
                     // dialogConfig.width = '60px';
                 };
+                LeaveListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_6__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return LeaveListComponent;
             }());
             LeaveListComponent.ctorParameters = function () { return [
@@ -2263,6 +2376,9 @@
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_leave_service__WEBPACK_IMPORTED_MODULE_2__["LeaveService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], LeaveListComponent.prototype, "pdfTable", void 0);
             LeaveListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-leave-list',
@@ -2435,6 +2551,8 @@
             /* harmony import */ var _loan_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../loan.component */ "./src/app/loan/loan.component.ts");
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_loan_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/loan.service */ "./src/app/loan/services/loan.service.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_5__);
             var LoanListComponent = /** @class */ (function () {
                 function LoanListComponent(dialog, _loanService) {
                     this.dialog = dialog;
@@ -2479,12 +2597,29 @@
                 LoanListComponent.prototype.deleteLoan = function (id) {
                     this._loanService.deleteLoan(id);
                 };
+                LoanListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_5__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return LoanListComponent;
             }());
             LoanListComponent.ctorParameters = function () { return [
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
                 { type: _services_loan_service__WEBPACK_IMPORTED_MODULE_4__["LoanService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], LoanListComponent.prototype, "pdfTable", void 0);
             LoanListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-loan-list',
@@ -2714,6 +2849,8 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_payroll_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/payroll.service */ "./src/app/payroll/services/payroll.service.ts");
             /* harmony import */ var _payroll_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../payroll.component */ "./src/app/payroll/payroll.component.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_5__);
             var PayrollListComponent = /** @class */ (function () {
                 function PayrollListComponent(dialog, _payrollService) {
                     this.dialog = dialog;
@@ -2758,12 +2895,29 @@
                 PayrollListComponent.prototype.deletePayroll = function (id) {
                     this._payrollService.deletePayroll(id);
                 };
+                PayrollListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_5__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return PayrollListComponent;
             }());
             PayrollListComponent.ctorParameters = function () { return [
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
                 { type: _services_payroll_service__WEBPACK_IMPORTED_MODULE_3__["PayrollService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], PayrollListComponent.prototype, "pdfTable", void 0);
             PayrollListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-payroll-list',
@@ -3026,6 +3180,8 @@
             /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
             /* harmony import */ var _services_training_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/training.service */ "./src/app/training/services/training.service.ts");
             /* harmony import */ var _training_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../training.component */ "./src/app/training/training.component.ts");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+            /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_5__);
             var TrainingListComponent = /** @class */ (function () {
                 function TrainingListComponent(dialog, _trainService) {
                     this.dialog = dialog;
@@ -3036,6 +3192,7 @@
                 TrainingListComponent.prototype.ngOnInit = function () {
                     this.trainingList = this._trainService.getTraining();
                     this.trainingFullList = this.trainingList;
+                    console.log(this.pdfTable);
                 };
                 TrainingListComponent.prototype.search = function () {
                     var _this = this;
@@ -3070,12 +3227,29 @@
                 TrainingListComponent.prototype.deleteTraining = function (id) {
                     this._trainService.deleteTraining(id);
                 };
+                TrainingListComponent.prototype.downloadAsPDF = function () {
+                    var doc = new jspdf__WEBPACK_IMPORTED_MODULE_5__();
+                    var specialElementHandlers = {
+                        '#editor': function (element, renderer) {
+                            return true;
+                        }
+                    };
+                    var pdfTable = this.pdfTable.nativeElement;
+                    doc.fromHTML(pdfTable.innerHTML, 10, 10, {
+                        width: 190,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('tableToPdf.pdf');
+                };
                 return TrainingListComponent;
             }());
             TrainingListComponent.ctorParameters = function () { return [
                 { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
                 { type: _services_training_service__WEBPACK_IMPORTED_MODULE_3__["TrainingService"] }
             ]; };
+            tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('pdfTable', { static: false })
+            ], TrainingListComponent.prototype, "pdfTable", void 0);
             TrainingListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-training-list',
@@ -3278,6 +3452,7 @@
                 // get userList() {
                 //   return this._userService.getUserDetail();
                 // }
+                //pdfSrc = "http://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
                 UserListComponent.prototype.sendMapData = function () {
                     if (this.isChecked == true) {
                         this.sendData();
@@ -3560,6 +3735,51 @@
         /*! no static exports found */
         /***/ (function (module, exports, __webpack_require__) {
             module.exports = __webpack_require__(/*! C:\Users\User\source\repos\MyHrm\src\main.ts */ "./src/main.ts");
+            /***/ 
+        }),
+        /***/ 1: 
+        /*!**********************!*\
+          !*** zlib (ignored) ***!
+          \**********************/
+        /*! no static exports found */
+        /***/ (function (module, exports) {
+            /* (ignored) */
+            /***/ 
+        }),
+        /***/ 2: 
+        /*!********************!*\
+          !*** fs (ignored) ***!
+          \********************/
+        /*! no static exports found */
+        /***/ (function (module, exports) {
+            /* (ignored) */
+            /***/ 
+        }),
+        /***/ 3: 
+        /*!**********************!*\
+          !*** http (ignored) ***!
+          \**********************/
+        /*! no static exports found */
+        /***/ (function (module, exports) {
+            /* (ignored) */
+            /***/ 
+        }),
+        /***/ 4: 
+        /*!***********************!*\
+          !*** https (ignored) ***!
+          \***********************/
+        /*! no static exports found */
+        /***/ (function (module, exports) {
+            /* (ignored) */
+            /***/ 
+        }),
+        /***/ 5: 
+        /*!*********************!*\
+          !*** url (ignored) ***!
+          \*********************/
+        /*! no static exports found */
+        /***/ (function (module, exports) {
+            /* (ignored) */
             /***/ 
         })
     }, [[0, "runtime", "vendor"]]]);
